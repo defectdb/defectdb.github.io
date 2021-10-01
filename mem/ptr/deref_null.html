@@ -146,12 +146,12 @@ kernel mode, the defect will panic the kernel.</p>
 <h2>Vulnerability potential<a class="headerlink" href="#vulnerability-potential" title="Permalink to this headline">¶</a></h2>
 <p>This issue has a potential to be a vulnerability.</p>
 <ol class="arabic simple">
-<li><p>Since the default behavior is to terminate the application or panic the
-kernel, this defect might be used as a part of Denial of Service attack.</p></li>
-<li><p>The termination of application might open other security issues in complex
-systems, leading to the attacker gaining access to the system.</p></li>
-<li><p>If attacker has an access to signal handler, this defect may be used to
-perform remote code execution.</p></li>
+<li>Since the default behavior is to terminate the application or panic the
+kernel, this defect might be used as a part of Denial of Service attack.</li>
+<li>The termination of application might open other security issues in complex
+systems, leading to the attacker gaining access to the system.</li>
+<li>If attacker has an access to signal handler, this defect may be used to
+perform remote code execution.</li>
 </ol>
 </div>
 <div class="section" id="technical-details">
@@ -177,8 +177,8 @@ assured that the signal handler may actually recover the program from the issue,
 otherwise, you risk to have the handler invoked repeatedly.</p>
 <div class="section" id="linux">
 <h3>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h3>
-<p>Set up the <code class="docutils literal notranslate"><span class="pre">SIGSEGV</span></code> signal handler to catch the issue.</p>
-<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<p>Set up the <code class="docutils literal"><span class="pre">SIGSEGV</span></code> signal handler to catch the issue.</p>
+<div class="highlight-c"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -210,9 +210,9 @@ otherwise, you risk to have the handler invoked repeatedly.</p>
 </div>
 <div class="section" id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<p>Use <code class="docutils literal notranslate"><span class="pre">__try</span></code>/<code class="docutils literal notranslate"><span class="pre">__except</span></code> if the compiler supports Structured Exception
+<p>Use <code class="docutils literal"><span class="pre">__try</span></code>/<code class="docutils literal"><span class="pre">__except</span></code> if the compiler supports Structured Exception
 Handling (Microsoft Visual C++ does).</p>
-<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-c"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -251,7 +251,7 @@ Handling (Microsoft Visual C++ does).</p>
 <h2>Reproduction<a class="headerlink" href="#reproduction" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="c-language">
 <h3>C language<a class="headerlink" href="#c-language" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-c notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-c"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -315,11 +315,20 @@ Handling (Microsoft Visual C++ does).</p>
     
 
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme-min.js"></script> 
 </body>
