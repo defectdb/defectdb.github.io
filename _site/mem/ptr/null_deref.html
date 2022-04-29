@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Null pointer dereference</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Null pointer dereference" />
+<meta name="author" content="Maxim Menshikov" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Dereferencing null pointer might have harmful effect on the application or the complete operating system. Impact In case there is no page assigned to null address, accessing data by that address and all adjacent addresses will terminate the application. For the kernel mode, the defect will panic the kernel. Vulnerability potential This issue has a potential to be a vulnerability. Since the default behavior is to terminate the application or panic the kernel, this defect might be used as a part of Denial of Service attack. The termination of application might open other security issues in complex systems, leading to the attacker gaining access to the system. If attacker has an access to signal handler, this defect may be used to perform remote code execution. Technical details The issue comes from memory management unit (MMU) de-facto conventions. When such a memory access occurs, the operating system looks up the page in the page table. The address range of the page containing null address is historically not mapped to any page on most systems, leading to SIGSEGV signal (on POSIX systems), which by default terminates an application. On Windows and Visual C++ compiler with Structured Exception Handling (SEH), the Microcontrollers Beware that most microcontrollers have null address page mapped to the vector of interrupt handlers. Changing the value on that address may have serious impact and may come unattended. Catching the issue There are methods to catch the issue in runtime, however, you must be assured that the signal handler may actually recover the program from the issue, otherwise, you risk to have the handler invoked repeatedly. Linux Set up the SIGSEGV signal handler to catch the issue. Windows Use __try/__except if the compiler supports Structured Exception Handling (Microsoft Visual C++ does). How to reproduce C" />
+<meta property="og:description" content="Dereferencing null pointer might have harmful effect on the application or the complete operating system. Impact In case there is no page assigned to null address, accessing data by that address and all adjacent addresses will terminate the application. For the kernel mode, the defect will panic the kernel. Vulnerability potential This issue has a potential to be a vulnerability. Since the default behavior is to terminate the application or panic the kernel, this defect might be used as a part of Denial of Service attack. The termination of application might open other security issues in complex systems, leading to the attacker gaining access to the system. If attacker has an access to signal handler, this defect may be used to perform remote code execution. Technical details The issue comes from memory management unit (MMU) de-facto conventions. When such a memory access occurs, the operating system looks up the page in the page table. The address range of the page containing null address is historically not mapped to any page on most systems, leading to SIGSEGV signal (on POSIX systems), which by default terminates an application. On Windows and Visual C++ compiler with Structured Exception Handling (SEH), the Microcontrollers Beware that most microcontrollers have null address page mapped to the vector of interrupt handlers. Changing the value on that address may have serious impact and may come unattended. Catching the issue There are methods to catch the issue in runtime, however, you must be assured that the signal handler may actually recover the program from the issue, otherwise, you risk to have the handler invoked repeatedly. Linux Set up the SIGSEGV signal handler to catch the issue. Windows Use __try/__except if the compiler supports Structured Exception Handling (Microsoft Visual C++ does). How to reproduce C" />
+<link rel="canonical" href="http://localhost:4000/mem/ptr/null_deref" />
+<meta property="og:url" content="http://localhost:4000/mem/ptr/null_deref" />
+<meta property="og:site_name" content="Defect DB" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-29T21:11:16+03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Null pointer dereference" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Maxim Menshikov"},"@type":"BlogPosting","url":"http://localhost:4000/mem/ptr/null_deref","description":"Dereferencing null pointer might have harmful effect on the application or the complete operating system. Impact In case there is no page assigned to null address, accessing data by that address and all adjacent addresses will terminate the application. For the kernel mode, the defect will panic the kernel. Vulnerability potential This issue has a potential to be a vulnerability. Since the default behavior is to terminate the application or panic the kernel, this defect might be used as a part of Denial of Service attack. The termination of application might open other security issues in complex systems, leading to the attacker gaining access to the system. If attacker has an access to signal handler, this defect may be used to perform remote code execution. Technical details The issue comes from memory management unit (MMU) de-facto conventions. When such a memory access occurs, the operating system looks up the page in the page table. The address range of the page containing null address is historically not mapped to any page on most systems, leading to SIGSEGV signal (on POSIX systems), which by default terminates an application. On Windows and Visual C++ compiler with Structured Exception Handling (SEH), the Microcontrollers Beware that most microcontrollers have null address page mapped to the vector of interrupt handlers. Changing the value on that address may have serious impact and may come unattended. Catching the issue There are methods to catch the issue in runtime, however, you must be assured that the signal handler may actually recover the program from the issue, otherwise, you risk to have the handler invoked repeatedly. Linux Set up the SIGSEGV signal handler to catch the issue. Windows Use __try/__except if the compiler supports Structured Exception Handling (Microsoft Visual C++ does). How to reproduce C","headline":"Null pointer dereference","dateModified":"2022-04-29T21:11:16+03:00","datePublished":"2022-04-29T21:11:16+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/mem/ptr/null_deref"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Defect DB" /><link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+</head><body a="auto">
+  <main class="page-content" aria-label="Content">
+    <div class="page-content-main">
+      <nav>
+  <ul class="menu">
+    <li><a href="/">
+          Home
+        </a></li>
+  </ul>
+</nav>
+<article>
+  <header class="post-header">
+    <h1 class="post-header-title">
+      <a href="/mem/ptr/null_deref">
+        <span itemprop="name headline mainEntityOfPage">Null pointer dereference</span>
+      </a>
+    </h1>
+  </header>
+  <div class="article cv">
+    <table>
+      
+      <tr>
+        <td>
+        Vulnerability potential
+        </td>
+        <td>
+          <b>
+            High
+          </b>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td>
+        DDoS potential
+        </td>
+        <td>
+          <b>
+            High
+          </b>
+        </td>
+      </tr>
+      
+    </table>
+  </div>
+  <div class="article">
+    <p>Dereferencing null pointer might have harmful effect on the application or the
+complete operating system.</p>
+
+<h1 id="impact">Impact</h1>
+<p>In case there is no page assigned to null address, accessing data by that
+address and all adjacent addresses will terminate the application. For the
+kernel mode, the defect will panic the kernel.</p>
+
+<h1 id="vulnerability-potential">Vulnerability potential</h1>
+
+<p>This issue has a potential to be a vulnerability.</p>
+
+<ol>
+  <li>Since the default behavior is to terminate the application or panic the
+kernel, this defect might be used as a part of Denial of Service attack.</li>
+  <li>The termination of application might open other security issues in complex
+systems, leading to the attacker gaining access to the system.</li>
+  <li>If attacker has an access to signal handler, this defect may be used to
+perform remote code execution.</li>
+</ol>
+
+<h1 id="technical-details">Technical details</h1>
+
+<p>The issue comes from memory management unit (MMU) de-facto conventions. When
+such a memory access occurs, the operating system looks up the page in the page
+table. The address range of the page containing null address is
+historically not mapped to any page on most systems, leading to SIGSEGV signal
+(on POSIX systems), which by default terminates an application.
+On Windows and Visual C++ compiler with Structured Exception Handling (SEH),
+the</p>
+
+<h2 id="microcontrollers">Microcontrollers</h2>
+
+<p>Beware that most microcontrollers have null address page mapped to the vector
+of interrupt handlers. Changing the value on that address may have serious
+impact and may come unattended.</p>
+
+<h1 id="catching-the-issue">Catching the issue</h1>
+
+<p>There are methods to catch the issue in runtime, however, you must be
+assured that the signal handler may actually recover the program from the issue,
+otherwise, you risk to have the handler invoked repeatedly.</p>
+
+<h2 id="linux">Linux</h2>
+
+<p>Set up the <code class="language-plaintext highlighter-rouge">SIGSEGV</code> signal handler to catch the issue.</p>
+
+<h2 id="windows">Windows</h2>
+
+<p>Use <code class="language-plaintext highlighter-rouge">__try</code>/<code class="language-plaintext highlighter-rouge">__except</code> if the compiler supports Structured Exception
+Handling (Microsoft Visual C++ does).</p>
+
+<h1 id="how-to-reproduce">How to reproduce</h1>
+
+<h2 id="c">C</h2>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+</body></html>

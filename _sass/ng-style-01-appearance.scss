@@ -1,0 +1,38 @@
+:root {
+  --accent-color: #0000C8;
+  --accent-color-transparent: #0000C830;
+  --accent-color-invert: #FFFF37;
+  --accent-color-transparent-invert: #FFFF3730;
+  --red-color: #C80000;
+  --red-color-invert: #37FFFF;
+  --badge-color: #FFFFFF;
+  --badge-color-invert: #000000;
+  --green-color: #00C800;
+  --green-color-invert: #FF37FF;
+  --gray-color: #808080;
+  --foreground-color: #000000;
+  --background-color: #FFFFFF;
+  --title-color: #2a2f36;
+  --foreground-color-dim: #2a2f36;
+  --background-color-dim: #F0F0F0;
+  --disabled-color: #404040;
+  --black-color: #000000;
+  --black-color-invert: #F0F0F0;
+}
+
+// Typography
+.readable-typo {
+  font-family: Muli,sans-serif;
+}
+
+.header-typo {
+  font-family: Muli,sans-serif;
+}
+
+.accent-typo {
+  color: var(--accent-color);
+}
+
+body, html {
+  min-height: 100%;
+}

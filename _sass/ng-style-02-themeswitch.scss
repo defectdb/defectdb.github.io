@@ -1,0 +1,27 @@
+// -------------- THEME SWITCHER -------------- //
+@mixin dark-appearance {
+  filter: invert(1);
+  .article img {
+    filter: invert(1);
+  }
+  img {
+    &.ioda { filter: invert(0); }
+  }
+}
+
+body[a="dark"] { @include dark-appearance; }
+
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] { @include dark-appearance; }
+  :root {
+    --accent-color: var(--accent-color-invert);
+    --accent-color-transparent: var(--accent-color-transparent-invert);
+    --red-color: var(--red-color-invert);
+    --green-color: var(--green-color-invert);
+    --badge-color: var(--badge-color-invert);
+    --black-color: var(--black-color-invert);
+  }
+}
+
+// -------------------------------------------- //

@@ -1,0 +1,80 @@
+<header
+{% if include.post.project_active %}
+  class="post-header post-header-active"
+{% else %}
+  class="post-header"
+{% endif %}
+>
+
+  <h1
+  {% if include.mini %}
+  class="post-header-title-mini"
+  {% else %}
+  class="post-header-title"
+  {% endif %}
+  >
+    <span itemprop="name headline mainEntityOfPage">
+      <a href="{{ include.post.url }}">{{ include.post.title }}
+      </a>
+      {% if include.post.categories.size > 0 %}
+      <span class="post-header-period-badge">{{ include.post.categories | join: ', '}}
+      </span>
+      {% endif %}
+      {% if include.post.project_active %}
+      <span class="post-header-active-badge">Active
+      </span>
+      {% endif %}
+      {% if include.post.project_big %}
+      <span class="post-header-highlights-badge">Highlights
+      </span>
+      {% endif %}
+      {% if include.post.project_commercial %}
+      <span class="post-header-external-badge">EXTERNAL
+      </span>
+      {% endif %}
+      {% if include.post.github_link %}
+      <span class="post-header-opensource-badge">Open-source
+      </span>
+      {% endif %}
+    </span>
+    </a>
+  </h2>
+  </h1>
+  <ul class="post-header-subheader">
+    <li class="post-header-date">
+      <time itemprop="datePublished dateModified" datetime="{{ include.post.date | date_to_xmlschema }}">
+        {{ include.post.date | date: site.theme_config.date_format }}
+      </time>
+    </li>
+    <li class="post-header-related-project">
+      {% if include.post.related_project %}
+      <a href="{{ include.post.related_project }}">Related project</a>
+      {% endif %}
+      {% if include.add_languages %}
+      {% if include.post.project_languages %}
+      {{ include.post.project_languages | join: ', ' }}
+      {% endif %}
+      {% endif %}
+    </li>
+  </ul>
+  {% if include.hide_desc %}
+  {% else %}
+    {% if include.post.excerpt || include.post.project_description %}
+      <div
+      {% if include.mini %}
+        class="post-header-excerpt-mini"
+      {% else %}
+        class="post-header-excerpt"
+      {% endif %}
+      >
+        {% if include.project %}
+            <p>
+              {{ include.post.project_description }}
+            </p>
+        {% else %}
+            {{ include.post.excerpt }}
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %}
+</header>

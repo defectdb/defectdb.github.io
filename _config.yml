@@ -1,1 +1,44 @@
-theme: jekyll-theme-minimal
+name: defectdb.org
+url: https://defectdb.org
+title: Defect DB
+description: "Defect database"
+author:
+  name: "Maxim Menshikov"
+  email: maxim@menshikov.org
+baseurl: ""
+twitter_username: _ultrashot
+github_username:  maximmenshikov
+
+# configure kramdown
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "page:num"
+
+excerpt_separator: <!--more-->
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "← Home" # customize text for homepage link in post layout
+  prev_page_text: "← Back"
+  back_icon_text: "←"
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+
+collections:
+  project:
+    output: true
+  paper:
+    output: true
+  pages:
+    output: true
+
+exclude:
+  - README.md

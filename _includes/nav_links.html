@@ -1,0 +1,40 @@
+{%-if include.back_to -%}
+<nav>
+  <ul class="menu">
+    <li>
+      {%-if include.back_to == "prev" -%}
+        <a href="#" onclick="history.back()">
+          {{ include.back_to_title }}
+        </a>
+      {%-else-%}
+        <a href="{{ include.back_to }}">
+          {{ include.back_to_title }}
+        </a>
+      {%-endif -%}
+    </li>
+  </ul>
+</nav>
+{%-else-%}
+<nav>
+  <ul class="menu">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/posts">Posts</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+    <li>
+      <a href="/papers">Papers</a>
+    </li>
+    <li>
+      <a href="/cv">CV</a>
+    </li>
+    <li>
+      <a href="/about">About</a>
+    </li>
+  </ul>
+</nav>
+{%-endif -%}

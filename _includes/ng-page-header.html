@@ -1,0 +1,23 @@
+<header>
+  <h1 class="title-block">{{ site.title }}
+    <div class="icon-block">
+      <a href="https://github.com/maximmenshikov">
+        <img alt="GitHub" class="icon" src="/images/icon-github.png"/>
+      </a>
+      <a href="https://www.linkedin.com/in/maxim-menshikov">
+        <img alt="LinkedIn" class="icon" src="/images/icon-li.png"/>
+      </a>
+      <a href="https://stackoverflow.com/users/15804385/maximmenshikov">
+        <img alt="StackOverflow" class="icon" src="/images/icon-so.png"/>
+      </a>
+      <a href="https://twitter.com/_ultrashot">
+        <img alt="Twitter" class="icon" src="/images/icon-twitter.png"/>
+      </a>
+    </div>
+  </h1>
+  <div class="subtitle-block">
+    {%-if site.theme_config.show_description-%}
+      <p>{{ site.description }}</p>
+    {%-endif-%}
+  </div>
+</header>

@@ -1,0 +1,47 @@
+.menu {
+  @extend .header-typo;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: inline;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+  }
+}
+
+.menu a {
+  @extend .menu-link;
+}
+
+
+.home-nav-block {
+  @extend .tags-typo;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-button {
+  @extend .global-link;
+}
+
+.nav-prev {
+  float: left;
+}
+
+.nav-prev a {
+  @extend .nav-button;
+}
+
+.nav-next {
+  float: right;
+}
+
+.nav-next a {
+  @extend .nav-button;
+}
+
+.nav-disabled a {
+  @extend .disabled-link;
+}

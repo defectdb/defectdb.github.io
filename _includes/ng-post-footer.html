@@ -1,0 +1,5 @@
+<div class="post-footer">
+    {% if page.dsq_thread_id or page.dsq_enabled %}
+    {% include disqus.html url=page.url disqus_id=page.dsq_thread_id -%}
+    {% endif %}
+</div>

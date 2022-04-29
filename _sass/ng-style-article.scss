@@ -1,0 +1,101 @@
+// Article (all)
+.article {
+  @extend .article-typo;
+  margin: auto;
+}
+
+.article a {
+  @extend .global-link;
+}
+
+.cv a {
+  @extend .global-cv-link;
+}
+
+.article h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.article p {
+  overflow-wrap: break-word;
+}
+
+.article p img {
+  display: block;
+  text-decoration: none;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+
+.article blockquote {
+  @extend .article-stress-typo;
+  border-left: thick solid var(--foreground-color);
+  padding: 1rem;
+
+  p {
+      margin: 0;
+  }
+}
+
+.article code {
+  font: monospace;
+  background: #F8F8F8;
+}
+
+.highlighter-rouge code {
+  display: block;
+  overflow-x: auto;
+  // white-space: pre-wrap;
+  padding: 1rem;
+}
+
+
+.article table {
+  width: 100%;
+}
+
+.article table, td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+.cv table, td {
+  border: none;
+}
+
+.article th {
+  @extend .header-typo;
+  @extend .accent-typo;
+  border: medium solid var(--accent-color);
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+.cv th {
+  border: none;
+}
+
+.portfolio table, th, td {
+  border: none;
+}
+
+.portfolio table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+
+.article tbody tr:nth-child(even)
+{
+  background: var(--background-color-dim);
+}
+
+.cv tbody tr:nth-child(even)
+{
+  background: var(--background-color);
+}

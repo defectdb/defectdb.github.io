@@ -1,0 +1,56 @@
+.title-block {
+  @extend .header-typo;
+  font-size: 28px;
+  overflow: hidden;
+}
+
+.subtitle-block {
+  @extend .header-typo;
+  margin-top: -20px;
+  font-size: 16pt;
+}
+
+@media screen and (max-width: 800px) {
+    .title-block {
+         font-size: 16px;
+    }
+    .subtitle-block {
+         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .title-block {
+         font-size: 18px;
+    }
+    .subtitle-block {
+         font-size: 12px;
+    }
+}
+
+.icon-block {
+  float: right;
+  text-decoration: none;
+  display: inline;
+  margin-left: 50px;
+}
+
+.icon-block a {
+  text-decoration: none;
+}
+
+.icon {
+  padding: 8px;
+  display: inline;
+  height: 0.8em;
+  filter: grayscale(1) contrast(80);
+}
+
+.icon img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.icon:hover {
+  filter: opacity(0.5) grayscale(1) contrast(80);
+}
