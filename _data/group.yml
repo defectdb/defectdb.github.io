@@ -1,5 +1,14 @@
 - name: mem
   title: Memory
+  permalink: /mem
   group:
     - name: ptr
       title: Pointers
+      permalink: /mem/ptr
+- name: logic
+  title: Logic
+  permalink: /logic
+- name: arithmetic
+  title: Arithmetic
+- name: context
+  title: Context
