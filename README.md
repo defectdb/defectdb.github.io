@@ -1,2 +1,2 @@
-# maximmenshikov.github.io
-Personal website
+# DefectDB
+The database of defects found in software.

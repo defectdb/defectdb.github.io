@@ -1,0 +1,9 @@
+<ul>
+  {% for page in site.pages %}
+  {% if page.group_full == include.group_full %}
+  <li>
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

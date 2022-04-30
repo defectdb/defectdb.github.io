@@ -9,6 +9,7 @@ vulnerability:
    - High
 ddos:
    - High
+group_full: mem.ptr
 group:
    - mem
    - ptr

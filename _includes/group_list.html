@@ -5,6 +5,9 @@
     {% assign old_tmp = tmp_group %}
     {% assign tmp_group = group.group %}
     {% include group_list.html %}
+
+    {% include defect_list.html group_full=group.full %}
+
     {% assign tmp_group = old_tmp %}
   </li>
   {% endfor %}
