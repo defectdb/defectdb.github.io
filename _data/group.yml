@@ -17,3 +17,11 @@
 - name: context
   full: context
   title: Context
+- name: parsing
+  full: parsing
+  title: Parsing
+  permalink: /parsing
+- name: translation
+  full: translation
+  title: Translation
+  permalink: /translation
