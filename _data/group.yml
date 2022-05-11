@@ -25,3 +25,12 @@
   full: translation
   title: Translation
   permalink: /translation
+- name: threading
+  full: threading
+  title: Threading
+  permalink: /threading
+  group:
+    - name: locking
+      full: threading.locking
+      title: Locking
+      permalink: /threading/locking
