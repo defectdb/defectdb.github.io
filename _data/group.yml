@@ -2,6 +2,44 @@
   title: Arithmetic
   full: arithmetic
   permalink: /arithmetic
+  group:
+    - name: bitmask
+      full: arithmetic.bitmask
+      title: Bitmasks
+      permalink: /arithmetic/bitmask
+    - name: division
+      full: arithmetic.division
+      title: Division
+      permalink: /arithmetic/division
+    - name: float
+      full: arithmetic.float
+      title: Floating point number
+      permalink: /arithmetic/float
+    - name: integer
+      full: arithmetic.integer
+      title: Integers
+      permalink: /arithmetic/integer
+    - name: ptr
+      full: arithmetic.ptr
+      title: Pointers
+      permalink: /arithmetic/ptr
+    - name: shift
+      full: arithmetic.shift
+      title: Bit shift
+      permalink: /arithmetic/shift
+    - name: unsigned
+      full: arithmetic.unsigned
+      title: Unsigned
+      permalink: /arithmetic/unsigned
+- name: array
+  title: Arrays
+  full: array
+  permalink: /array
+  group:
+    - name: index
+      full: array.index
+      title: Indices
+      permalink: /array/index
 - name: ast
   title: Abstract Syntax Tree
   full: ast
@@ -11,11 +49,98 @@
       full: ast.binary
       title: Binary operations
       permalink: /ast/binary
+    - name: sizeof
+      full: ast.sizeof
+      title: SizeOf operations
+      permalink: /ast/sizeof
+- name: cast
+  title: Casts
+  full: cast
+  permalink: /cast
+  group:
+    - name: integer
+      full: cast.integer
+      title: Integer operations
+      permalink: /cast/integer
+- name: class
+  title: Classes
+  full: class
+  permalink: /class
+  group:
+    - name: member
+      full: class.member
+      title: Members
+      permalink: /class/member
+- name: context
+  title: Contexts
+  full: context
+  permalink: /context
+  group:
+    - name: interrupt
+      full: context.interrupt
+      title: Interrupts
+      permalink: /context/interrupt
+    - name: thread
+      full: context.thread
+      title: Threads
+      permalink: /context/thread
+- name: expr
+  title: Expressions
+  full: expr
+  permalink: /expr
+  group:
+    - name: evaluation
+      full: expr.evaluation
+      title: Evaluation
+      permalink: /expr/evaluation
+      group:
+        - name: order
+          full: expr.evaluation.order
+          title: Order
+          permalink: /expr/evaluation/order
+    - name: qualifier
+      full: expr.qualifier
+      title: Qualifiers
+      permalink: /expr/qualifier
+- name: file
+  full: file
+  title: File
+  permalink: /file
+  group:
+    - name: read
+      full: file.read
+      title: Read
+      permalink: /file/read
+    - name: state
+      full: file.state
+      title: States
+      permalink: /file/state
+    - name: write
+      full: file.write
+      title: Write
+      permalink: /file/write
+- name: fn
+  full: fn
+  title: Functions
+  permalink: /fn
+  group:
+    - name: argument
+      full: fn.argument
+      title: Arguments
+      permalink: /fn/argument
 - name: logic
   full: logic
   title: Logic
   permalink: /logic
   group:
+    - name: assignment
+      full: logic.assignment
+      title: Assignments
+      permalink: /logic/assignment
+    - name: complete_behaviour
+      full: logic.complete_behaviour
+      title: Complete behaviours
+      permalink: /logic/complete_behaviour
     - name: condition
       full: logic.condition
       title: Conditions
@@ -24,10 +149,18 @@
       full: logic.contract
       title: Contract
       permalink: /logic/contract
+    - name: disjoint_behaviour
+      full: logic.disjoint_behaviour
+      title: Disjoint behaviours
+      permalink: /logic/disjoint_behaviour
     - name: invariant
       full: logic.invariant
       title: Invariants
       permalink: /logic/invariant
+- name: loop
+  title: Loop
+  full: loop
+  permalink: /loop
 - name: mem
   title: Memory
   full: mem
@@ -37,14 +170,66 @@
       full: mem.ptr
       title: Pointers
       permalink: /mem/ptr
-
-- name: context
-  full: context
-  title: Context
+      group:
+        - name: block
+          full: mem.ptr.block
+          title: Blocks
+          permalink: /mem/ptr/block
+        - name: compare
+          full: mem.ptr.compare
+          title: Comparison
+          permalink: /mem/ptr/compare
 - name: parsing
   full: parsing
   title: Parsing
   permalink: /parsing
+- name: std
+  title: Standard Library
+  full: std
+  permalink: /std
+  group:
+    - name: alloc
+      full: std.alloc
+      title: Allocation
+      permalink: /std/alloc
+    - name: fmt
+      full: std.fmt
+      title: Formatting
+      permalink: /std/fmt
+      group:
+        - name: arg
+          full: std.fmt.arg
+          title: Arguments
+          permalink: /std/fmt/arg
+        - name: format
+          full: std.fmt.format
+          title: Format
+          permalink: /std/fmt/format
+        - name: param
+          full: std.fmt.param
+          title: Parameters
+          permalink: /std/fmt/param
+    - name: lock
+      full: std.lock
+      title: Locking
+      permalink: /std/lock
+    - name: pthread
+      full: std.pthread
+      title: pthread
+      permalink: /std/pthread
+      group:
+        - name: exit
+          full: std.pthread.exit
+          title: Exit
+          permalink: /std/pthread/exit
+    - name: rng
+      full: std.rng
+      title: Random Number Generators
+      permalink: /std/rng
+    - name: unlock
+      full: std.unlock
+      title: Unlock
+      permalink: /std/unlock
 - name: translation
   full: translation
   title: Translation
@@ -58,3 +243,16 @@
       full: threading.locking
       title: Locking
       permalink: /threading/locking
+- name: var
+  full: var
+  title: Variables
+  permalink: /var
+  group:
+    - name: scope
+      full: var.scope
+      title: Scopes
+      permalink: /var/scope
+    - name: state
+      full: var.state
+      title: States
+      permalink: /var/state
