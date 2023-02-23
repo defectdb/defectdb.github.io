@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: logic/contract
+group_full: logic.contract
 group:
    - logic
    - contract

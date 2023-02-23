@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: ast/binary
+group_full: ast.binary
 group:
    - ast
    - binary

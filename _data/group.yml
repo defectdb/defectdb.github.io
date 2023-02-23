@@ -1,3 +1,33 @@
+- name: arithmetic
+  title: Arithmetic
+  full: arithmetic
+  permalink: /arithmetic
+- name: ast
+  title: Abstract Syntax Tree
+  full: ast
+  permalink: /ast
+  group:
+    - name: binary
+      full: ast.binary
+      title: Binary operations
+      permalink: /ast/binary
+- name: logic
+  full: logic
+  title: Logic
+  permalink: /logic
+  group:
+    - name: condition
+      full: logic.condition
+      title: Conditions
+      permalink: /logic/condition
+    - name: contract
+      full: logic.contract
+      title: Contract
+      permalink: /logic/contract
+    - name: invariant
+      full: logic.invariant
+      title: Invariants
+      permalink: /logic/invariant
 - name: mem
   title: Memory
   full: mem
@@ -7,13 +37,7 @@
       full: mem.ptr
       title: Pointers
       permalink: /mem/ptr
-- name: logic
-  full: logic
-  title: Logic
-  permalink: /logic
-- name: arithmetic
-  full: arithmetic
-  title: Arithmetic
+
 - name: context
   full: context
   title: Context

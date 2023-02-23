@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: logic/invariant
+group_full: logic.invariant
 group:
    - logic
    - invariant
