@@ -2,7 +2,9 @@
   {% for page in site.pages %}
   {% if page.group_full == include.group_full %}
   <li>
-    <a href="{{ page.permalink }}">{{ page.title }}</a>
+    <div class="article">
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
+    </div>
   </li>
   {% endif %}
   {% endfor %}

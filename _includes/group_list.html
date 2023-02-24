@@ -1,14 +1,16 @@
 <ul>
   {% for group in tmp_group %}
   <li>
-    <a сlass="article_gray" href="{{ group.permalink }}">{{ group.title }}</a>
-    {% assign old_tmp = tmp_group %}
-    {% assign tmp_group = group.group %}
-    {% include group_list.html %}
+    <div class="article_gray">
+      <a href="{{ group.permalink }}">{{ group.title }}</a>
+      {% assign old_tmp = tmp_group %}
+      {% assign tmp_group = group.group %}
+      {% include group_list.html %}
 
-    {% include defect_list.html group_full=group.full %}
+      {% include defect_list.html group_full=group.full %}
 
-    {% assign tmp_group = old_tmp %}
+      {% assign tmp_group = old_tmp %}
+    </div>
   </li>
   {% endfor %}
 </ul>
