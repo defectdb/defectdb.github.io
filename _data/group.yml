@@ -13,7 +13,7 @@
       permalink: /arithmetic/division
     - name: float
       full: arithmetic.float
-      title: Floating point number
+      title: Floating point numbers
       permalink: /arithmetic/float
     - name: integer
       full: arithmetic.integer
