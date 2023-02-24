@@ -9,10 +9,9 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: loop.no_var
+group_full: loop
 group:
    - loop
-   - no_var
 ---
 
 No influental variable is changed in this loop.

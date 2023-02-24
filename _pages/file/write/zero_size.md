@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: file/write
+group_full: file.write
 group:
    - file
    - write

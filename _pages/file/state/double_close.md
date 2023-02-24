@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: file/state
+group_full: file.state
 group:
    - file
    - state

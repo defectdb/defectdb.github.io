@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: file/read
+group_full: file.read
 group:
    - file
    - read

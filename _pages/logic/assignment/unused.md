@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: logic/assignment
+group_full: logic.assignment
 group:
    - logic
    - assignment

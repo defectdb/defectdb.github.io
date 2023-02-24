@@ -15,6 +15,15 @@
       full: arithmetic.float
       title: Floating point numbers
       permalink: /arithmetic/float
+      group:
+        - name: comparison
+          full: arithmetic.float.comparison
+          title: Comparison
+          permalink: /arithmetic/float/comparison
+        - name: fractional_part
+          full: arithmetic.float.fractional_part
+          title: Fractional part
+          permalink: /arithmetic/float/fractional_part
     - name: integer
       full: arithmetic.integer
       title: Integers
@@ -31,6 +40,11 @@
       full: arithmetic.unsigned
       title: Unsigned
       permalink: /arithmetic/unsigned
+      group:
+        - name: zero
+          full: arithmetic.unsigned.zero
+          title: Related to zero
+          permalink: /arithmetic/unsigned/zero
 - name: array
   title: Arrays
   full: array
@@ -102,6 +116,11 @@
       full: expr.qualifier
       title: Qualifiers
       permalink: /expr/qualifier
+      group:
+        - name: const
+          full: expr.qualifier.const
+          title: Const qualifier
+          permalink: /expr/qualifier/const
 - name: file
   full: file
   title: File

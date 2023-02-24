@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: logic/condition
+group_full: logic.condition
 group:
    - logic
    - condition

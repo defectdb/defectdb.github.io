@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: logic/complete_behaviour
+group_full: logic.complete_behaviour
 group:
    - logic
    - complete_behaviour

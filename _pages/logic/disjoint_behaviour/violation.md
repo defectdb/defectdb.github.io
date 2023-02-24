@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: logic/disjoint_behaviour
+group_full: logic.disjoint_behaviour
 group:
    - logic
    - disjoint_behaviour

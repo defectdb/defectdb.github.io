@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: fn/argument
+group_full: fn.argument
 group:
    - fn
    - argument
