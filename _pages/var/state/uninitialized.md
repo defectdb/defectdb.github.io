@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: var/state
+group_full: var.state
 group:
    - var
    - state

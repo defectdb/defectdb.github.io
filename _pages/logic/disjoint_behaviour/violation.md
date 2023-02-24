@@ -2,7 +2,7 @@
 title: Observed behaviour matches more than one of disjoint behaviours
 author: Maxim Menshikov
 layout: defect
-permalink: /logic/complete_behaviour/violation
+permalink: /logic/disjoint_behaviour/violation
 arch:
    - native
 vulnerability:

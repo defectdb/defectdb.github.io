@@ -9,7 +9,7 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: var/scope
+group_full: var.scope
 group:
    - var
    - scope
