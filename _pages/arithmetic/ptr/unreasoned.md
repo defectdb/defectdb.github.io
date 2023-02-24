@@ -9,11 +9,10 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: arithmetic.ptr.unreasoned
+group_full: arithmetic.ptr
 group:
    - arithmetic
    - ptr
-   - unreasoned
 ---
 
 Unreasoned pointer arithmetics.

@@ -9,11 +9,10 @@ vulnerability:
    - None
 ddos:
    - None
-group_full: arithmetic.shift.beyond
+group_full: arithmetic.shift
 group:
    - arithmetic
    - shift
-   - beyond
 ---
 
 The integer shift is beyond the boundaries of a variable

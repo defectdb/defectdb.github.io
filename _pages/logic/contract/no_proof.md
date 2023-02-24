@@ -15,4 +15,4 @@ group:
    - contract
 ---
 
-Contract was violated.
+It is not possible to determine whether the contract is satisfied.
