@@ -42,6 +42,13 @@
   border-bottom: solid 2px var(--accent-color);
 }
 
+.global-link-grayed {
+  text-decoration: none;
+  color: var(--gray-color);
+  font-weight: 800;
+  border-bottom: solid 2px var(--accent-color-transparent);
+}
+
 .global-cv-link {
   text-decoration: none;
   color: var(--title-color);

@@ -9,8 +9,11 @@
 }
 
 .article_gray a {
+  @extend .global-link-grayed;
+}
+
+.article_normal a {
   @extend .global-link;
-  color: var(--gray-color);
 }
 
 .cv a {
