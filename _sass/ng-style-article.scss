@@ -8,6 +8,11 @@
   @extend .global-link;
 }
 
+.article_gray a {
+  @extend .global-link;
+  color: var(--gray-color);
+}
+
 .cv a {
   @extend .global-cv-link;
 }
