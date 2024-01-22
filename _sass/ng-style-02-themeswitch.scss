@@ -21,6 +21,7 @@ body[a="dark"] { @include dark-appearance; }
     --green-color: var(--green-color-invert);
     --badge-color: var(--badge-color-invert);
     --black-color: var(--black-color-invert);
+    --page-background-color: var(--page-background-color-invert);
   }
 }
 
