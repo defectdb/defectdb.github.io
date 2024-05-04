@@ -2,7 +2,7 @@
   {% for group in tmp_group %}
   <li>
     <div class="article_gray">
-      <a href="{{ group.permalink }}">{{ group.title }}</a>
+      <a href="{{ group.permalink }}.html">{{ group.title }}</a>
       {% assign old_tmp = tmp_group %}
       {% assign tmp_group = group.group %}
       {% include group_list.html %}
