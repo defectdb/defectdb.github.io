@@ -2,7 +2,7 @@
 title: File is not open
 author: Maxim Menshikov
 layout: defect
-permalink: /file/state/double_close
+permalink: /file/state/not_open
 arch:
    - native
 vulnerability:

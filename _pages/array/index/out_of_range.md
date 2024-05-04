@@ -2,7 +2,7 @@
 title: The index is out of range
 author: Maxim Menshikov
 layout: defect
-permalink: /array/index/negative
+permalink: /array/index/out_of_range
 arch:
    - native
 vulnerability:

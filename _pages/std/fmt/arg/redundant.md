@@ -2,7 +2,7 @@
 title: Format argument is redundant
 author: Maxim Menshikov
 layout: defect
-permalink: /std/fmt/arg/missing
+permalink: /std/fmt/arg/redundant
 arch:
    - native
 vulnerability:
