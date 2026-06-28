@@ -1,0 +1,50 @@
+{%- comment -%}
+Renders the contents of a section (category) page: its direct sub-sections and
+its direct defects, as two link lists styled like the home-page taxonomy.
+A "direct child" is any page whose permalink is the current permalink plus
+exactly one more path segment. Sub-sections (index pages) have no `vulnerability`
+front matter; defect pages do.
+{%- endcomment -%}
+{%- assign cur = page.url -%}
+{%- assign curslash = cur | append: "/" -%}
+{%- assign sections = "" -%}
+{%- assign defects = "" -%}
+{%- for p in site.pages -%}
+  {%- if p.permalink and p.permalink != cur and p.permalink contains curslash -%}
+    {%- assign rest = p.permalink | remove_first: curslash -%}
+    {%- unless rest contains "/" -%}
+      {%- if p.vulnerability -%}
+        {%- assign defects = defects | append: p.title | append: "~~" | append: p.permalink | append: "||" -%}
+      {%- else -%}
+        {%- assign sections = sections | append: p.title | append: "~~" | append: p.permalink | append: "||" -%}
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if sections == "" and defects == "" -%}
+<p>This section has no entries yet.</p>
+{%- else -%}
+{%- if sections != "" -%}
+<ul>
+  {%- assign rows = sections | split: "||" | sort -%}
+  {%- for r in rows -%}
+    {%- assign pair = r | split: "~~" -%}
+  <li>
+    <div class="article_gray"><a href="{{ pair[1] }}.html">{{ pair[0] }}</a></div>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}
+{%- if defects != "" -%}
+<ul>
+  {%- assign rows = defects | split: "||" | sort -%}
+  {%- for r in rows -%}
+    {%- assign pair = r | split: "~~" -%}
+  <li>
+    <div class="article_normal"><a href="{{ pair[1] }}.html">{{ pair[0] }}</a></div>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}
+{%- endif -%}
