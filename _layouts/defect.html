@@ -10,6 +10,7 @@ layout: default
       </a>
     </h1>
   </header>
+  {% if page.vulnerability or page.ddos %}
   <div class="article cv">
     <table>
       {% if page.vulnerability %}
@@ -38,7 +39,11 @@ layout: default
       {% endif %}
     </table>
   </div>
+  {% endif %}
   <div class="article">
     {{ content }}
+    {% unless page.vulnerability %}
+      {% include section_children.html %}
+    {% endunless %}
   </div>
 </article>
