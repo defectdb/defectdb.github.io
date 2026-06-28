@@ -1,4 +1,10 @@
 // -------------- THEME SWITCHER -------------- //
+// The dark theme inverts the <body> with a filter. The <html> root is NOT
+// filtered, because the browser paints the page canvas (the scroll / overscroll
+// area behind everything) from the root background *without* applying the
+// filter — so the root must already hold the final, literal dark colour.
+// `--canvas-color` carries that literal colour and is kept equal to whatever the
+// inverted body background resolves to, so html, body and canvas always match.
 @mixin dark-appearance {
   filter: invert(1);
   .article img {
@@ -10,6 +16,8 @@
 }
 
 body[a="dark"] { @include dark-appearance; }
+// body bg #FBFAF6 inverts to #040509 in the manual-dark path
+html:has(body[a="dark"]) { --canvas-color: #040509; }
 
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +30,8 @@ body[a="dark"] { @include dark-appearance; }
     --badge-color: var(--badge-color-invert);
     --black-color: var(--black-color-invert);
     --page-background-color: var(--page-background-color-invert);
+    // body bg #D0D0D0 inverts to #2F2F2F — match the canvas to it
+    --canvas-color: #2F2F2F;
   }
 }
 
