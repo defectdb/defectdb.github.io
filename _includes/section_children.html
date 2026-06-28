@@ -25,6 +25,7 @@ front matter; defect pages do.
 {%- if sections == "" and defects == "" -%}
 <p>This section has no entries yet.</p>
 {%- else -%}
+<h2 class="section-contents-title">In this section</h2>
 {%- if sections != "" -%}
 <ul>
   {%- assign rows = sections | split: "||" | sort -%}
