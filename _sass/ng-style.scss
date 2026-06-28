@@ -1,9 +1,10 @@
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: var(--page-background-color); margin: 0; }
-
-html { height: 100%; }
+// The body background is inverted by the dark-theme filter; the html canvas is
+// not filtered, so it uses the literal --canvas-color instead.
+html { background: var(--canvas-color); margin: 0; height: 100%; }
+body { background: var(--page-background-color); margin: 0; }
 
 body {
   font-family: var(--font-body);
