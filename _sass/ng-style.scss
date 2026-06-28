@@ -5,10 +5,32 @@ html, body { background: var(--page-background-color); margin: 0; }
 
 html { height: 100%; }
 
+body {
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  color: var(--ink-color);
+  font-size: 1.2rem;
+  line-height: 1.72;
+  font-weight: 400;
+  font-feature-settings: "kern", "liga", "onum", "pnum";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .page-content-main {
-  max-width: 1024px;
+  max-width: 47rem;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 3.5rem 1.5rem 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  body { font-size: 1.1rem; line-height: 1.66; }
+  .page-content-main { padding: 2rem 1.2rem 4rem; }
+}
+
+::selection {
+  background: var(--accent-color-transparent);
 }
 
 /* 

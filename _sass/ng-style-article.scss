@@ -20,14 +20,75 @@
   @extend .global-cv-link;
 }
 
-.article h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -.02em;
+.article h1, .article h2, .article h3,
+.article h4, .article h5, .article h6 {
+  @extend .header-typo;
+  color: var(--title-color);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -.012em;
+}
+
+// Section headings (markdown `# ...` inside a defect article)
+.article h1 {
+  font-size: 1.72rem;
+  margin: 3.2rem 0 1rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--rule-color);
+}
+
+.article > h1:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 1.4rem;
+}
+
+.article h2 {
+  font-size: 1.32rem;
+  margin: 2.2rem 0 .7rem;
+}
+
+.article h3 {
+  font-size: 1.12rem;
+  margin: 1.8rem 0 .5rem;
+}
+
+.article h4, .article h5, .article h6 {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-soft-color);
+  margin: 1.5rem 0 .4rem;
 }
 
 .article p {
   overflow-wrap: break-word;
+  margin: 1.05rem 0;
+  color: var(--ink-color);
+}
+
+// Editorial lead / standfirst: the opening paragraph reads as a deck
+.article > p:first-child {
+  font-size: 1.36rem;
+  line-height: 1.5;
+  color: var(--ink-soft-color);
+  margin: .2rem 0 1.8rem;
+}
+
+.article ul, .article ol {
+  padding-left: 1.4rem;
+}
+
+.article li {
+  margin: .35rem 0;
+}
+
+.article hr {
+  border: 0;
+  height: 1px;
+  background: var(--rule-color);
+  margin: 2.6rem 0;
 }
 
 .article p img {
@@ -41,35 +102,58 @@
 
 .article blockquote {
   @extend .article-stress-typo;
-  border-left: thick solid var(--foreground-color);
-  padding: 1rem;
+  border-left: 3px solid var(--accent-color);
+  margin: 1.6rem 0;
+  padding: .2rem 0 .2rem 1.3rem;
+  color: var(--ink-soft-color);
 
   p {
-      margin: 0;
+      margin: .4rem 0;
   }
 }
 
 .article code {
-  font: monospace;
-  background: #F8F8F8;
+  font-family: var(--font-mono);
+  font-size: .86em;
+  font-feature-settings: normal;
+  background: var(--code-background-color);
+  border-radius: 4px;
+  padding: .1em .35em;
+}
+
+.highlighter-rouge {
+  margin: 1.4rem 0;
+}
+
+.highlighter-rouge code,
+.article pre {
+  font-family: var(--font-mono);
 }
 
 .highlighter-rouge code {
   display: block;
   overflow-x: auto;
+  font-size: .82rem;
+  line-height: 1.55;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--rule-color);
+  border-radius: 8px;
   // white-space: pre-wrap;
-  padding: 1rem;
 }
 
 
 .article table {
   width: 100%;
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  font-size: .98rem;
 }
 
-.article table, td {
-  border: thin solid black;
-  border-collapse: collapse;
-  padding: 0.4rem;
+.article td {
+  border: 0;
+  border-bottom: 1px solid var(--rule-color);
+  padding: .55rem .7rem;
+  vertical-align: top;
 }
 
 .cv table, td {
@@ -79,9 +163,11 @@
 .article th {
   @extend .header-typo;
   @extend .accent-typo;
-  border: medium solid var(--accent-color);
-  border-collapse: collapse;
-  padding: 0.4rem;
+  text-align: left;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid var(--accent-color);
+  padding: .5rem .7rem;
 }
 
 .cv th {
@@ -100,7 +186,7 @@
 
 .article tbody tr:nth-child(even)
 {
-  background: var(--background-color-dim);
+  background: var(--code-background-color);
 }
 
 .cv tbody tr:nth-child(even)

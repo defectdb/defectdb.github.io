@@ -18,17 +18,28 @@
   --disabled-color: #404040;
   --black-color: #000000;
   --black-color-invert: #F0F0F0;
-  --page-background-color: #FСFСFС;
+  --page-background-color: #FBFAF6;
   --page-background-color-invert: #D0D0D0;
+  --ink-color: #211d18;
+  --ink-soft-color: #4a443b;
+  --rule-color: #e6e0d4;
+  --code-background-color: #f3f0e8;
+
+  // Font stacks
+  --font-body: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-display: "Fraunces", "Newsreader", "Hoefler Text", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 // Typography
 .readable-typo {
-  font-family: Muli,sans-serif;
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
 }
 
 .header-typo {
-  font-family: Muli,sans-serif;
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
 }
 
 .accent-typo {
