@@ -1,6 +1,9 @@
 ---
-title: Assignments
+title: "Assignments"
 author: Maxim Menshikov
 layout: defect
 permalink: /logic/assignment
+group:
+   - logic
 ---
+

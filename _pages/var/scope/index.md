@@ -1,6 +1,9 @@
 ---
-title: Scopes
+title: "Scopes"
 author: Maxim Menshikov
 layout: defect
 permalink: /var/scope
+group:
+   - var
 ---
+

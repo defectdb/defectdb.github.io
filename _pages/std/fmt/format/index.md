@@ -1,6 +1,10 @@
 ---
-title: Format
+title: "Format"
 author: Maxim Menshikov
 layout: defect
 permalink: /std/fmt/format
+group:
+   - std
+   - fmt
 ---
+

@@ -1,6 +1,9 @@
 ---
-title: Allocation
+title: "Allocation"
 author: Maxim Menshikov
 layout: defect
 permalink: /std/alloc
+group:
+   - std
 ---
+

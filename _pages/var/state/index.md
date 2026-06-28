@@ -1,6 +1,9 @@
 ---
-title: States
+title: "States"
 author: Maxim Menshikov
 layout: defect
 permalink: /var/state
+group:
+   - var
 ---
+
