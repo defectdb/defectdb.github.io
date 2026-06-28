@@ -12,7 +12,7 @@ ddos:
 group_full: csharp.null
 group:
    - csharp
-   - null
+   - "null"
 ---
 x.Equals(null) crashes when x is null; use `x is null` (or `x == null`) for null checks
 
