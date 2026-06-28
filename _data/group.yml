@@ -1,277 +1,586 @@
-- name: arithmetic
-  title: Arithmetic
-  full: arithmetic
-  permalink: /arithmetic
+- name: arch
+  title: "Architecture"
+  full: arch
+  permalink: /arch
+  group:
+    - name: linkage
+      title: "Linkage"
+      full: arch.linkage
+      permalink: /arch/linkage
+- name: arithm
+  title: "Arithmetic"
+  full: arithm
+  permalink: /arithm
   group:
     - name: bitmask
-      full: arithmetic.bitmask
-      title: Bitmasks
-      permalink: /arithmetic/bitmask
+      title: "Bitmasks"
+      full: arithm.bitmask
+      permalink: /arithm/bitmask
     - name: division
-      full: arithmetic.division
-      title: Division
-      permalink: /arithmetic/division
+      title: "Division"
+      full: arithm.division
+      permalink: /arithm/division
     - name: float
-      full: arithmetic.float
-      title: Floating point numbers
-      permalink: /arithmetic/float
+      title: "Floating point numbers"
+      full: arithm.float
+      permalink: /arithm/float
       group:
         - name: comparison
-          full: arithmetic.float.comparison
-          title: Comparison
-          permalink: /arithmetic/float/comparison
+          title: "Comparison"
+          full: arithm.float.comparison
+          permalink: /arithm/float/comparison
         - name: fractional_part
-          full: arithmetic.float.fractional_part
-          title: Fractional part
-          permalink: /arithmetic/float/fractional_part
+          title: "Fractional part"
+          full: arithm.float.fractional_part
+          permalink: /arithm/float/fractional_part
     - name: integer
-      full: arithmetic.integer
-      title: Integers
-      permalink: /arithmetic/integer
+      title: "Integers"
+      full: arithm.integer
+      permalink: /arithm/integer
     - name: ptr
-      full: arithmetic.ptr
-      title: Pointers
-      permalink: /arithmetic/ptr
+      title: "Pointers"
+      full: arithm.ptr
+      permalink: /arithm/ptr
     - name: shift
-      full: arithmetic.shift
-      title: Bit shift
-      permalink: /arithmetic/shift
+      title: "Bit shift"
+      full: arithm.shift
+      permalink: /arithm/shift
     - name: unsigned
-      full: arithmetic.unsigned
-      title: Unsigned
-      permalink: /arithmetic/unsigned
+      title: "Unsigned"
+      full: arithm.unsigned
+      permalink: /arithm/unsigned
       group:
         - name: zero
-          full: arithmetic.unsigned.zero
-          title: Related to zero
-          permalink: /arithmetic/unsigned/zero
+          title: "Related to zero"
+          full: arithm.unsigned.zero
+          permalink: /arithm/unsigned/zero
 - name: array
-  title: Arrays
+  title: "Arrays"
   full: array
   permalink: /array
   group:
     - name: index
+      title: "Indices"
       full: array.index
-      title: Indices
       permalink: /array/index
+    - name: slice
+      title: "Slices"
+      full: array.slice
+      permalink: /array/slice
 - name: ast
-  title: Abstract Syntax Tree
+  title: "Abstract Syntax Tree"
   full: ast
   permalink: /ast
   group:
     - name: binary
+      title: "Binary operations"
       full: ast.binary
-      title: Binary operations
       permalink: /ast/binary
     - name: sizeof
+      title: "SizeOf operations"
       full: ast.sizeof
-      title: SizeOf operations
       permalink: /ast/sizeof
 - name: cast
-  title: Casts
+  title: "Casts"
   full: cast
   permalink: /cast
   group:
+    - name: float
+      title: "Floating point numbers"
+      full: cast.float
+      permalink: /cast/float
     - name: integer
+      title: "Integers"
       full: cast.integer
-      title: Integer operations
       permalink: /cast/integer
+    - name: pointer
+      title: "Pointer"
+      full: cast.pointer
+      permalink: /cast/pointer
 - name: class
-  title: Classes
+  title: "Classes"
   full: class
   permalink: /class
   group:
     - name: member
+      title: "Members"
       full: class.member
-      title: Members
       permalink: /class/member
 - name: context
-  title: Contexts
+  title: "Context"
   full: context
   permalink: /context
   group:
     - name: interrupt
+      title: "Interrupts"
       full: context.interrupt
-      title: Interrupts
       permalink: /context/interrupt
     - name: thread
+      title: "Threads"
       full: context.thread
-      title: Threads
       permalink: /context/thread
+- name: cpp
+  title: "C++"
+  full: cpp
+  permalink: /cpp
+  group:
+    - name: arith
+      title: "Arithmetic"
+      full: cpp.arith
+      permalink: /cpp/arith
+    - name: class
+      title: "Classes"
+      full: cpp.class
+      permalink: /cpp/class
+    - name: concurrency
+      title: "Concurrency"
+      full: cpp.concurrency
+      permalink: /cpp/concurrency
+    - name: ctor_dtor
+      title: "Constructors and destructors"
+      full: cpp.ctor_dtor
+      permalink: /cpp/ctor_dtor
+    - name: dtor
+      title: "Destructors"
+      full: cpp.dtor
+      permalink: /cpp/dtor
+    - name: error
+      title: "Error handling"
+      full: cpp.error
+      permalink: /cpp/error
+    - name: iterator
+      title: "Iterators"
+      full: cpp.iterator
+      permalink: /cpp/iterator
+    - name: lifetime
+      title: "Lifetime"
+      full: cpp.lifetime
+      permalink: /cpp/lifetime
+    - name: mem
+      title: "Memory"
+      full: cpp.mem
+      permalink: /cpp/mem
+    - name: op_assign
+      title: "Assignment operator"
+      full: cpp.op_assign
+      permalink: /cpp/op_assign
+    - name: security
+      title: "Security"
+      full: cpp.security
+      permalink: /cpp/security
+    - name: string
+      title: "Strings"
+      full: cpp.string
+      permalink: /cpp/string
+    - name: switch
+      title: "Switch"
+      full: cpp.switch
+      permalink: /cpp/switch
+- name: csharp
+  title: "C#"
+  full: csharp
+  permalink: /csharp
+  group:
+    - name: async
+      title: "Asynchrony"
+      full: csharp.async
+      permalink: /csharp/async
+    - name: debug
+      title: "Debugging"
+      full: csharp.debug
+      permalink: /csharp/debug
+    - name: dispose
+      title: "Disposal"
+      full: csharp.dispose
+      permalink: /csharp/dispose
+    - name: exception
+      title: "Exceptions"
+      full: csharp.exception
+      permalink: /csharp/exception
+    - name: lock
+      title: "Locking"
+      full: csharp.lock
+      permalink: /csharp/lock
+    - name: marshal
+      title: "Marshalling"
+      full: csharp.marshal
+      permalink: /csharp/marshal
+    - name: null
+      title: "Null handling"
+      full: csharp.null
+      permalink: /csharp/null
+    - name: process
+      title: "Process"
+      full: csharp.process
+      permalink: /csharp/process
+    - name: string
+      title: "Strings"
+      full: csharp.string
+      permalink: /csharp/string
+    - name: task
+      title: "Tasks"
+      full: csharp.task
+      permalink: /csharp/task
 - name: expr
-  title: Expressions
+  title: "Expressions"
   full: expr
   permalink: /expr
   group:
     - name: evaluation
+      title: "Evaluation"
       full: expr.evaluation
-      title: Evaluation
       permalink: /expr/evaluation
       group:
         - name: order
+          title: "Order"
           full: expr.evaluation.order
-          title: Order
           permalink: /expr/evaluation/order
     - name: qualifier
+      title: "Qualifiers"
       full: expr.qualifier
-      title: Qualifiers
       permalink: /expr/qualifier
       group:
         - name: const
+          title: "Const qualifier"
           full: expr.qualifier.const
-          title: Const qualifier
           permalink: /expr/qualifier/const
 - name: file
+  title: "Files"
   full: file
-  title: File
   permalink: /file
   group:
     - name: read
+      title: "Read"
       full: file.read
-      title: Read
       permalink: /file/read
     - name: state
+      title: "States"
       full: file.state
-      title: States
       permalink: /file/state
     - name: write
+      title: "Write"
       full: file.write
-      title: Write
       permalink: /file/write
 - name: fn
+  title: "Functions"
   full: fn
-  title: Functions
   permalink: /fn
   group:
     - name: argument
+      title: "Arguments"
       full: fn.argument
-      title: Arguments
       permalink: /fn/argument
+    - name: result
+      title: "Result"
+      full: fn.result
+      permalink: /fn/result
+    - name: timing
+      title: "Timing"
+      full: fn.timing
+      permalink: /fn/timing
+- name: gc
+  title: "Garbage Collector"
+  full: gc
+  permalink: /gc
+  group:
+    - name: misuse
+      title: "Misuse"
+      full: gc.misuse
+      permalink: /gc/misuse
+- name: go
+  title: "Go"
+  full: go
+  permalink: /go
+  group:
+    - name: main
+      title: "Entry point"
+      full: go.main
+      permalink: /go/main
+- name: ipc
+  title: "IPC"
+  full: ipc
+  permalink: /ipc
+  group:
+    - name: channel
+      title: "Channels"
+      full: ipc.channel
+      permalink: /ipc/channel
+- name: js
+  title: "JavaScript"
+  full: js
+  permalink: /js
+  group:
+    - name: array
+      title: "Arrays"
+      full: js.array
+      permalink: /js/array
+    - name: async
+      title: "Asynchrony"
+      full: js.async
+      permalink: /js/async
+    - name: comparison
+      title: "Comparison"
+      full: js.comparison
+      permalink: /js/comparison
+    - name: debug
+      title: "Debugging"
+      full: js.debug
+      permalink: /js/debug
+    - name: error
+      title: "Error handling"
+      full: js.error
+      permalink: /js/error
+    - name: legacy
+      title: "Legacy"
+      full: js.legacy
+      permalink: /js/legacy
+    - name: scope
+      title: "Scopes"
+      full: js.scope
+      permalink: /js/scope
+    - name: security
+      title: "Security"
+      full: js.security
+      permalink: /js/security
 - name: logic
+  title: "Logic"
   full: logic
-  title: Logic
   permalink: /logic
   group:
     - name: assignment
+      title: "Assignments"
       full: logic.assignment
-      title: Assignments
       permalink: /logic/assignment
     - name: complete_behaviour
+      title: "Complete behaviours"
       full: logic.complete_behaviour
-      title: Complete behaviours
       permalink: /logic/complete_behaviour
     - name: condition
+      title: "Conditions"
       full: logic.condition
-      title: Conditions
       permalink: /logic/condition
     - name: contract
+      title: "Contracts"
       full: logic.contract
-      title: Contract
       permalink: /logic/contract
     - name: disjoint_behaviour
+      title: "Disjoint behaviours"
       full: logic.disjoint_behaviour
-      title: Disjoint behaviours
       permalink: /logic/disjoint_behaviour
     - name: invariant
+      title: "Invariants"
       full: logic.invariant
-      title: Invariants
       permalink: /logic/invariant
 - name: loop
-  title: Loop
+  title: "Loops"
   full: loop
   permalink: /loop
 - name: mem
-  title: Memory
+  title: "Memory"
   full: mem
   permalink: /mem
   group:
+    - name: block
+      title: "Blocks"
+      full: mem.block
+      permalink: /mem/block
+      group:
+        - name: free
+          title: "Free"
+          full: mem.block.free
+          permalink: /mem/block/free
     - name: ptr
+      title: "Pointers"
       full: mem.ptr
-      title: Pointers
       permalink: /mem/ptr
       group:
-        - name: block
-          full: mem.ptr.block
-          title: Blocks
-          permalink: /mem/ptr/block
         - name: compare
+          title: "Comparison"
           full: mem.ptr.compare
-          title: Comparison
           permalink: /mem/ptr/compare
 - name: parsing
+  title: "Parsing"
   full: parsing
-  title: Parsing
   permalink: /parsing
+- name: rust
+  title: "Rust"
+  full: rust
+  permalink: /rust
+  group:
+    - name: borrow
+      title: "Borrowing"
+      full: rust.borrow
+      permalink: /rust/borrow
+    - name: debug
+      title: "Debugging"
+      full: rust.debug
+      permalink: /rust/debug
+    - name: env
+      title: "Environment"
+      full: rust.env
+      permalink: /rust/env
+    - name: mem
+      title: "Memory"
+      full: rust.mem
+      permalink: /rust/mem
+    - name: option
+      title: "Option"
+      full: rust.option
+      permalink: /rust/option
+    - name: panic
+      title: "Panics"
+      full: rust.panic
+      permalink: /rust/panic
+    - name: ptr
+      title: "Pointers"
+      full: rust.ptr
+      permalink: /rust/ptr
+    - name: result
+      title: "Result"
+      full: rust.result
+      permalink: /rust/result
+- name: sbom
+  title: "SBOM"
+  full: sbom
+  permalink: /sbom
+  group:
+    - name: diff
+      title: "Diff"
+      full: sbom.diff
+      permalink: /sbom/diff
+    - name: license
+      title: "Licensing"
+      full: sbom.license
+      permalink: /sbom/license
 - name: std
-  title: Standard Library
+  title: "Standard Library"
   full: std
   permalink: /std
   group:
     - name: alloc
+      title: "Allocation"
       full: std.alloc
-      title: Allocation
       permalink: /std/alloc
     - name: fmt
+      title: "Formatting"
       full: std.fmt
-      title: Formatting
       permalink: /std/fmt
       group:
         - name: arg
+          title: "Arguments"
           full: std.fmt.arg
-          title: Arguments
           permalink: /std/fmt/arg
         - name: format
+          title: "Format"
           full: std.fmt.format
-          title: Format
           permalink: /std/fmt/format
         - name: param
+          title: "Parameters"
           full: std.fmt.param
-          title: Parameters
           permalink: /std/fmt/param
     - name: lock
+      title: "Locking"
       full: std.lock
-      title: Locking
       permalink: /std/lock
+    - name: map
+      title: "Map"
+      full: std.map
+      permalink: /std/map
     - name: pthread
+      title: "Pthread"
       full: std.pthread
-      title: pthread
       permalink: /std/pthread
       group:
         - name: exit
+          title: "Exit"
           full: std.pthread.exit
-          title: Exit
           permalink: /std/pthread/exit
     - name: rng
+      title: "Rng"
       full: std.rng
-      title: Random Number Generators
       permalink: /std/rng
     - name: unlock
+      title: "Unlock"
       full: std.unlock
-      title: Unlock
       permalink: /std/unlock
-- name: translation
-  full: translation
-  title: Translation
-  permalink: /translation
+- name: switch
+  title: "Switch"
+  full: switch
+  permalink: /switch
+  group:
+    - name: case
+      title: "Cases"
+      full: switch.case
+      permalink: /switch/case
 - name: threading
+  title: "Threading"
   full: threading
-  title: Threading
   permalink: /threading
   group:
+    - name: lang
+      title: "Language constructs"
+      full: threading.lang
+      permalink: /threading/lang
     - name: locking
+      title: "Locking"
       full: threading.locking
-      title: Locking
       permalink: /threading/locking
+    - name: thread
+      title: "Threads"
+      full: threading.thread
+      permalink: /threading/thread
+- name: translation
+  title: "Translation"
+  full: translation
+  permalink: /translation
+- name: ts
+  title: "TypeScript"
+  full: ts
+  permalink: /ts
+  group:
+    - name: type
+      title: "Types"
+      full: ts.type
+      permalink: /ts/type
+- name: types
+  title: "Types"
+  full: types
+  permalink: /types
+  group:
+    - name: assignment
+      title: "Assignments"
+      full: types.assignment
+      permalink: /types/assignment
 - name: var
+  title: "Variables"
   full: var
-  title: Variables
   permalink: /var
   group:
+    - name: confusion
+      title: "Confusion"
+      full: var.confusion
+      permalink: /var/confusion
+    - name: deinit
+      title: "Deinitialization"
+      full: var.deinit
+      permalink: /var/deinit
+    - name: interface
+      title: "Interfaces"
+      full: var.interface
+      permalink: /var/interface
     - name: scope
+      title: "Scopes"
       full: var.scope
-      title: Scopes
       permalink: /var/scope
+    - name: size
+      title: "Size"
+      full: var.size
+      permalink: /var/size
     - name: state
+      title: "States"
       full: var.state
-      title: States
       permalink: /var/state
+    - name: static
+      title: "Static"
+      full: var.static
+      permalink: /var/static
