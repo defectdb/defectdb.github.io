@@ -37,6 +37,27 @@ body {
   background: var(--accent-color-transparent);
 }
 
+.site-footer {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule-color);
+  font-family: var(--font-body);
+  font-size: .92rem;
+  line-height: 1.6;
+  color: var(--ink-soft-color);
+}
+
+.site-footer p { margin: 0; }
+
+.site-footer a {
+  color: var(--title-color);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.site-footer a:hover { color: var(--accent-color); }
+
 /* 
 body {
   color: #4d4b57;
