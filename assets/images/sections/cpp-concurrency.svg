@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Concurrency — two figures each hold one lock and reach for the other's: deadlock">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="41" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left figure -->
+    <circle cx="250" cy="120" r="32"/>
+    <path d="M250 152 V260"/>
+    <path d="M250 270 L210 360 M250 270 L292 360"/>
+    <!-- left holds lock A (down), reaches right toward lock B -->
+    <path d="M250 180 L300 230"/>
+    <path d="M250 180 L520 175"/>
+    <!-- lock A near left -->
+    <rect x="280" y="230" width="70" height="56" rx="10"/>
+    <path d="M292 230 V210 a23 23 0 0 1 46 0 V230"/>
+    <circle cx="315" cy="256" r="7" fill="#1b1a17"/>
+    <!-- right figure -->
+    <circle cx="950" cy="120" r="32"/>
+    <path d="M950 152 V260"/>
+    <path d="M950 270 L908 360 M950 270 L990 360"/>
+    <!-- right holds lock B (down), reaches left toward lock A -->
+    <path d="M950 180 L900 230"/>
+    <path d="M950 180 L680 175"/>
+    <!-- lock B near right -->
+    <rect x="850" y="230" width="70" height="56" rx="10"/>
+    <path d="M862 230 V210 a23 23 0 0 1 46 0 V230"/>
+    <circle cx="885" cy="256" r="7" fill="#1b1a17"/>
+    <!-- crossing arrowheads in the middle -->
+    <path d="M520 175 l-16 -10 M520 175 l-14 12"/>
+    <path d="M680 175 l16 -10 M680 175 l14 12"/>
+    <!-- deadlock spark in the middle -->
+    <path d="M600 150 l0 -22 M600 200 l0 22 M576 175 l-22 0 M624 175 l22 0" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Functions — a machine box taking arguments in, a clock on top, a result coming out">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="86" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- function machine -->
+    <rect x="460" y="170" width="280" height="180" rx="14"/>
+    <text x="600" y="280" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="46" fill="#1b1a17" stroke="none">f( )</text>
+    <!-- argument balls feeding in from the left -->
+    <circle cx="300" cy="210" r="22"/>
+    <circle cx="300" cy="300" r="22"/>
+    <path d="M322 210 C400 210 420 230 458 250"/>
+    <path d="M322 300 C400 300 420 280 458 270"/>
+    <path d="M458 250 L428 240 M458 250 L432 268" />
+    <!-- result arrow out the right -->
+    <path d="M740 260 H900"/>
+    <path d="M900 260 L870 242 M900 260 L870 278"/>
+    <rect x="905" y="232" width="56" height="56" rx="8"/>
+    <!-- clock on top (timing) -->
+    <circle cx="600" cy="115" r="46"/>
+    <path d="M600 115 V82 M600 115 L628 130"/>
+    <path d="M600 170 V160"/>
+  </g>
+</svg>

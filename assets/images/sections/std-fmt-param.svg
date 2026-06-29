@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Parameters — a format specifier slot stamped with a big invalid cross">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="61" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- a card showing an invalid format parameter -->
+    <rect x="430" y="150" width="340" height="150" rx="14"/>
+    <text x="470" y="255" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="60" fill="#1b1a17" stroke="none">%?z</text>
+    <!-- big invalid cross stamped over it -->
+    <circle cx="600" cy="225" r="150"/>
+    <path d="M495 120 L705 330"/>
+    <!-- stick figure pointing -->
+    <circle cx="930" cy="160" r="32"/>
+    <path d="M930 192 V300"/>
+    <path d="M930 220 L820 245"/>
+    <path d="M930 220 L985 270"/>
+    <path d="M930 300 L895 380"/>
+    <path d="M930 300 L968 380"/>
+  </g>
+</svg>

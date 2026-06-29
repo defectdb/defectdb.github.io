@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Legacy — a cobwebbed tombstone marking a deprecated feature">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="78" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- ground -->
+    <path d="M400 385 H810"/>
+    <path d="M430 385 q-8 -16 -22 -18 M470 385 q6 -18 22 -16" stroke-width="2.4" opacity="0.6"/>
+    <path d="M740 385 q-8 -16 -22 -18 M780 385 q6 -18 22 -16" stroke-width="2.4" opacity="0.6"/>
+    <!-- tombstone -->
+    <path d="M490 385 V210 Q490 130 605 130 Q720 130 720 210 V385"/>
+    <path d="M520 230 H690" stroke-width="2.4" opacity="0.6"/>
+    <text x="540" y="305" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="46" fill="#1b1a17" stroke="none">with</text>
+    <!-- cobweb in the corner -->
+    <path d="M460 150 L560 130 M460 150 L540 200 M460 150 L420 230" stroke-width="2.3" opacity="0.55"/>
+    <path d="M512 140 Q500 168 482 188 M540 162 Q514 184 498 214" stroke-width="2.3" opacity="0.55"/>
+  </g>
+</svg>

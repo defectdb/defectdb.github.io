@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Complete behaviours — an arrow landing outside the accepted bracketed range on a number line">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="73" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- number line -->
+    <line x1="160" y1="300" x2="1040" y2="300"/>
+    <line x1="300" y1="290" x2="300" y2="310" opacity="0.5" stroke-width="2.4"/>
+    <line x1="420" y1="290" x2="420" y2="310" opacity="0.5" stroke-width="2.4"/>
+    <line x1="540" y1="290" x2="540" y2="310" opacity="0.5" stroke-width="2.4"/>
+    <line x1="660" y1="290" x2="660" y2="310" opacity="0.5" stroke-width="2.4"/>
+    <line x1="780" y1="290" x2="780" y2="310" opacity="0.5" stroke-width="2.4"/>
+    <line x1="900" y1="290" x2="900" y2="310" opacity="0.5" stroke-width="2.4"/>
+    <!-- accepted range bracket [ ... ] -->
+    <path d="M330 230 H300 V370 H330"/>
+    <path d="M690 230 H720 V370 H690"/>
+    <text x="510" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none" text-anchor="middle">accepted</text>
+    <!-- the observed value landing OUTSIDE, to the right -->
+    <line x1="940" y1="130" x2="900" y2="296"/>
+    <path d="M900 296 L886 268 M900 296 L922 280"/>
+    <!-- crash/miss spark at landing point -->
+    <path d="M900 300 l-26 -10 M900 300 l26 -10 M900 300 l-18 18 M900 300 l18 18 M900 300 l0 -28" opacity="0.7" stroke-width="2.4"/>
+    <!-- big X mark beside the out-of-range hit -->
+    <line x1="965" y1="200" x2="1005" y2="240"/>
+    <line x1="1005" y1="200" x2="965" y2="240"/>
+  </g>
+</svg>

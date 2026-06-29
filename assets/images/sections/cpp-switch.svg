@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Switch — with the break missing the cases topple like dominoes one into the next">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="141" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- floor -->
+    <path d="M120 360 H1080"/>
+    <!-- case 1 fully toppled -->
+    <rect x="170" y="300" width="90" height="56" rx="6" transform="rotate(78 215 328)"/>
+    <text x="150" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case 1</text>
+    <!-- case 2 falling -->
+    <rect x="330" y="230" width="60" height="130" rx="6" transform="rotate(40 360 295)"/>
+    <text x="340" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case 2</text>
+    <!-- case 3 starting to tip -->
+    <rect x="510" y="200" width="60" height="160" rx="6" transform="rotate(18 540 280)"/>
+    <text x="510" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case 3</text>
+    <!-- case 4 still standing -->
+    <rect x="690" y="190" width="60" height="170" rx="6"/>
+    <text x="690" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case 4</text>
+    <!-- the missing break: a dashed wall that should have stopped the cascade -->
+    <rect x="610" y="180" width="40" height="180" rx="6" stroke-dasharray="11 12"/>
+    <text x="560" y="150" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">no break</text>
+    <!-- motion arc of the cascade -->
+    <path d="M230 270 Q360 150 540 200" stroke-width="2.4" opacity="0.5" stroke-dasharray="8 10"/>
+  </g>
+</svg>

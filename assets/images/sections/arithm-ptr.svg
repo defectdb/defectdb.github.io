@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Pointers — an arrow strides past the end of an array into empty space">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="88" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- array of boxes -->
+    <rect x="180" y="240" width="90" height="90" rx="6"/>
+    <rect x="270" y="240" width="90" height="90" rx="6"/>
+    <rect x="360" y="240" width="90" height="90" rx="6"/>
+    <rect x="450" y="240" width="90" height="90" rx="6"/>
+    <rect x="540" y="240" width="90" height="90" rx="6"/>
+    <!-- array bracket -->
+    <path d="M170 230 h-12 v110 h12" opacity="0.5" stroke-width="2.4"/>
+    <path d="M640 230 h12 v110 h-12" opacity="0.5" stroke-width="2.4"/>
+    <!-- pointer arrow walking far past the end -->
+    <path d="M250 200 q300 -130 640 80"/>
+    <path d="M890 280 l-44 -8 m44 8 l-12 -42"/>
+    <!-- the place it lands: empty / void with a question -->
+    <rect x="900" y="250" width="100" height="100" rx="6" stroke-dasharray="9 13" opacity="0.5" stroke-width="2.4"/>
+    <path d="M935 285 a18 18 0 1 1 18 22 v10"/>
+    <circle cx="953" cy="332" r="4" fill="#1b1a17"/>
+    <!-- p+? label as small marks near start -->
+    <circle cx="250" cy="185" r="10"/>
+  </g>
+</svg>

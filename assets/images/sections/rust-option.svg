@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Option — a figure unwrapping a gift box that is empty inside">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="77" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- figure peering into box -->
+    <circle cx="250" cy="170" r="34"/>
+    <path d="M250 204 V310"/>
+    <path d="M250 230 L340 250 M250 230 L180 270"/>
+    <path d="M250 310 L215 390 M250 310 L288 390"/>
+    <path d="M236 182 L264 182"/>
+    <!-- arm reaching into box -->
+    <path d="M340 250 L470 300"/>
+    <!-- opened gift box, empty -->
+    <path d="M470 290 L470 400 L700 400 L700 290"/>
+    <path d="M470 290 L700 290"/>
+    <!-- lifted-off lid, tilted -->
+    <path d="M520 230 L760 200 L780 250 L540 280 Z"/>
+    <!-- ribbon on lid -->
+    <path d="M640 215 q10 -26 30 -8" stroke-width="2.4" opacity="0.7"/>
+    <!-- big empty void inside : None -->
+    <ellipse cx="585" cy="345" rx="60" ry="42"/>
+    <path d="M540 320 L630 372" stroke-width="2.6"/>
+    <!-- surprise mark -->
+    <text x="800" y="180" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">!</text>
+  </g>
+</svg>

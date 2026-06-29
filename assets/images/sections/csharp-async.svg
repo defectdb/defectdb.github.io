@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Asynchrony — a figure tossing a task into a void, fire and forget">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="12" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="230" cy="155" r="34"/>
+    <path d="M230 189 V300"/>
+    <path d="M230 215 L305 150"/>
+    <path d="M230 220 L185 285"/>
+    <path d="M230 300 L190 382"/>
+    <path d="M230 300 L272 382"/>
+    <rect x="450" y="120" width="46" height="46" rx="6"/>
+    <path d="M305 150 Q560 50 770 150" stroke-width="2.4" opacity="0.55" stroke-dasharray="6 12"/>
+    <circle cx="900" cy="235" r="120"/>
+    <circle cx="900" cy="235" r="80"/>
+    <circle cx="900" cy="235" r="42"/>
+    <circle cx="900" cy="235" r="9" fill="#1b1a17"/>
+    <text x="838" y="412" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">void</text>
+  </g>
+</svg>

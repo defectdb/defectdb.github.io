@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Indices — an arrow shooting past the last array box into empty space">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- three array boxes -->
+    <rect x="180" y="180" width="120" height="120"/>
+    <rect x="300" y="180" width="120" height="120"/>
+    <rect x="420" y="180" width="120" height="120"/>
+    <text x="225" y="345" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">0</text>
+    <text x="345" y="345" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">1</text>
+    <text x="465" y="345" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">2</text>
+    <!-- dashed edge of the array -->
+    <path d="M540 150 V330" stroke-width="2.4" opacity="0.5" stroke-dasharray="10 12"/>
+    <!-- arrow flying past into the void -->
+    <path d="M560 240 H880"/>
+    <path d="M880 240 L850 218 M880 240 L850 262"/>
+    <!-- index label out of range -->
+    <text x="690" y="200" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">[7]</text>
+    <!-- void question mark where it lands -->
+    <text x="930" y="258" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="60" fill="#1b1a17" stroke="none">?</text>
+    <!-- small spark at landing -->
+    <path d="M1000 200 l16 -28 M1040 220 l30 -10 M1010 270 l14 30 M1050 250 l30 12"/>
+  </g>
+</svg>

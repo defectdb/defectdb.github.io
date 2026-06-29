@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Exceptions — a figure sweeps an exclamation mark under the rug">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="15" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M300 360 L860 360"/>
+    <path d="M330 360 C360 338 400 348 430 360 L560 360 C610 360 620 300 700 300 C780 300 790 360 840 360 L900 360 C916 360 920 348 908 340"/>
+    <path d="M698 322 L702 348" stroke-width="2.6" opacity="0.6"/>
+    <circle cx="700" cy="356" r="2.4" fill="#1b1a17" opacity="0.6"/>
+    <path d="M335 360 L327 372 M365 360 L357 372 M860 360 L852 372 M890 360 L882 372" stroke-width="2.2" opacity="0.5"/>
+    <circle cx="1010" cy="150" r="34"/>
+    <path d="M1010 184 V286"/>
+    <path d="M1010 210 L948 250"/>
+    <path d="M1010 215 L1052 250"/>
+    <path d="M1010 286 L972 372"/>
+    <path d="M1010 286 L1048 372"/>
+    <path d="M948 250 L808 332"/>
+    <rect x="780" y="328" width="40" height="20" rx="4" transform="rotate(-26 800 338)"/>
+    <path d="M786 348 L780 360 M796 352 L792 364 M806 352 L804 364" stroke-width="2.2" opacity="0.6"/>
+  </g>
+</svg>

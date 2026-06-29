@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Pointers — a big arrow pointing into an empty null void">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="103" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- labelled pointer box -->
+    <rect x="160" y="200" width="170" height="120" rx="10"/>
+    <text x="185" y="275" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">ptr</text>
+    <!-- long arrow shooting toward the void -->
+    <path d="M330 260 L820 260"/>
+    <path d="M820 260 l-40 -22 m40 22 l-40 22"/>
+    <!-- the void it points to : a slashed null circle -->
+    <ellipse cx="980" cy="260" rx="80" ry="100"/>
+    <path d="M915 185 L1045 335" stroke-width="2.8"/>
+    <!-- nothing-here dust marks -->
+    <g stroke-width="2.4" opacity="0.55">
+      <path d="M880 150 l16 -8 M1080 150 l-16 -8 M880 372 l16 8 M1080 372 l-16 8"/>
+    </g>
+    <!-- small confused figure beside it -->
+    <circle cx="560" cy="370" r="24" opacity="0.55" stroke-width="2.4"/>
+    <text x="600" y="360" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none" opacity="0.6">?</text>
+  </g>
+</svg>

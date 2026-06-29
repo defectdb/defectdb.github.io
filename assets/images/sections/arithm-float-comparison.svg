@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Comparison — a balance scale that won't quite settle on 0.1+0.2 equals 0.3">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="54" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- balance, tilted slightly: never exactly equal -->
+    <line x1="600" y1="120" x2="600" y2="360"/>
+    <path d="M600 360 l-60 30 h120 z"/>
+    <!-- tilted beam -->
+    <line x1="380" y1="150" x2="820" y2="190"/>
+    <line x1="600" y1="120" x2="600" y2="170"/>
+    <!-- left pan -->
+    <line x1="380" y1="150" x2="320" y2="230"/>
+    <line x1="380" y1="150" x2="440" y2="230"/>
+    <path d="M320 230 a60 26 0 0 0 120 0"/>
+    <text x="380" y="222" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">0.1+0.2</text>
+    <!-- right pan -->
+    <line x1="820" y1="190" x2="760" y2="270"/>
+    <line x1="820" y1="190" x2="880" y2="270"/>
+    <path d="M760 270 a60 26 0 0 0 120 0"/>
+    <text x="820" y="262" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">0.3</text>
+    <!-- the "==" with a slash through it -->
+    <line x1="560" y1="60" x2="640" y2="60"/>
+    <line x1="560" y1="86" x2="640" y2="86"/>
+    <line x1="650" y1="48" x2="550" y2="98"/>
+  </g>
+</svg>

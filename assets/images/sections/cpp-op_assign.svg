@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Assignment operator — an object assigns to itself: it frees its own contents before copying, and falls apart">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="111" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the object 'this' -->
+    <rect x="500" y="190" width="200" height="140" rx="14"/>
+    <text x="540" y="170" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">this = this</text>
+    <!-- self-assignment loop: arrow leaves the right and curls back into the left -->
+    <path d="M700 230 C840 180 840 360 540 360 C470 360 470 330 500 305" stroke-width="2.6"/>
+    <path d="M500 305 l-2 -18 M500 305 l18 4"/>
+    <!-- contents already freed: a piece falling out the bottom -->
+    <rect x="560" y="250" width="50" height="50" rx="6" transform="rotate(20 585 275)"/>
+    <path d="M585 330 L575 380 M605 332 L620 378" stroke-width="2.4" opacity="0.6"/>
+    <!-- spark of corruption inside -->
+    <path d="M640 250 l16 -16 M640 290 l16 16 M650 270 l22 0" stroke-width="2.4"/>
+  </g>
+</svg>

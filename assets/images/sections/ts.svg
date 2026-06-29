@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="TypeScript — a shape sorter with a square peg dropping into the matching square hole">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="103" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- sorter box -->
+    <rect x="400" y="210" width="400" height="170" rx="16"/>
+    <!-- shaped holes -->
+    <rect x="452" y="252" width="56" height="56"/>
+    <circle cx="600" cy="280" r="30"/>
+    <path d="M700 312 L732 256 L764 312 Z"/>
+    <!-- matching square peg held above, lowering in -->
+    <rect x="450" y="120" width="56" height="56"/>
+    <path d="M478 182 V244"/>
+    <path d="M478 244 L468 226 M478 244 L488 226"/>
+    <!-- hand holding the peg -->
+    <path d="M450 130 q-26 -8 -48 4" stroke-width="2.6"/>
+    <!-- correct-fit checkmark -->
+    <path d="M840 170 L872 206 L936 122"/>
+  </g>
+</svg>

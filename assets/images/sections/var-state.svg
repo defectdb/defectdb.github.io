@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="States — a hand reaching into an empty box and pulling out a question mark">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="118" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- empty box labelled x -->
+    <rect x="560" y="220" width="220" height="170" rx="12"/>
+    <path d="M560 270 H780"/>
+    <text x="585" y="258" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">x</text>
+    <!-- emptiness: dashed interior + ? -->
+    <text x="650" y="350" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="48" fill="#1b1a17" stroke="none">?</text>
+    <!-- figure reaching in / using it -->
+    <circle cx="300" cy="160" r="34"/>
+    <path d="M283 162 a7 5 0 0 1 12 0 M308 162 a7 5 0 0 1 12 0"/>
+    <path d="M289 184 a9 5 0 0 0 16 0"/>
+    <path d="M300 194 V300"/>
+    <path d="M300 220 L260 270"/>
+    <!-- arm reaching into box -->
+    <path d="M300 225 L520 250"/>
+    <path d="M520 250 L575 270"/>
+    <path d="M300 300 L262 380"/>
+    <path d="M300 300 L340 380"/>
+    <!-- pulled-out unknown above -->
+    <path d="M670 215 V160"/>
+    <path d="M670 160 L654 178 M670 160 L686 178"/>
+    <text x="700" y="150" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">??</text>
+  </g>
+</svg>

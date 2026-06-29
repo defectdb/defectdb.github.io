@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="States — a figure slamming an already-closed door a second time">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="64" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- door frame -->
+    <rect x="470" y="80" width="240" height="320"/>
+    <rect x="490" y="100" width="200" height="300"/>
+    <!-- door panels -->
+    <rect x="510" y="130" width="160" height="110"/>
+    <rect x="510" y="260" width="160" height="110"/>
+    <!-- doorknob -->
+    <circle cx="525" cy="250" r="9" fill="#1b1a17"/>
+    <!-- "already closed" X / lock mark -->
+    <path d="M580 175 L620 215 M620 175 L580 215"/>
+    <!-- figure pushing the closed door again -->
+    <circle cx="850" cy="150" r="32"/>
+    <path d="M850 182 V280"/>
+    <path d="M850 210 L720 220"/>
+    <path d="M850 210 L900 250"/>
+    <path d="M850 280 L815 370 M850 280 L890 360"/>
+    <!-- impact marks at the door (closed twice!) -->
+    <path d="M690 200 l30 -12 M695 230 l32 4 M690 260 l28 14" opacity="0.6" stroke-width="2.6"/>
+    <!-- caption -->
+    <text x="850" y="420" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">close() again?</text>
+  </g>
+</svg>

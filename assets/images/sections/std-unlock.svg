@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Unlock — a figure turns a key in a padlock that is already hanging open">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="127" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- padlock already OPEN (shackle swung up and out) -->
+    <rect x="520" y="220" width="200" height="170" rx="18"/>
+    <!-- open shackle: one leg out of the body -->
+    <path d="M680 220 V170 a60 60 0 0 0 -120 0 V150"/>
+    <!-- keyhole -->
+    <circle cx="620" cy="290" r="16"/>
+    <path d="M620 306 L606 350 H634 Z" fill="#1b1a17"/>
+    <!-- redundant 'unlock' marks -->
+    <path d="M740 250 L780 242 M740 290 L784 288" opacity="0.5" stroke-width="2.4"/>
+    <!-- key being turned again (already unlocked) -->
+    <circle cx="360" cy="290" r="26"/>
+    <path d="M386 290 H470"/>
+    <path d="M450 290 V312 M470 290 V316"/>
+    <!-- stick figure holding the key, shrugging -->
+    <circle cx="230" cy="150" r="30"/>
+    <path d="M230 180 V290"/>
+    <path d="M230 205 L340 280"/>
+    <path d="M230 205 L160 250"/>
+    <path d="M230 290 L195 370"/>
+    <path d="M230 290 L268 370"/>
+  </g>
+</svg>

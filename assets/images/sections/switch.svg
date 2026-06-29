@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Switch — a railroad track splitting into several branches with a switch lever">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="152" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- incoming single track (two rails) -->
+    <path d="M120 250 H470"/>
+    <path d="M120 300 H470"/>
+    <!-- ties -->
+    <path d="M160 240 V310 M230 240 V310 M300 240 V310 M370 240 V310" opacity="0.5" stroke-width="2.4"/>
+    <!-- branch up -->
+    <path d="M470 250 C600 230 700 150 1050 130"/>
+    <path d="M470 300 C600 280 700 200 1050 180"/>
+    <!-- branch straight -->
+    <path d="M470 250 H1050"/>
+    <path d="M470 300 H1050"/>
+    <!-- branch down -->
+    <path d="M470 250 C600 270 700 350 1050 360"/>
+    <path d="M470 300 C600 320 700 400 1050 410"/>
+    <!-- the switch lever -->
+    <circle cx="470" cy="275" r="14" fill="#1b1a17"/>
+    <path d="M470 275 L520 170"/>
+    <circle cx="524" cy="158" r="12"/>
+    <!-- arriving train car as a box -->
+    <rect x="150" y="200" width="90" height="60" rx="8"/>
+    <circle cx="175" cy="270" r="12"/>
+    <circle cx="215" cy="270" r="12"/>
+  </g>
+</svg>

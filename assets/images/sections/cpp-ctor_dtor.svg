@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Constructors and destructors — a worker calls up to a floor that has not been built yet">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="51" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- built ground floor -->
+    <rect x="430" y="300" width="320" height="100" rx="6"/>
+    <path d="M510 300 V400 M590 300 V400 M670 300 V400" stroke-width="2.2" opacity="0.5"/>
+    <!-- upper floor not built yet (dashed) -->
+    <rect x="430" y="180" width="320" height="100" rx="6" stroke-dasharray="12 12"/>
+    <text x="470" y="240" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">not built</text>
+    <!-- worker on the ground floor calling up with a megaphone -->
+    <circle cx="270" cy="300" r="30"/>
+    <path d="M270 330 V400 M270 400 L235 440 M270 400 L305 440"/>
+    <path d="M270 350 L320 320"/>
+    <!-- megaphone -->
+    <path d="M320 308 L362 296 L362 344 L320 332 Z"/>
+    <path d="M362 304 L386 296 M362 320 L390 320 M362 336 L386 344" stroke-width="2.4"/>
+    <!-- virtual call going up to the missing floor -->
+    <path d="M392 290 Q470 210 560 220" stroke-width="2.4" stroke-dasharray="8 10"/>
+    <path d="M560 220 l-16 -4 M560 220 l-8 14"/>
+    <!-- question mark where the override should be -->
+    <path d="M600 235 q0 -22 22 -22 q22 0 22 22 q0 16 -22 18 v10" stroke-width="2.6"/>
+    <circle cx="622" cy="270" r="3.5" fill="#1b1a17"/>
+  </g>
+</svg>

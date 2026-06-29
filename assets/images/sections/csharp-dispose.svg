@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Disposal — a figure walks away leaving a resource never thrown in the bin">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="14" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M820 240 L832 388 L928 388 L940 240 Z"/>
+    <path d="M800 240 L960 240"/>
+    <path d="M860 240 q20 -22 40 0"/>
+    <path d="M856 262 L862 372 M880 262 L880 372 M904 262 L898 372" stroke-width="2.4" opacity="0.55"/>
+    <rect x="600" y="180" width="64" height="58" rx="6"/>
+    <path d="M612 180 L612 168 L652 168 L652 180" stroke-width="2.4" opacity="0.7"/>
+    <path d="M664 198 Q760 120 855 222" stroke-width="2.4" opacity="0.55" stroke-dasharray="6 12"/>
+    <path d="M855 222 L840 214 M855 222 L848 238" stroke-width="2.4" opacity="0.55"/>
+    <circle cx="300" cy="160" r="34"/>
+    <path d="M300 194 V298"/>
+    <path d="M300 215 L350 250"/>
+    <path d="M300 215 L255 245"/>
+    <path d="M300 298 L255 378"/>
+    <path d="M300 298 L348 372"/>
+    <path d="M196 150 q18 -14 30 0 M232 150 q18 -14 30 0" stroke-width="2.2" opacity="0.5"/>
+  </g>
+</svg>

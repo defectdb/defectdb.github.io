@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Security — a hand feeds a lit bomb into an open mouth labelled eval">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="95" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- head with wide-open mouth -->
+    <circle cx="330" cy="200" r="78"/>
+    <circle cx="318" cy="178" r="4.5" fill="#1b1a17"/>
+    <circle cx="356" cy="176" r="4.5" fill="#1b1a17"/>
+    <circle cx="372" cy="218" r="22"/>
+    <!-- bomb being fed in -->
+    <circle cx="600" cy="210" r="50"/>
+    <path d="M636 176 Q664 144 690 160"/>
+    <path d="M690 160 L690 132 M690 160 L668 150 M690 160 L712 150 M690 160 L676 140 M690 160 L704 140" stroke-width="2.6"/>
+    <!-- arrow toward the mouth -->
+    <path d="M470 215 H418"/>
+    <path d="M418 215 L440 203 M418 215 L440 227"/>
+    <!-- label -->
+    <text x="540" y="350" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">eval()</text>
+  </g>
+</svg>

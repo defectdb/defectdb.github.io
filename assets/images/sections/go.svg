@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Go — a figure walking through a doorway marked main">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- doorway / entry point -->
+    <rect x="520" y="110" width="220" height="300" rx="6"/>
+    <rect x="545" y="135" width="170" height="275"/>
+    <circle cx="690" cy="280" r="8" fill="#1b1a17"/>
+    <!-- sign above door -->
+    <rect x="540" y="55" width="180" height="46" rx="8"/>
+    <text x="630" y="88" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">main()</text>
+    <!-- arrow approaching -->
+    <path d="M200 270 H470"/>
+    <path d="M470 270 L440 252 M470 270 L440 288"/>
+    <!-- stick figure stepping in -->
+    <circle cx="330" cy="170" r="32"/>
+    <path d="M330 202 V310"/>
+    <path d="M330 230 L270 270"/>
+    <path d="M330 230 L400 250"/>
+    <path d="M330 310 L295 400"/>
+    <path d="M330 310 L375 385"/>
+  </g>
+</svg>

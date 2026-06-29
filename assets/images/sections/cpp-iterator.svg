@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Iterators — an iterator points at a slot that vanished when the container was resized">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="81" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- array bracket left -->
+    <path d="M180 180 H150 V340 H180"/>
+    <!-- boxes that have shifted left after a mutation -->
+    <rect x="200" y="220" width="80" height="80" rx="8"/>
+    <rect x="300" y="220" width="80" height="80" rx="8"/>
+    <rect x="400" y="220" width="80" height="80" rx="8"/>
+    <!-- old slot now empty (dashed) where iterator still points -->
+    <rect x="640" y="220" width="80" height="80" rx="8" stroke-dasharray="11 12"/>
+    <!-- the elements moved: motion lines -->
+    <path d="M560 200 H500 M560 320 H500" stroke-width="2.4" opacity="0.5"/>
+    <path d="M500 200 l16 -8 M500 200 l16 8" stroke-width="2.4" opacity="0.5"/>
+    <!-- array bracket right -->
+    <path d="M740 180 H770 V340 H740"/>
+    <!-- iterator arrow pointing into the empty slot -->
+    <path d="M680 120 V200"/>
+    <path d="M680 200 l-10 -16 M680 200 l10 -16"/>
+    <text x="610" y="105" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">it</text>
+    <!-- spark at the dangling read -->
+    <path d="M724 196 l16 -8 M724 240 l16 8 M730 218 l18 0" stroke-width="2.4"/>
+  </g>
+</svg>

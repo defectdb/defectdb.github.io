@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Unsigned — subtracting below zero wraps around to a huge number">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="109" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the equation 0 - 1 = -->
+    <text x="280" y="250" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="56" fill="#1b1a17" stroke="none">0 − 1 =</text>
+    <!-- wrap-around loop arrow: goes off bottom and comes back at top as a huge value -->
+    <path d="M360 290 q-40 110 120 110 h360"/>
+    <path d="M840 400 l-40 -16 m40 16 l-30 30" />
+    <!-- the absurd huge result -->
+    <text x="780" y="220" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none">4294967295</text>
+    <!-- a wide-eyed shocked figure -->
+    <circle cx="1060" cy="180" r="32"/>
+    <path d="M1060 212 V300"/>
+    <path d="M1060 235 L1015 200"/>
+    <path d="M1060 235 L1105 200"/>
+    <path d="M1060 300 L1028 372"/>
+    <path d="M1060 300 L1092 372"/>
+    <circle cx="1050" cy="176" r="4" fill="#1b1a17"/>
+    <circle cx="1070" cy="176" r="4" fill="#1b1a17"/>
+    <ellipse cx="1060" cy="196" rx="7" ry="9"/>
+  </g>
+</svg>

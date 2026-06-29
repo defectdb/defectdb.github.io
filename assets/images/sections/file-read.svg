@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Read — a figure squinting through a magnifier at a blank page labelled 0">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="53" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- puzzled figure -->
+    <circle cx="300" cy="130" r="34"/>
+    <path d="M300 164 V270"/>
+    <path d="M300 300 m-2 0 a3 3 0 1 0 4 0"/>
+    <path d="M300 270 L255 360 M300 270 L345 360"/>
+    <path d="M300 195 L360 220"/>
+    <!-- raised arm holding magnifier -->
+    <path d="M300 195 L255 150"/>
+    <path d="M285 110 a14 8 0 0 1 28 0" />
+    <!-- empty page -->
+    <path d="M560 90 H760 V370 H560 Z"/>
+    <!-- big zero, nothing else on the page -->
+    <ellipse cx="660" cy="230" rx="48" ry="78"/>
+    <!-- magnifier hovering over the blank page -->
+    <circle cx="500" cy="200" r="60"/>
+    <path d="M457 243 L400 300"/>
+    <!-- caption -->
+    <text x="660" y="415" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">read(0)?</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Assignments — a sheet reading x = 5 crumpled and tossed straight into a trash can">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="71" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the assignment written on a sheet -->
+    <rect x="200" y="150" width="230" height="150" rx="10"/>
+    <text x="315" y="245" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="48" fill="#1b1a17" stroke="none" text-anchor="middle">x = 5</text>
+    <!-- arc of the toss -->
+    <path d="M470 200 Q680 60 860 200" opacity="0.5" stroke-width="2.4" stroke-dasharray="8 12"/>
+    <!-- crumpled ball mid-air -->
+    <circle cx="700" cy="120" r="26"/>
+    <path d="M686 110 l12 8 M704 104 l-6 14 M712 122 l-10 -4" opacity="0.6" stroke-width="2.2"/>
+    <!-- trash can -->
+    <path d="M820 200 L840 360 L960 360 L980 200 Z"/>
+    <rect x="800" y="178" width="200" height="28" rx="8"/>
+    <line x1="870" y1="220" x2="884" y2="340" opacity="0.5" stroke-width="2.4"/>
+    <line x1="900" y1="220" x2="900" y2="340" opacity="0.5" stroke-width="2.4"/>
+    <line x1="930" y1="220" x2="916" y2="340" opacity="0.5" stroke-width="2.4"/>
+    <!-- small figure tossing -->
+    <circle cx="130" cy="150" r="28"/>
+    <path d="M130 178 V270"/>
+    <path d="M130 200 L185 178"/>
+    <path d="M130 200 L96 230"/>
+    <path d="M130 270 L100 340"/>
+    <path d="M130 270 L162 340"/>
+  </g>
+</svg>

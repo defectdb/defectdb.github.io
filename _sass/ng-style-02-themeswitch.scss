@@ -10,6 +10,11 @@
   .article img {
     filter: invert(1);
   }
+  // Line-art section illustrations should adapt with the theme (invert once,
+  // like text), not be re-inverted back to their light-mode colours like photos.
+  .section-hero img {
+    filter: invert(0);
+  }
   img {
     &.ioda { filter: invert(0); }
   }

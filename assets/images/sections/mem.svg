@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Memory — stacked memory blocks with a pointer arrow aiming into one of them">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="86" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- a column of memory blocks (RAM) -->
+    <rect x="700" y="70" width="220" height="80"/>
+    <rect x="700" y="150" width="220" height="80"/>
+    <rect x="700" y="230" width="220" height="80"/>
+    <rect x="700" y="310" width="220" height="80"/>
+    <!-- address ticks on the side -->
+    <path d="M680 110 H700 M680 190 H700 M680 270 H700 M680 350 H700" stroke-width="2.4" opacity="0.5"/>
+    <!-- pointer box pointing at the second block -->
+    <rect x="300" y="150" width="170" height="80"/>
+    <text x="320" y="205" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">ptr</text>
+    <path d="M470 190 H690"/>
+    <path d="M690 190 L662 170 M690 190 L662 210"/>
+    <!-- stick figure carrying / placing a block -->
+    <circle cx="190" cy="120" r="30"/>
+    <path d="M190 150 V250"/>
+    <path d="M190 175 L240 175"/>
+    <path d="M190 175 L150 210"/>
+    <path d="M190 250 L162 330"/>
+    <path d="M190 250 L218 330"/>
+  </g>
+</svg>

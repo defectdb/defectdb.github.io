@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Evaluation — an input expression fed through a function machine producing a result">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="47" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- input token -->
+    <rect x="140" y="180" width="150" height="90" rx="12"/>
+    <text x="215" y="238" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none" text-anchor="middle">a+b</text>
+    <!-- arrow in -->
+    <line x1="300" y1="225" x2="420" y2="225"/>
+    <path d="M420 225 L404 215 M420 225 L404 235"/>
+    <!-- the machine (a hopper with a crank) -->
+    <rect x="430" y="120" width="320" height="220" rx="16"/>
+    <!-- gears inside -->
+    <circle cx="540" cy="220" r="48"/>
+    <circle cx="540" cy="220" r="14"/>
+    <circle cx="650" cy="250" r="34"/>
+    <circle cx="650" cy="250" r="10"/>
+    <line x1="540" y1="160" x2="540" y2="178"/>
+    <line x1="540" y1="262" x2="540" y2="280"/>
+    <line x1="480" y1="220" x2="498" y2="220"/>
+    <line x1="582" y1="220" x2="600" y2="220"/>
+    <!-- arrow out -->
+    <line x1="760" y1="225" x2="880" y2="225"/>
+    <path d="M880 225 L864 215 M880 225 L864 235"/>
+    <!-- output token -->
+    <rect x="890" y="180" width="170" height="90" rx="12"/>
+    <text x="975" y="240" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none" text-anchor="middle">42</text>
+  </g>
+</svg>

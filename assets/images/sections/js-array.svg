@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Arrays — a magnifier searches an array and finds nothing, returning minus one">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- array brackets -->
+    <path d="M360 140 H320 V330 H360"/>
+    <path d="M740 140 H780 V330 H740"/>
+    <!-- array cells -->
+    <rect x="400" y="205" width="60" height="60"/>
+    <rect x="500" y="205" width="60" height="60"/>
+    <rect x="600" y="205" width="60" height="60"/>
+    <!-- magnifier searching -->
+    <circle cx="540" cy="235" r="46"/>
+    <path d="M573 268 L640 330"/>
+    <!-- arrow off the end to the result -->
+    <path d="M800 240 H930"/>
+    <path d="M930 240 L908 228 M930 240 L908 252"/>
+    <text x="950" y="252" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none">-1</text>
+  </g>
+</svg>

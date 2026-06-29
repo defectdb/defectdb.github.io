@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Arguments — a square peg jammed against a round hole, a missing peg, and a spare peg">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="41" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- board with three round holes -->
+    <rect x="220" y="240" width="760" height="120" rx="10"/>
+    <!-- hole 1: type mismatch (square peg stuck above round hole) -->
+    <circle cx="370" cy="300" r="34"/>
+    <rect x="338" y="150" width="64" height="64"/>
+    <!-- jam sparks -->
+    <path d="M370 224 L370 244 M348 232 L356 248 M392 232 L384 248" stroke-width="2.4"/>
+    <!-- hole 2: missing argument (empty hole + question mark) -->
+    <circle cx="600" cy="300" r="34"/>
+    <path d="M584 150 a16 16 0 1 1 16 22 v10"/>
+    <circle cx="600" cy="195" r="2.6" fill="#1b1a17"/>
+    <!-- hole 3: redundant argument (peg in hole + spare peg beside) -->
+    <circle cx="830" cy="300" r="34"/>
+    <circle cx="830" cy="300" r="18"/>
+    <circle cx="930" cy="180" r="30"/>
+    <path d="M930 210 V250" stroke-width="2.4"/>
+    <path d="M915 245 L930 262 L945 245" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Comparison — a balance scale declares a square and a circle equal">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="42" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- stand -->
+    <path d="M600 120 V315"/>
+    <path d="M560 360 H640"/>
+    <path d="M600 315 V360"/>
+    <path d="M560 360 L544 384 M640 360 L656 384"/>
+    <!-- beam -->
+    <path d="M455 130 H745"/>
+    <!-- left pan -->
+    <path d="M455 130 L433 205 M455 130 L497 205"/>
+    <path d="M425 205 Q465 240 505 205"/>
+    <rect x="443" y="148" width="46" height="46"/>
+    <!-- right pan -->
+    <path d="M745 130 L703 205 M745 130 L767 205"/>
+    <path d="M695 205 Q735 240 775 205"/>
+    <circle cx="735" cy="172" r="24"/>
+    <!-- equals verdict -->
+    <path d="M572 268 H628"/>
+    <path d="M572 292 H628"/>
+  </g>
+</svg>

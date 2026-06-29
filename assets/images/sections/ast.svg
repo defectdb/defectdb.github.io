@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Abstract Syntax Tree — a binary expression tree of circular nodes">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- edges -->
+    <line x1="575" y1="118" x2="470" y2="205"/>
+    <line x1="625" y1="118" x2="730" y2="205"/>
+    <line x1="420" y1="258" x2="372" y2="345"/>
+    <line x1="470" y1="258" x2="520" y2="345"/>
+    <!-- root + -->
+    <circle cx="600" cy="92" r="36"/>
+    <!-- left * -->
+    <circle cx="448" cy="232" r="32"/>
+    <!-- right leaf -->
+    <circle cx="752" cy="232" r="32"/>
+    <!-- leaves -->
+    <circle cx="356" cy="368" r="28"/>
+    <circle cx="544" cy="368" r="28"/>
+    <!-- node glyphs -->
+    <line x1="582" y1="92" x2="618" y2="92"/>
+    <line x1="600" y1="74" x2="600" y2="110"/>
+    <line x1="432" y1="216" x2="464" y2="248"/>
+    <line x1="464" y1="216" x2="432" y2="248"/>
+    <!-- small figure admiring the tree -->
+    <circle cx="200" cy="160" r="30"/>
+    <path d="M200 190 V286"/>
+    <path d="M200 214 L262 196"/>
+    <path d="M200 214 L150 250"/>
+    <path d="M200 286 L166 360"/>
+    <path d="M200 286 L238 360"/>
+    <text x="752" y="244" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none" text-anchor="middle">a</text>
+    <text x="356" y="380" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none" text-anchor="middle">b</text>
+    <text x="544" y="380" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none" text-anchor="middle">c</text>
+  </g>
+</svg>

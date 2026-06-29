@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Garbage Collector — a figure sweeping crumpled objects into a bin">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- trash bin -->
+    <path d="M820 250 L840 410 H980 L1000 250 Z"/>
+    <path d="M800 250 H1020"/>
+    <path d="M880 250 V230 H940 V250"/>
+    <path d="M870 290 V370 M910 290 V370 M950 290 V370"/>
+    <!-- crumpled objects flying in -->
+    <circle cx="760" cy="180" r="22"/>
+    <path d="M752 172 L768 188 M768 172 L752 188"/>
+    <circle cx="690" cy="130" r="16"/>
+    <path d="M684 124 L696 136 M696 124 L684 136"/>
+    <!-- stick figure with broom -->
+    <circle cx="300" cy="130" r="34"/>
+    <path d="M285 122 L295 130 M315 122 L305 130"/>
+    <path d="M295 150 a14 8 0 0 0 20 0"/>
+    <path d="M300 164 V300"/>
+    <path d="M300 200 L370 250"/>
+    <path d="M300 200 L240 240"/>
+    <path d="M300 300 L260 390"/>
+    <path d="M300 300 L342 390"/>
+    <!-- broom -->
+    <path d="M370 250 L520 360"/>
+    <path d="M520 360 L470 400 M520 360 L560 380 M520 360 L500 410"/>
+  </g>
+</svg>

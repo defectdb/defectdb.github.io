@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Bitmasks — a stencil mask misaligned over a row of bits">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- byte: 8 bit cells -->
+    <rect x="300" y="250" width="600" height="80" rx="6"/>
+    <line x1="375" y1="250" x2="375" y2="330"/>
+    <line x1="450" y1="250" x2="450" y2="330"/>
+    <line x1="525" y1="250" x2="525" y2="330"/>
+    <line x1="600" y1="250" x2="600" y2="330"/>
+    <line x1="675" y1="250" x2="675" y2="330"/>
+    <line x1="750" y1="250" x2="750" y2="330"/>
+    <line x1="825" y1="250" x2="825" y2="330"/>
+    <!-- bit values 1 0 1 1 0 0 1 0 -->
+    <line x1="337" y1="270" x2="337" y2="310"/>
+    <ellipse cx="412" cy="290" rx="13" ry="20"/>
+    <line x1="487" y1="270" x2="487" y2="310"/>
+    <line x1="562" y1="270" x2="562" y2="310"/>
+    <ellipse cx="637" cy="290" rx="13" ry="20"/>
+    <ellipse cx="712" cy="290" rx="13" ry="20"/>
+    <line x1="787" y1="270" x2="787" y2="310"/>
+    <ellipse cx="862" cy="290" rx="13" ry="20"/>
+    <!-- stencil mask, misaligned: a plate with windows hovering above, shifted -->
+    <rect x="345" y="120" width="600" height="80" rx="10" opacity="0.5" stroke-width="2.4"/>
+    <rect x="380" y="135" width="50" height="50" rx="4"/>
+    <rect x="530" y="135" width="50" height="50" rx="4"/>
+    <rect x="680" y="135" width="50" height="50" rx="4"/>
+    <rect x="830" y="135" width="50" height="50" rx="4"/>
+    <!-- alignment lines showing the windows DON'T line up with cells -->
+    <line x1="405" y1="185" x2="405" y2="250" opacity="0.5" stroke-width="2.4"/>
+    <line x1="855" y1="185" x2="855" y2="250" opacity="0.5" stroke-width="2.4"/>
+    <!-- a confused worried figure to the side -->
+    <circle cx="1000" cy="170" r="30"/>
+    <path d="M1000 200 V300"/>
+    <path d="M1000 225 L950 200"/>
+    <path d="M1000 225 L1050 200"/>
+    <path d="M1000 300 L965 370"/>
+    <path d="M1000 300 L1035 370"/>
+    <path d="M988 180 q12 -10 24 0" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

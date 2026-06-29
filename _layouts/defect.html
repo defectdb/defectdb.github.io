@@ -41,6 +41,13 @@ layout: default
   </div>
   {% endif %}
   <div class="article">
+    {% unless page.vulnerability %}
+      {%- assign imgslug = page.url | remove_first: "/" | replace: "/", "-" -%}
+      {%- assign imgpath = "/assets/images/sections/" | append: imgslug | append: ".svg" -%}
+      {%- assign hero = nil -%}
+      {%- for sf in site.static_files -%}{%- if sf.path == imgpath -%}{%- assign hero = sf.path -%}{%- endif -%}{%- endfor -%}
+      {% if hero %}<div class="section-hero"><img src="{{ hero | relative_url }}" alt="{{ page.title }}"></div>{% endif %}
+    {% endunless %}
     {{ content }}
     {% unless page.vulnerability %}
       {% include section_children.html %}

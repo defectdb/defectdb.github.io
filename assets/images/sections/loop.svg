@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Loops — a circular loop arrow with an empty counter box where the loop variable is missing">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="130" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- big looping arrow -->
+    <path d="M600 110 a130 130 0 1 0 95 42"/>
+    <path d="M695 152 L660 150 M695 152 L688 188"/>
+    <!-- empty counter slot in the middle -->
+    <rect x="540" y="200" width="120" height="90" rx="10"/>
+    <text x="600" y="265" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none">i = ?</text>
+    <!-- confused figure scratching head beside the loop -->
+    <circle cx="930" cy="160" r="32"/>
+    <path d="M930 192 V290"/>
+    <path d="M930 215 L880 250"/>
+    <path d="M930 215 L955 150"/>
+    <path d="M955 150 q15 -10 25 4" opacity="0.7"/>
+    <path d="M930 290 L900 370 M930 290 L960 370"/>
+    <!-- question marks floating -->
+    <text x="985" y="120" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">?</text>
+  </g>
+</svg>

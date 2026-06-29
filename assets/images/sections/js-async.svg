@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Asynchrony — a figure walks away while an unhandled promise balloon floats off with a cut string">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- floating promise balloon -->
+    <circle cx="830" cy="120" r="60"/>
+    <path d="M822 179 L830 196 L838 179"/>
+    <path d="M830 196 Q792 250 812 300" stroke-width="2.6"/>
+    <!-- frayed/cut end -->
+    <path d="M812 300 L800 318 M812 300 L820 320 M812 300 L808 322" stroke-width="2.4"/>
+    <!-- figure walking away, back turned -->
+    <circle cx="340" cy="210" r="34"/>
+    <path d="M340 244 V330"/>
+    <path d="M340 330 L300 405"/>
+    <path d="M340 330 L380 398"/>
+    <path d="M340 272 L300 312"/>
+    <path d="M340 272 L382 300"/>
+    <!-- rising motion marks (faint) -->
+    <path d="M900 90 q14 -10 0 -24" stroke-width="2.3" opacity="0.5"/>
+    <path d="M760 70 q14 -10 0 -24" stroke-width="2.3" opacity="0.5"/>
+  </g>
+</svg>

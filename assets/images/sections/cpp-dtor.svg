@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Destructors — a figure sweeping up at the end is hit by an exception going off: terminate">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="61" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- sweeper (cleanup) -->
+    <circle cx="280" cy="140" r="32"/>
+    <path d="M280 172 V280"/>
+    <path d="M280 280 L240 370 M280 280 L320 370"/>
+    <path d="M280 200 L370 250"/>
+    <!-- broom -->
+    <path d="M362 232 L470 320"/>
+    <path d="M470 320 l40 12 l-22 26 z"/>
+    <path d="M474 332 l8 18 M484 326 l10 16 M494 322 l10 14" stroke-width="2.4"/>
+    <!-- exception explosion that erupts during cleanup -->
+    <circle cx="760" cy="220" r="46"/>
+    <path d="M760 174 V120 M760 266 V320 M714 220 H660 M806 220 H860 M727 187 L690 150 M793 187 L830 150 M727 253 L690 290 M793 253 L830 290" stroke-width="2.6"/>
+    <!-- throw arrow into the blast -->
+    <path d="M520 300 Q620 280 700 240" stroke-width="2.4"/>
+    <path d="M700 240 l-18 0 M700 240 l-6 18"/>
+    <text x="700" y="380" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">terminate</text>
+  </g>
+</svg>

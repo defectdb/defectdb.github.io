@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Binary operations — identical twin shapes on both sides of an equals, a puzzled figure">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left box a -->
+    <rect x="320" y="150" width="150" height="150" rx="18"/>
+    <text x="395" y="245" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="60" fill="#1b1a17" stroke="none" text-anchor="middle">a</text>
+    <!-- equals sign -->
+    <line x1="520" y1="205" x2="600" y2="205"/>
+    <line x1="520" y1="245" x2="600" y2="245"/>
+    <!-- right box a (identical twin) -->
+    <rect x="650" y="150" width="150" height="150" rx="18"/>
+    <text x="725" y="245" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="60" fill="#1b1a17" stroke="none" text-anchor="middle">a</text>
+    <!-- mirror / sameness indicator -->
+    <path d="M560 120 q0 -20 -20 -20 M560 120 q0 -20 20 -20" opacity="0.5" stroke-width="2.4"/>
+    <!-- puzzled figure scratching head -->
+    <circle cx="980" cy="150" r="32"/>
+    <path d="M980 182 V286"/>
+    <path d="M980 210 L1040 240"/>
+    <path d="M980 210 L946 150"/>
+    <path d="M946 150 L930 120"/>
+    <path d="M980 286 L946 360"/>
+    <path d="M980 286 L1016 360"/>
+    <path d="M966 150 q14 12 28 0" opacity="0.5" stroke-width="2.4"/>
+    <!-- question mark over the puzzled figure -->
+    <path d="M996 92 a16 16 0 1 1 16 20 v10" opacity="0.6" stroke-width="2.6"/>
+    <circle cx="1012" cy="132" r="3" fill="#1b1a17"/>
+  </g>
+</svg>

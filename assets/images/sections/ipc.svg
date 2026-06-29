@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="IPC — two figures passing a message through a pipe between them">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="53" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left figure (sender) -->
+    <circle cx="180" cy="150" r="32"/>
+    <path d="M180 182 V290"/>
+    <path d="M180 210 L130 250"/>
+    <path d="M180 210 L250 230"/>
+    <path d="M180 290 L150 380"/>
+    <path d="M180 290 L215 380"/>
+    <!-- pipe / channel between them -->
+    <path d="M270 250 H930"/>
+    <path d="M270 320 H930"/>
+    <path d="M270 250 V320 M930 250 V320"/>
+    <!-- message envelope travelling through pipe -->
+    <rect x="560" y="265" width="80" height="50" rx="4"/>
+    <path d="M560 265 L600 295 L640 265"/>
+    <!-- motion lines -->
+    <path d="M470 290 H530 M380 290 H440" opacity="0.5" stroke-width="2.4"/>
+    <!-- right figure (receiver) -->
+    <circle cx="1020" cy="150" r="32"/>
+    <path d="M1020 182 V290"/>
+    <path d="M1020 210 L950 230"/>
+    <path d="M1020 210 L1070 250"/>
+    <path d="M1020 290 L985 380"/>
+    <path d="M1020 290 L1055 380"/>
+  </g>
+</svg>

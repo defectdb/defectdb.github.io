@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Scopes — a variable box escaping out of its curly-brace block while a shadow follows">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="95" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- big curly braces forming a room/scope -->
+    <path d="M380 90 C330 90 360 200 300 220 C360 240 330 350 380 350"/>
+    <path d="M760 90 C810 90 780 200 840 220 C780 240 810 350 760 350"/>
+    <!-- variable box escaping rightward over the brace -->
+    <rect x="700" y="180" width="110" height="80" rx="10"/>
+    <text x="742" y="232" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">x</text>
+    <path d="M820 220 H960"/>
+    <path d="M960 220 L934 206 M960 220 L934 234"/>
+    <!-- a faint shadow box (shadowing) behind original spot -->
+    <rect x="470" y="190" width="110" height="80" rx="10"/>
+    <text x="512" y="242" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">x</text>
+    <rect x="490" y="210" width="110" height="80" rx="10" opacity="0.5" stroke-width="2.4"/>
+    <!-- unused: cobweb-ish dust marks under the shadow box -->
+    <path d="M470 320 l20 12 M520 326 v18 M570 320 l-18 14" opacity="0.5" stroke-width="2.2"/>
+  </g>
+</svg>

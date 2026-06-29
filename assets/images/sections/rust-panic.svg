@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Panics — a stick figure flailing with arms up beside an exclamation explosion">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="89" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- panicking figure, arms up -->
+    <circle cx="420" cy="190" r="36"/>
+    <path d="M420 226 L420 330"/>
+    <path d="M420 250 L360 175 M420 250 L480 175"/>
+    <path d="M420 330 L375 410 M420 330 L470 408"/>
+    <!-- panicked open mouth -->
+    <circle cx="420" cy="200" r="9"/>
+    <circle cx="406" cy="182" r="4" fill="#1b1a17"/>
+    <circle cx="434" cy="182" r="4" fill="#1b1a17"/>
+    <!-- sweat drops -->
+    <path d="M360 150 q-10 14 0 18 q10 -4 0 -18" fill="#1b1a17" stroke="none"/>
+    <path d="M490 150 q-10 14 0 18 q10 -4 0 -18" fill="#1b1a17" stroke="none"/>
+    <!-- explosion starburst with ! inside -->
+    <path d="M820 220 L860 150 L885 215 L955 185 L915 250 L985 285 L905 295 L935 365 L865 320 L840 390 L815 320 L740 350 L785 285 L715 255 L795 235 L760 170 Z"/>
+    <text x="838" y="290" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="64" fill="#1b1a17" stroke="none">!</text>
+    <!-- radiating shock lines -->
+    <g stroke-width="2.4" opacity="0.6">
+      <path d="M620 250 l-40 -8 M1010 250 l40 -8 M820 110 l-8 -40 M850 400 l8 40"/>
+    </g>
+  </g>
+</svg>

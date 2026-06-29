@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Format — a format string label that keeps shape-shifting instead of staying constant">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="53" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- a tag/label held by a string, but its contents are a shifting variable -->
+    <!-- the label card -->
+    <path d="M430 150 L760 150 L820 240 L760 330 L430 330 Z"/>
+    <!-- hole of the tag -->
+    <circle cx="468" cy="240" r="12"/>
+    <!-- shifting content: a wobbly variable box with arrows -->
+    <text x="520" y="255" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">fmt = ?</text>
+    <!-- swapping arrows around the label to show non-constant -->
+    <path d="M880 200 a120 120 0 1 1 -10 -70" />
+    <path d="M870 110 L902 132 L862 152" />
+    <!-- a second ghost label behind, offset, showing it changes -->
+    <path d="M470 175 L780 175" opacity="0.5" stroke-width="2.4"/>
+    <path d="M470 305 L780 305" opacity="0.5" stroke-width="2.4"/>
+    <!-- stick figure unsure, on left -->
+    <circle cx="230" cy="170" r="30"/>
+    <path d="M230 200 V300"/>
+    <path d="M230 225 L300 215"/>
+    <path d="M230 225 L180 270"/>
+    <path d="M230 300 L195 375"/>
+    <path d="M230 300 L268 375"/>
+  </g>
+</svg>

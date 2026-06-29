@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Files — a document with an arrow reading out and an arrow writing in">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="42" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the file (folded-corner document) -->
+    <path d="M510 90 H650 L730 170 V360 H510 Z"/>
+    <path d="M650 90 V170 H730"/>
+    <path d="M540 220 H700 M540 255 H700 M540 290 H660"/>
+    <!-- READ arrow going out to the right (to a little reader) -->
+    <path d="M730 250 H960"/>
+    <path d="M960 250 L930 232 M960 250 L930 268"/>
+    <circle cx="1020" cy="250" r="26"/>
+    <path d="M1006 250 a14 8 0 0 1 28 0"/>
+    <!-- WRITE arrow coming in from the left (a pen) -->
+    <path d="M280 190 H510"/>
+    <path d="M510 190 L480 172 M510 190 L480 208"/>
+    <path d="M220 150 L290 220 M210 140 L240 130 L300 190 L260 230 Z"/>
+    <!-- ground -->
+    <path d="M450 390 H800" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

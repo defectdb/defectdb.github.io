@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Borrowing — two figures tugging one box while a referee blows a whistle">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left figure pulling -->
+    <circle cx="200" cy="170" r="34"/>
+    <path d="M200 204 L240 300"/>
+    <path d="M200 230 L300 250"/>
+    <path d="M240 300 L210 385 M240 300 L285 380"/>
+    <!-- contested box in middle -->
+    <rect x="510" y="210" width="180" height="120" rx="12"/>
+    <path d="M600 210 V330 M510 270 H690"/>
+    <!-- left arm to box -->
+    <path d="M300 250 L510 270"/>
+    <!-- right figure pulling -->
+    <circle cx="1000" cy="170" r="34"/>
+    <path d="M1000 204 L960 300"/>
+    <path d="M1000 230 L900 250"/>
+    <path d="M960 300 L990 385 M960 300 L915 380"/>
+    <path d="M900 250 L690 270"/>
+    <!-- referee -->
+    <circle cx="600" cy="100" r="30"/>
+    <path d="M600 130 L600 195"/>
+    <path d="M600 150 L560 120 M600 150 L645 135"/>
+    <!-- whistle by mouth -->
+    <path d="M645 135 l40 -6"/>
+    <circle cx="695" cy="124" r="12"/>
+    <!-- toot lines -->
+    <path d="M715 110 l24 -10 M718 124 l26 0 M714 140 l24 12" stroke-width="2.4" opacity="0.6"/>
+  </g>
+</svg>

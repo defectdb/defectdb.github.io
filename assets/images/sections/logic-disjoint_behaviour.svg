@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Disjoint behaviours — two circles that should be separate but overlap, with one dot caught in the overlap">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="89" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left behaviour circle -->
+    <circle cx="500" cy="230" r="150"/>
+    <text x="410" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none" text-anchor="middle">A</text>
+    <!-- right behaviour circle, overlapping (should be disjoint!) -->
+    <circle cx="700" cy="230" r="150"/>
+    <text x="790" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none" text-anchor="middle">B</text>
+    <!-- the offending dot stuck in the overlap, matching both -->
+    <circle cx="600" cy="230" r="16" fill="#1b1a17"/>
+    <!-- two arrows from the dot to each label, "matches both" -->
+    <path d="M584 218 L470 150" opacity="0.6" stroke-width="2.4"/>
+    <path d="M616 218 L730 150" opacity="0.6" stroke-width="2.4"/>
+    <!-- alarm: small spark over the overlap -->
+    <path d="M600 150 l-20 -24 M600 150 l0 -32 M600 150 l20 -24" opacity="0.7" stroke-width="2.4"/>
+    <!-- puzzled figure -->
+    <circle cx="1010" cy="150" r="30"/>
+    <path d="M1010 180 V280"/>
+    <path d="M1010 205 L955 180"/>
+    <path d="M1010 205 L1060 180"/>
+    <path d="M1010 280 L978 350"/>
+    <path d="M1010 280 L1042 350"/>
+    <path d="M996 150 q14 12 28 0" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

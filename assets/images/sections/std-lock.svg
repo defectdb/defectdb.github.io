@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Locking — a figure clamping a second padlock onto an already locked padlock">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="73" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- first padlock (already locked) -->
+    <rect x="500" y="220" width="200" height="160" rx="18"/>
+    <path d="M540 220 V170 a60 60 0 0 1 120 0 V220"/>
+    <circle cx="600" cy="290" r="16"/>
+    <path d="M600 306 V340"/>
+    <!-- second padlock being added, hooked through the first's shackle -->
+    <rect x="640" y="110" width="150" height="120" rx="16"/>
+    <path d="M670 110 V78 a45 45 0 0 1 90 0 V110"/>
+    <circle cx="715" cy="165" r="12"/>
+    <!-- doubling marks (motion) -->
+    <path d="M800 150 L840 140 M800 180 L844 178" opacity="0.5" stroke-width="2.4"/>
+    <!-- stick figure pressing the second lock -->
+    <circle cx="250" cy="160" r="32"/>
+    <path d="M250 192 V300"/>
+    <path d="M250 220 L640 170"/>
+    <path d="M250 220 L195 265"/>
+    <path d="M250 300 L213 380"/>
+    <path d="M250 300 L290 380"/>
+  </g>
+</svg>

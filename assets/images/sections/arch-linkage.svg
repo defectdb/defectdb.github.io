@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Linkage — a call arrow crossing a forbidden dashed boundary into a no-entry zone">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- caller module on the left -->
+    <rect x="140" y="180" width="200" height="120" rx="14"/>
+    <path d="M170 235 H260" />
+    <!-- the forbidden dashed wall down the middle -->
+    <path d="M620 50 V390" stroke-dasharray="16 16"/>
+    <!-- call arrow shooting across the boundary -->
+    <path d="M340 235 H800"/>
+    <path d="M800 235 L766 216 M800 235 L766 254"/>
+    <!-- no-entry sign on the far side -->
+    <circle cx="930" cy="235" r="78"/>
+    <path d="M878 235 H982"/>
+    <path d="M875 180 L985 290" opacity="0.5" stroke-width="2.4"/>
+    <!-- caption -->
+    <text x="690" y="360" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">not allowed</text>
+  </g>
+</svg>

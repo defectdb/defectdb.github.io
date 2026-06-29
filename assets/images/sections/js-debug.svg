@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Debugging — a running figure halted by a pause sign">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="54" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- running figure -->
+    <circle cx="380" cy="170" r="34"/>
+    <path d="M380 204 V288"/>
+    <path d="M380 288 L340 352"/>
+    <path d="M380 288 L430 338"/>
+    <path d="M380 232 L335 218"/>
+    <path d="M380 232 L432 252"/>
+    <!-- motion lines -->
+    <path d="M300 190 H346" stroke-width="2.3" opacity="0.5"/>
+    <path d="M292 230 H338" stroke-width="2.3" opacity="0.5"/>
+    <path d="M298 270 H336" stroke-width="2.3" opacity="0.5"/>
+    <!-- octagon pause sign -->
+    <path d="M789 125 H851 L895 169 V231 L851 275 H789 L745 231 V169 Z"/>
+    <path d="M820 290 V388"/>
+    <!-- pause bars -->
+    <rect x="800" y="166" width="14" height="68"/>
+    <rect x="826" y="166" width="14" height="68"/>
+  </g>
+</svg>

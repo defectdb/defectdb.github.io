@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Cases — a tiny figure overwhelmed by a towering, teetering stack of case labels">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="163" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- teetering tower of 'case' boxes -->
+    <rect x="520" y="340" width="220" height="48" rx="6"/>
+    <rect x="535" y="288" width="200" height="48" rx="6"/>
+    <rect x="515" y="236" width="210" height="48" rx="6"/>
+    <rect x="540" y="184" width="195" height="48" rx="6" transform="rotate(-4 637 208)"/>
+    <rect x="520" y="132" width="205" height="48" rx="6" transform="rotate(3 622 156)"/>
+    <rect x="545" y="82" width="180" height="48" rx="6" transform="rotate(-6 635 106)"/>
+    <text x="630" y="375" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case</text>
+    <text x="635" y="323" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case</text>
+    <text x="620" y="271" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none">case</text>
+    <!-- a teetering top box about to fall -->
+    <path d="M740 70 l24 -16 M755 95 l28 -4" opacity="0.6" stroke-width="2.4"/>
+    <!-- overwhelmed figure to the side, arms up -->
+    <circle cx="280" cy="200" r="34"/>
+    <path d="M280 234 V330"/>
+    <path d="M280 255 L235 200 M280 255 L325 200"/>
+    <path d="M280 330 L245 410 M280 330 L315 410"/>
+    <path d="M268 196 q12 8 24 0"/>
+    <!-- sweat / panic marks -->
+    <path d="M330 160 l16 -12 M335 195 l18 0" opacity="0.6" stroke-width="2.4"/>
+    <text x="200" y="110" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">!</text>
+  </g>
+</svg>

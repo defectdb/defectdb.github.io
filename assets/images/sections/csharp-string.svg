@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Strings — a loop keeps adding boxes, a figure buried under a giant concatenated chain">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="20" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M232 110 a58 58 0 1 1 -40 16"/>
+    <path d="M192 126 L178 102 M192 126 L216 116"/>
+    <path d="M212 158 L228 158 M220 150 L220 166" stroke-width="2.6" opacity="0.7"/>
+    <rect x="330" y="262" width="50" height="44" rx="5"/>
+    <rect x="408" y="262" width="50" height="44" rx="5"/>
+    <rect x="486" y="262" width="50" height="44" rx="5"/>
+    <rect x="564" y="262" width="50" height="44" rx="5"/>
+    <rect x="642" y="262" width="50" height="44" rx="5"/>
+    <rect x="720" y="262" width="50" height="44" rx="5"/>
+    <rect x="798" y="262" width="50" height="44" rx="5"/>
+    <path d="M380 284 L408 284 M458 284 L486 284 M536 284 L564 284 M614 284 L692 284 M692 284 L720 284 M770 284 L798 284" stroke-width="2.4" opacity="0.6"/>
+    <path d="M390 280 L398 288 M394 280 L386 288 M468 280 L476 288 M472 280 L464 288 M546 280 L554 288 M550 280 L542 288 M624 280 L632 288 M628 280 L620 288 M702 280 L710 288 M706 280 L698 288 M780 280 L788 288 M784 280 L776 288" stroke-width="2.2" opacity="0.5"/>
+    <circle cx="980" cy="200" r="32"/>
+    <path d="M980 232 V312"/>
+    <path d="M980 250 L848 286"/>
+    <path d="M980 250 L1024 282"/>
+    <path d="M980 312 L944 384"/>
+    <path d="M980 312 L1016 384"/>
+    <path d="M952 168 L960 176 M1000 168 L1008 176" stroke-width="2.4" opacity="0.6"/>
+  </g>
+</svg>

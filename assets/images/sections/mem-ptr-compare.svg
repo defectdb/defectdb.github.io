@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Comparison — a balance scale weighing a pointer arrow against a plain number, tilting oddly, with a puzzled figure">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="130" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- balance scale, tilted -->
+    <path d="M540 110 V330"/>
+    <path d="M540 330 H470 M540 330 H610" />
+    <!-- tilted beam -->
+    <path d="M380 150 L700 110"/>
+    <circle cx="540" cy="130" r="10" fill="#1b1a17"/>
+    <!-- left pan (pointer) hanging low -->
+    <path d="M380 150 L350 250 M380 150 L410 250"/>
+    <path d="M335 250 a60 26 0 0 0 90 0" />
+    <!-- pointer arrow in left pan -->
+    <path d="M345 220 H410"/>
+    <path d="M410 220 L392 207 M410 220 L392 233"/>
+    <!-- right pan (constant 42) hanging high -->
+    <path d="M700 110 L670 200 M700 110 L730 200"/>
+    <path d="M655 200 a60 26 0 0 0 90 0" />
+    <text x="668" y="190" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none">42</text>
+    <!-- vs symbol -->
+    <text x="510" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">ptr == 42 ?</text>
+    <!-- puzzled stick figure -->
+    <circle cx="940" cy="150" r="30"/>
+    <path d="M940 180 V280"/>
+    <path d="M940 205 L905 165"/>
+    <path d="M940 205 L975 240"/>
+    <path d="M940 280 L912 360"/>
+    <path d="M940 280 L968 360"/>
+    <text x="985" y="150" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="50" fill="#1b1a17" stroke="none">?</text>
+  </g>
+</svg>

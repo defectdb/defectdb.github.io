@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Casts — a square block being forced through a round hole">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="42" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the sorting board / wall with a round hole -->
+    <rect x="600" y="80" width="60" height="280"/>
+    <circle cx="630" cy="220" r="70"/>
+    <!-- square peg approaching from the left -->
+    <rect x="320" y="160" width="130" height="130"/>
+    <!-- motion arrow toward hole -->
+    <path d="M470 225 H560"/>
+    <path d="M560 225 L532 205 M560 225 L532 245"/>
+    <!-- hand pushing the square peg -->
+    <circle cx="170" cy="120" r="32"/>
+    <path d="M170 152 V250"/>
+    <path d="M170 180 L300 225"/>
+    <path d="M170 180 L120 230"/>
+    <path d="M170 250 L138 335"/>
+    <path d="M170 250 L205 335"/>
+    <!-- mismatch sparks at the hole -->
+    <path d="M700 150 l24 -22 M740 200 l30 -8 M715 290 l20 26"/>
+  </g>
+</svg>

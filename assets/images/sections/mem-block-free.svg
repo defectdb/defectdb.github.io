@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Double free — a stick figure dropping the same block into the trash twice, with a spark">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="108" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- trash bin = free() -->
+    <path d="M740 200 L760 380 H900 L920 200 Z"/>
+    <path d="M720 200 H940"/>
+    <path d="M810 170 H850 V200"/>
+    <path d="M790 230 V350 M830 230 V350 M870 230 V350" stroke-width="2.4" opacity="0.5"/>
+    <!-- first block already in the bin -->
+    <rect x="795" y="250" width="70" height="60"/>
+    <!-- second identical block falling in again (double free) -->
+    <rect x="640" y="120" width="70" height="60"/>
+    <path d="M700 190 q40 30 80 55" stroke-width="2.4" opacity="0.5" stroke-dasharray="8 10"/>
+    <!-- collision spark inside the bin -->
+    <path d="M830 240 l-18 -24 M860 250 l26 -16 M820 300 l-20 20 M870 295 l24 16"/>
+    <!-- stick figure tossing it -->
+    <circle cx="320" cy="150" r="32"/>
+    <path d="M320 182 V290"/>
+    <path d="M320 210 L420 150"/>
+    <path d="M320 210 L260 250"/>
+    <path d="M320 290 L288 375"/>
+    <path d="M320 290 L355 375"/>
+    <!-- panic mark -->
+    <text x="455" y="120" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="60" fill="#1b1a17" stroke="none">!</text>
+    <text x="500" y="170" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">x2</text>
+  </g>
+</svg>

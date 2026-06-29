@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Parsing — a document fed into a grinder machine that jams and sparks, spitting out an error">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="141" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- incoming document with messy text -->
+    <path d="M170 130 H320 V330 H170 Z"/>
+    <path d="M195 175 H300 M195 205 q20 -14 40 0 t40 0 M195 245 H290 M195 280 q15 12 30 0 t40 0"/>
+    <!-- feed arrow into machine -->
+    <path d="M320 230 H430"/>
+    <path d="M430 230 L400 214 M430 230 L400 246"/>
+    <!-- parser machine with rollers -->
+    <rect x="440" y="150" width="320" height="180" rx="14"/>
+    <circle cx="520" cy="240" r="34"/>
+    <circle cx="600" cy="240" r="34"/>
+    <circle cx="680" cy="240" r="34"/>
+    <path d="M504 224 L536 256 M536 224 L504 256" opacity="0.5" stroke-width="2.4"/>
+    <!-- jam spark bursting out the top -->
+    <path d="M600 150 V100 M560 130 L540 95 M640 130 L660 95 M600 110 L585 80 M600 110 L615 80" />
+    <!-- error tag spat out the right -->
+    <path d="M760 250 H880"/>
+    <path d="M880 250 L850 234 M880 250 L850 266"/>
+    <path d="M895 218 L985 218 L1010 250 L985 282 L895 282 Z"/>
+    <text x="948" y="262" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">ERR</text>
+  </g>
+</svg>

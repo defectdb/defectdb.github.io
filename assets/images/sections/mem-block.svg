@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Blocks — a memory block as a leaky bucket dripping, with a balloon floating away">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="97" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- leaky bucket = unfreed memory block -->
+    <path d="M360 180 L410 360 H560 L610 180 Z"/>
+    <ellipse cx="485" cy="180" rx="125" ry="26"/>
+    <text x="430" y="285" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">mem</text>
+    <!-- drips of leaking memory -->
+    <path d="M470 372 q-8 18 0 30 q8 -12 0 -30 Z" fill="#1b1a17"/>
+    <path d="M520 380 q-7 16 0 26 q7 -10 0 -26 Z" fill="#1b1a17"/>
+    <path d="M450 410 q-6 12 0 20 q6 -8 0 -20 Z" fill="#1b1a17"/>
+    <!-- balloon floating away (lost reference) -->
+    <ellipse cx="850" cy="150" rx="60" ry="72"/>
+    <path d="M850 222 L840 245 H860 Z"/>
+    <path d="M850 245 q-20 60 30 110 q-40 50 0 90" stroke-width="2.4" opacity="0.5"/>
+    <!-- up arrow showing it drifting off -->
+    <path d="M850 90 V40" stroke-width="2.4" opacity="0.5"/>
+    <path d="M850 40 L832 66 M850 40 L868 66" stroke-width="2.4" opacity="0.5"/>
+  </g>
+</svg>

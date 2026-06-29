@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Context — a CPU juggling a lightning-bolt interrupt and two threads">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- CPU body as a little juggler -->
+    <rect x="500" y="220" width="200" height="160" rx="16"/>
+    <text x="600" y="320" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">CPU</text>
+    <!-- pins -->
+    <path d="M500 250 H470 M500 290 H470 M500 330 H470 M700 250 H730 M700 290 H730 M700 330 H730"/>
+    <!-- juggling arms reaching up -->
+    <path d="M520 220 C470 150 400 130 360 120"/>
+    <path d="M680 220 C730 150 800 130 840 120"/>
+    <path d="M600 220 V120"/>
+    <!-- thread ball left -->
+    <circle cx="340" cy="110" r="38"/>
+    <path d="M310 95 C360 110 320 130 370 120 M312 120 C350 100 332 140 372 105"/>
+    <!-- thread ball right -->
+    <circle cx="860" cy="110" r="38"/>
+    <path d="M830 95 C880 110 840 130 890 120 M832 120 C870 100 852 140 892 105"/>
+    <!-- lightning-bolt interrupt center -->
+    <path d="M615 110 L585 60 L605 60 L590 30 L630 70 L608 70 Z" fill="#1b1a17"/>
+    <!-- motion arcs -->
+    <path d="M320 60 C340 40 360 40 380 60" opacity="0.5" stroke-width="2.4"/>
+    <path d="M820 60 C840 40 860 40 880 60" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

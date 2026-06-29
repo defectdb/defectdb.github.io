@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Lifetime — a view frame looks at an object that has already become a ghost">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="91" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- figure holding a view frame -->
+    <circle cx="240" cy="150" r="32"/>
+    <path d="M240 182 V300"/>
+    <path d="M240 300 L205 390 M240 300 L278 390"/>
+    <path d="M240 210 L330 250"/>
+    <path d="M240 210 L330 200"/>
+    <!-- the view / span: a hand-held empty frame -->
+    <rect x="330" y="180" width="150" height="100" rx="8"/>
+    <path d="M330 230 L300 220 M480 230 L510 220" stroke-width="2.4"/>
+    <text x="350" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">view</text>
+    <!-- sightline through the frame to where the temporary used to be -->
+    <path d="M480 230 H700" stroke-width="2.4" stroke-dasharray="9 11"/>
+    <path d="M700 230 l-16 -9 M700 230 l-16 9"/>
+    <!-- temporary has died: a ghost drifting up -->
+    <path d="M740 280 V210 a55 60 0 0 1 110 0 V280 l-18 -22 -18 22 -18 -22 -18 22 -19 -22 z"/>
+    <circle cx="775" cy="215" r="6" fill="#1b1a17"/>
+    <circle cx="825" cy="215" r="6" fill="#1b1a17"/>
+    <path d="M780 248 q15 -12 30 0" stroke-width="2.4"/>
+    <text x="740" y="380" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">temporary</text>
+  </g>
+</svg>

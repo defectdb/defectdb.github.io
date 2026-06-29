@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Error handling — a figure sweeps an error spark under the rug">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="66" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- floor -->
+    <path d="M240 388 H800"/>
+    <!-- rug with a lump hiding the error -->
+    <path d="M300 388 Q300 352 360 352 H420 Q455 300 510 352 H700 Q760 352 760 388"/>
+    <!-- error spark hidden under the lump -->
+    <path d="M482 344 L482 312 M482 344 L458 322 M482 344 L506 322 M482 344 L512 348 M482 344 L452 350" stroke-width="2.6"/>
+    <!-- figure with broom -->
+    <circle cx="905" cy="118" r="34"/>
+    <path d="M905 152 V250"/>
+    <path d="M905 250 L880 330"/>
+    <path d="M905 250 L930 330"/>
+    <path d="M905 188 L824 250"/>
+    <path d="M905 200 L860 232"/>
+    <!-- broom -->
+    <path d="M824 250 L744 360"/>
+    <path d="M744 360 L716 398 M744 360 L744 402 M744 360 L772 396"/>
+    <path d="M730 376 L760 386" stroke-width="2.4"/>
+  </g>
+</svg>

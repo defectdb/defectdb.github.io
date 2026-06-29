@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Diff — a changelog with an added line plus, a removed line minus, and a version bumped">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="49" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- diff sheet -->
+    <rect x="300" y="60" width="600" height="320" rx="14"/>
+    <path d="M380 60 V380" opacity="0.5" stroke-width="2.4"/>
+    <!-- gutter markers and rows -->
+    <!-- added (+) -->
+    <path d="M335 130 H355 M345 120 V140"/>
+    <path d="M420 130 H840"/>
+    <!-- removed (-) with a strike -->
+    <path d="M335 200 H355"/>
+    <path d="M420 200 H760"/>
+    <path d="M410 200 H770" opacity="0.5" stroke-width="2.4"/>
+    <!-- version changed: 1.2 -> 1.3 -->
+    <path d="M335 285 L348 272 M335 272 L348 285" opacity="0.7"/>
+    <text x="415" y="298" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">v1.2</text>
+    <path d="M560 285 H640"/>
+    <path d="M640 285 L612 268 M640 285 L612 302"/>
+    <text x="665" y="298" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">v1.3</text>
+  </g>
+</svg>

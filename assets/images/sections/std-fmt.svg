@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Formatting — a printf template with shaped slots being filled by shaped pegs">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="37" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the format string board with cut-out slots -->
+    <rect x="360" y="170" width="640" height="150" rx="10"/>
+    <!-- printf text hint -->
+    <text x="395" y="225" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">printf(</text>
+    <text x="935" y="225" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">)</text>
+    <!-- square slot -->
+    <rect x="560" y="255" width="52" height="52"/>
+    <!-- round slot -->
+    <circle cx="700" cy="281" r="28"/>
+    <!-- triangle slot -->
+    <path d="M820 307 L852 255 L884 307 Z"/>
+    <!-- pegs descending into slots -->
+    <rect x="560" y="80" width="52" height="52"/>
+    <path d="M586 132 V250"/>
+    <circle cx="700" cy="106" r="28"/>
+    <path d="M700 134 V250"/>
+    <path d="M820 132 L852 80 L884 132 Z"/>
+    <path d="M852 132 V250"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Division — a pie split among zero people, then an explosion">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- pie -->
+    <circle cx="320" cy="230" r="120"/>
+    <line x1="320" y1="230" x2="320" y2="110"/>
+    <line x1="320" y1="230" x2="424" y2="170"/>
+    <line x1="320" y1="230" x2="424" y2="290"/>
+    <line x1="320" y1="230" x2="320" y2="350"/>
+    <line x1="320" y1="230" x2="216" y2="290"/>
+    <line x1="320" y1="230" x2="216" y2="170"/>
+    <!-- divide sign -->
+    <line x1="500" y1="230" x2="560" y2="230"/>
+    <circle cx="530" cy="205" r="6" fill="#1b1a17"/>
+    <circle cx="530" cy="255" r="6" fill="#1b1a17"/>
+    <!-- a big zero (no one to share with) -->
+    <ellipse cx="690" cy="230" rx="60" ry="90"/>
+    <!-- equals -->
+    <line x1="800" y1="218" x2="860" y2="218"/>
+    <line x1="800" y1="242" x2="860" y2="242"/>
+    <!-- explosion / spark -->
+    <path d="M1000 230 l-50 -10 l40 -28 l-12 -48 l44 34 l46 -34 l-12 48 l40 28 l-50 10 l24 44 l-46 -28 l-46 28 z"/>
+    <line x1="1010" y1="120" x2="1010" y2="80"/>
+    <line x1="1090" y1="150" x2="1130" y2="120"/>
+    <line x1="930" y1="150" x2="890" y2="120"/>
+  </g>
+</svg>

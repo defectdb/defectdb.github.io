@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Timing — a figure waiting forever by an hourglass with no timeout, cobwebs forming">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="119" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- waiting figure, slumped -->
+    <circle cx="320" cy="160" r="34"/>
+    <path d="M320 150 a12 6 0 0 0 0 0" />
+    <path d="M308 170 q12 -8 24 0"/>
+    <path d="M320 194 V300"/>
+    <path d="M320 220 L270 270 M320 220 L375 255"/>
+    <path d="M320 300 L280 380 M320 300 L360 380"/>
+    <!-- cobweb on the waiting arm (waited too long) -->
+    <path d="M270 270 L250 300 M270 270 L300 300 M260 285 H290" opacity="0.5" stroke-width="2.2"/>
+    <!-- big hourglass -->
+    <path d="M620 90 H820 M620 390 H820"/>
+    <path d="M640 90 L720 240 L640 390"/>
+    <path d="M800 90 L720 240 L800 390"/>
+    <!-- all sand fallen, none left on top -->
+    <path d="M660 360 q60 -40 120 0"/>
+    <path d="M695 300 q25 30 50 0" opacity="0.6" stroke-width="2.4"/>
+    <!-- infinity symbol instead of a timeout -->
+    <path d="M930 230 a26 26 0 1 0 0 0.1 a26 26 0 1 1 0 -0.1"/>
+    <text x="930" y="320" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">no timeout</text>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Conditions — an if diamond whose true and false branches both lead to the same box">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="79" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- decision diamond -->
+    <path d="M520 60 L660 160 L520 260 L380 160 Z"/>
+    <text x="520" y="172" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="36" fill="#1b1a17" stroke="none" text-anchor="middle">if</text>
+    <!-- TRUE branch out the right -->
+    <path d="M660 160 H800 V330"/>
+    <path d="M800 330 L788 310 M800 330 L812 310"/>
+    <text x="730" y="140" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="26" fill="#1b1a17" stroke="none" text-anchor="middle">true</text>
+    <!-- FALSE branch out the left -->
+    <path d="M380 160 H240 V330"/>
+    <path d="M240 330 L228 310 M240 330 L252 310"/>
+    <text x="310" y="140" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="26" fill="#1b1a17" stroke="none" text-anchor="middle">false</text>
+    <!-- both arrows converge on the SAME box -->
+    <path d="M240 330 H400"/>
+    <path d="M800 330 H640"/>
+    <rect x="400" y="320" width="240" height="90" rx="14"/>
+    <text x="520" y="378" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none" text-anchor="middle">same</text>
+    <!-- shrugging figure on the right -->
+    <circle cx="980" cy="120" r="30"/>
+    <path d="M980 150 V250"/>
+    <path d="M980 175 L1035 150"/>
+    <path d="M980 175 L925 150"/>
+    <path d="M980 250 L948 320"/>
+    <path d="M980 250 L1012 320"/>
+    <path d="M966 120 q14 12 28 0" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

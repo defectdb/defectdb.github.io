@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Error handling — an error is caught and quietly swept under the rug into empty braces">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="71" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- thrown error (bomb) arcing in -->
+    <path d="M150 180 Q360 80 560 200" stroke-width="2.4" stroke-dasharray="8 10"/>
+    <circle cx="180" cy="180" r="22"/>
+    <path d="M195 165 q12 -12 4 -26 M199 140 l8 -8 M191 138 l2 -10" stroke-width="2.4"/>
+    <!-- empty catch braces acting as a bin -->
+    <path d="M560 150 q-40 0 -40 60 q0 60 -40 60 q40 0 40 60 q0 60 40 60" stroke-width="3.4"/>
+    <path d="M860 150 q40 0 40 60 q0 60 40 60 q-40 0 -40 60 q0 60 -40 60" stroke-width="3.4"/>
+    <!-- nothing inside (the swallowed error), just a hush -->
+    <circle cx="710" cy="220" r="34"/>
+    <path d="M700 215 q10 -8 20 0 M704 245 q16 10 32 0" stroke-width="2.6"/>
+    <!-- finger to lips: shhh -->
+    <path d="M710 215 L710 150 M700 165 l10 -14 l10 14" stroke-width="2.6"/>
+    <text x="610" y="400" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">shhh</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Pthread — a needle and thread, one thread heading out through an exit door">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="97" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- spool of threads (the process) on the left -->
+    <rect x="170" y="180" width="120" height="160" rx="8"/>
+    <path d="M170 210 H290 M170 310 H290"/>
+    <!-- multiple threads (parallel wavy lines) running across -->
+    <path d="M290 235 q120 -20 240 0 q120 20 240 0" />
+    <path d="M290 265 q120 20 240 0 q120 -20 240 0" />
+    <path d="M290 295 q120 -20 240 0 q120 20 240 0" />
+    <!-- a needle continuing one thread toward door -->
+    <path d="M770 265 L900 265"/>
+    <path d="M885 252 L930 265 L885 278 Z"/>
+    <!-- EXIT door on right -->
+    <rect x="960" y="120" width="180" height="280" rx="6"/>
+    <path d="M1010 120 V400"/>
+    <circle cx="1025" cy="270" r="8" fill="#1b1a17"/>
+    <text x="965" y="100" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">EXIT</text>
+  </g>
+</svg>

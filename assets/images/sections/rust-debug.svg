@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Debugging — a shipped parcel with a dbg sticky note still stuck on it">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="37" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- shipping parcel -->
+    <path d="M470 200 L700 200 L760 270 L760 400 L470 400 L470 270 Z"/>
+    <path d="M470 270 L760 270"/>
+    <path d="M700 200 L760 270"/>
+    <path d="M615 270 V400"/>
+    <!-- packing tape -->
+    <path d="M540 200 L600 270 M600 270 L600 400" stroke-width="2.4" opacity="0.55"/>
+    <!-- sticky note left on box -->
+    <rect x="540" y="120" width="200" height="120" rx="6"/>
+    <path d="M560 175 H720 M560 205 H700" stroke-width="2.2" opacity="0.5"/>
+    <text x="565" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">dbg!</text>
+    <!-- worried figure noticing -->
+    <circle cx="940" cy="170" r="34"/>
+    <path d="M940 204 V310"/>
+    <path d="M940 230 L1010 190 M940 230 L880 270"/>
+    <path d="M940 310 L905 390 M940 310 L978 390"/>
+    <path d="M928 182 q12 -10 24 0"/>
+    <!-- pointing toward note -->
+    <path d="M1010 190 L1040 150 M1040 150 l-2 -22 m2 22 l16 14" stroke-width="2.4"/>
+  </g>
+</svg>

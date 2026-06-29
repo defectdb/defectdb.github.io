@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Scopes — a var balloon hoisted out the top of its block braces">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="84" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- block braces -->
+    <path d="M515 200 Q495 200 495 222 V255 Q495 275 478 280 Q495 285 495 305 V338 Q495 360 515 360"/>
+    <path d="M685 200 Q705 200 705 222 V255 Q705 275 722 280 Q705 285 705 305 V338 Q705 360 685 360"/>
+    <!-- statements inside -->
+    <path d="M540 270 H650" stroke-width="2.4" opacity="0.6"/>
+    <path d="M540 310 H630" stroke-width="2.4" opacity="0.6"/>
+    <!-- var balloon hoisted above the open top -->
+    <circle cx="600" cy="115" r="44"/>
+    <text x="565" y="128" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="32" fill="#1b1a17" stroke="none">var</text>
+    <path d="M600 159 Q612 190 600 222" stroke-width="2.4"/>
+    <!-- rising arrows -->
+    <path d="M520 150 V100 M520 100 L510 116 M520 100 L530 116" stroke-width="2.3" opacity="0.5"/>
+    <path d="M680 150 V100 M680 100 L670 116 M680 100 L690 116" stroke-width="2.3" opacity="0.5"/>
+  </g>
+</svg>

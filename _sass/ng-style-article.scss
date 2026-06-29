@@ -81,11 +81,22 @@
 }
 
 // Editorial lead / standfirst: the opening paragraph reads as a deck
-.article > p:first-child {
+.article > p:first-of-type {
   font-size: 1.36rem;
   line-height: 1.5;
   color: var(--ink-soft-color);
   margin: .2rem 0 1.8rem;
+}
+
+// Section header illustration
+.section-hero {
+  margin: .4rem 0 2rem;
+}
+
+.section-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .article ul, .article ol {

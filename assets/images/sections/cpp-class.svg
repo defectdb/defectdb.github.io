@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Classes — deleting through a base pointer lets the derived part leak away as a ghost">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- base pointer arrow -->
+    <path d="M150 230 H300"/>
+    <path d="M300 230 l-16 -10 M300 230 l-16 10"/>
+    <text x="150" y="208" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">delete</text>
+    <!-- Base part: cleaned up, marked with X -->
+    <rect x="330" y="180" width="200" height="100" rx="12"/>
+    <path d="M350 200 L510 260 M510 200 L350 260" stroke-width="2.6" opacity="0.6"/>
+    <!-- seam where the destructor should have reached but didn't -->
+    <path d="M330 290 H530" stroke-width="2.4" stroke-dasharray="10 12"/>
+    <!-- Derived part floats off as a ghost (leaked) -->
+    <path d="M700 270 V200 a55 60 0 0 1 110 0 V270 l-18 -22 -18 22 -18 -22 -18 22 -19 -22 z"/>
+    <circle cx="735" cy="205" r="6" fill="#1b1a17"/>
+    <circle cx="785" cy="205" r="6" fill="#1b1a17"/>
+    <path d="M740 235 q15 14 30 0" stroke-width="2.4"/>
+    <!-- drift motion -->
+    <path d="M560 250 Q640 200 700 215" stroke-width="2.4" opacity="0.5" stroke-dasharray="8 10"/>
+  </g>
+</svg>

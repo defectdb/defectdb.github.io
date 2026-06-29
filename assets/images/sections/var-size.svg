@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Size — a tiny dot rattling around inside a huge oversized crate">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="107" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- giant crate (isometric-ish) -->
+    <rect x="360" y="120" width="540" height="270" rx="10"/>
+    <path d="M360 120 L440 60 H980 L900 120"/>
+    <path d="M900 120 L980 60 V330 L900 390"/>
+    <!-- tiny content dot rattling, with motion marks -->
+    <circle cx="600" cy="330" r="14" fill="#1b1a17"/>
+    <path d="M560 318 h-22 M566 350 l-18 12 M644 322 h22" opacity="0.5" stroke-width="2.4"/>
+    <!-- size bracket showing huge capacity -->
+    <path d="M360 415 H900"/>
+    <path d="M360 405 V425 M900 405 V425"/>
+    <!-- tiny figure for scale -->
+    <circle cx="1040" cy="300" r="20"/>
+    <path d="M1040 320 V360 M1040 332 L1020 348 M1040 332 L1060 348 M1040 360 L1024 392 M1040 360 L1056 392"/>
+  </g>
+</svg>

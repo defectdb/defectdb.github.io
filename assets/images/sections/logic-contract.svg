@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Contracts — a signed contract document torn in half, a broken seal between the pieces">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="83" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left half of torn contract -->
+    <path d="M360 80 L560 90 L548 200 L568 250 L546 320 L360 360 Z"/>
+    <line x1="390" y1="130" x2="520" y2="135" opacity="0.6" stroke-width="2.4"/>
+    <line x1="390" y1="170" x2="510" y2="175" opacity="0.6" stroke-width="2.4"/>
+    <line x1="390" y1="210" x2="500" y2="215" opacity="0.6" stroke-width="2.4"/>
+    <line x1="390" y1="290" x2="470" y2="293" opacity="0.6" stroke-width="2.4"/>
+    <!-- right half of torn contract, offset -->
+    <path d="M640 100 L840 90 L840 360 L632 340 L654 270 L632 210 L652 160 Z"/>
+    <line x1="690" y1="150" x2="800" y2="148" opacity="0.6" stroke-width="2.4"/>
+    <line x1="690" y1="190" x2="800" y2="188" opacity="0.6" stroke-width="2.4"/>
+    <line x1="690" y1="230" x2="800" y2="228" opacity="0.6" stroke-width="2.4"/>
+    <!-- signature scribble on right half -->
+    <path d="M690 300 q20 -22 40 0 t40 0" opacity="0.7" stroke-width="2.6"/>
+    <!-- broken wax seal split across the tear -->
+    <path d="M560 250 a40 40 0 0 1 8 -78" />
+    <path d="M632 210 a40 40 0 0 1 22 110"/>
+    <path d="M580 200 l-14 30 M600 215 l-14 30" opacity="0.6" stroke-width="2.4"/>
+    <!-- question mark: no proof available -->
+    <path d="M960 150 a30 30 0 1 1 32 38 v16" stroke-width="3"/>
+    <circle cx="992" cy="240" r="5" fill="#1b1a17"/>
+  </g>
+</svg>

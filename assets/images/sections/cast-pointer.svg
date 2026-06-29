@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Pointer to integer — an arrow pointer being relabelled as a plain number on a scale">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="75" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the pointer: a box labelled with an address, with an arrow leaving it -->
+    <rect x="180" y="170" width="200" height="110"/>
+    <text x="200" y="238" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">0x7F</text>
+    <!-- arrow head that marks it as a pointer, being crossed out -->
+    <path d="M390 225 H470"/>
+    <path d="M470 225 L442 205 M470 225 L442 245"/>
+    <path d="M400 250 L470 200" stroke-width="2.6"/>
+    <!-- transformation arrow -->
+    <path d="M520 225 H700"/>
+    <path d="M700 225 L672 205 M700 225 L672 245"/>
+    <text x="560" y="190" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">(int)</text>
+    <!-- the result: a bare integer, no arrow -->
+    <text x="760" y="265" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="120" fill="#1b1a17" stroke="none">127</text>
+    <!-- confused stick figure scratching head -->
+    <circle cx="1080" cy="120" r="30"/>
+    <path d="M1080 150 V250"/>
+    <path d="M1080 175 L1110 130"/>
+    <path d="M1080 175 L1040 210"/>
+    <path d="M1080 250 L1052 330"/>
+    <path d="M1080 250 L1110 330"/>
+    <text x="1108" y="110" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none">?</text>
+  </g>
+</svg>

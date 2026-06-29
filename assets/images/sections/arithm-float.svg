@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Floating point — a number drifting up on a balloon">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="42" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- ground line -->
+    <line x1="160" y1="390" x2="1040" y2="390" opacity="0.5" stroke-width="2.4"/>
+    <!-- a figure reaching up -->
+    <circle cx="320" cy="250" r="32"/>
+    <path d="M320 282 V360"/>
+    <path d="M320 300 L270 250"/>
+    <path d="M320 300 L370 250"/>
+    <path d="M320 360 L290 390"/>
+    <path d="M320 360 L350 390"/>
+    <!-- balloon carrying the number aloft -->
+    <ellipse cx="720" cy="150" rx="100" ry="115"/>
+    <path d="M720 265 l-14 22 h28 z"/>
+    <line x1="720" y1="287" x2="640" y2="390"/>
+    <!-- the floating number 3.14 inside the balloon -->
+    <text x="720" y="170" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="64" fill="#1b1a17" stroke="none">3.14</text>
+    <!-- drifting motion ticks -->
+    <path d="M860 120 q20 -20 0 -40" opacity="0.5" stroke-width="2.4"/>
+    <path d="M900 180 q24 -22 0 -44" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Arithmetic — two small numbers multiply, overflow a narrow box, then a wide box arrives too late">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="21" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- small operands -->
+    <rect x="120" y="200" width="80" height="80" rx="10"/>
+    <rect x="280" y="200" width="80" height="80" rx="10"/>
+    <path d="M232 230 l16 20 M248 230 l-16 20" stroke-width="2.6"/>
+    <!-- arrow into narrow box -->
+    <path d="M372 240 H470"/>
+    <path d="M470 240 l-14 -9 M470 240 l-14 9"/>
+    <!-- narrow box overflowing -->
+    <rect x="500" y="150" width="90" height="170" rx="8"/>
+    <path d="M500 200 H590 M500 230 H590 M500 260 H590" stroke-width="2.2" opacity="0.5"/>
+    <!-- overflow spilling over the top -->
+    <path d="M508 150 q10 -40 30 -36 q8 -28 30 -20 q22 -2 14 26" />
+    <path d="M520 120 l-6 -16 M548 100 l2 -18 M572 116 l12 -12" stroke-width="2.4"/>
+    <!-- arrow to wide box, too late -->
+    <path d="M610 300 H730"/>
+    <path d="M730 300 l-14 -9 M730 300 l-14 9"/>
+    <rect x="740" y="250" width="330" height="90" rx="10"/>
+    <path d="M820 250 V340 M900 250 V340 M980 250 V340" stroke-width="2.2" opacity="0.5"/>
+    <text x="760" y="220" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">too late</text>
+  </g>
+</svg>

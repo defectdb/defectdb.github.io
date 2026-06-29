@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Environment — a blank luggage tag with an equals sign and an empty name slot">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="51" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- figure holding tag, confused -->
+    <circle cx="250" cy="150" r="34"/>
+    <path d="M250 184 V300"/>
+    <path d="M250 215 L320 250 M250 215 L185 250"/>
+    <path d="M250 300 L215 385 M250 300 L288 385"/>
+    <path d="M238 162 q12 8 24 0"/>
+    <!-- question marks over head -->
+    <text x="305" y="120" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">?</text>
+    <!-- string from hand to tag -->
+    <path d="M320 250 L470 250"/>
+    <!-- blank name tag -->
+    <path d="M470 250 L520 200 L760 200 L760 360 L520 360 Z"/>
+    <circle cx="500" cy="250" r="12"/>
+    <!-- empty name field with equals -->
+    <path d="M560 290 H720" stroke-width="2.4" opacity="0.55"/>
+    <text x="560" y="285" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">  =</text>
+    <!-- dashed empty key box where name should be -->
+    <path d="M560 250 h70" stroke-width="2.4" stroke-dasharray="10 9" opacity="0.7"/>
+    <!-- big void where the key is -->
+    <ellipse cx="950" cy="280" rx="60" ry="74"/>
+    <path d="M900 230 L1000 330" stroke-width="2.6"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Arguments — a square peg and a round hole swapped, plus a null hand-off">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="97" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- shape-sorter board: square hole and round hole -->
+    <rect x="430" y="120" width="320" height="240" rx="14"/>
+    <rect x="480" y="180" width="90" height="90"/>
+    <circle cx="660" cy="225" r="48"/>
+    <!-- a round peg heading toward the SQUARE hole (wrong order) -->
+    <circle cx="525" cy="80" r="40"/>
+    <path d="M525 120 V165 M510 150 L525 165 L540 150" />
+    <!-- a square peg heading toward the ROUND hole (wrong order) -->
+    <rect x="625" y="55" width="70" height="70"/>
+    <path d="M660 125 V165 M645 150 L660 165 L675 150"/>
+    <!-- null argument: a hand offering a void symbol Ø -->
+    <circle cx="940" cy="200" r="48"/>
+    <path d="M905 165 L975 235"/>
+    <path d="M890 270 L940 248"/>
+    <!-- little arrow from null into the board -->
+    <path d="M890 248 L770 240"/>
+    <path d="M770 240 L800 228 M770 240 L800 252"/>
+  </g>
+</svg>

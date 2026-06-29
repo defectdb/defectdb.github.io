@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Write — a giant pen poised over a blank page writing nothing, a big zero">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="75" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- blank page -->
+    <path d="M430 110 H700 V380 H430 Z"/>
+    <!-- a single big zero, the only thing 'written' -->
+    <ellipse cx="565" cy="245" rx="55" ry="85"/>
+    <!-- the pen, nib touching the page but nothing flows -->
+    <path d="M760 70 L920 230"/>
+    <path d="M745 55 L775 25 L935 185 L905 215 Z"/>
+    <path d="M745 55 L935 185"/>
+    <!-- nib tip -->
+    <path d="M735 65 L700 290 L760 90"/>
+    <circle cx="713" cy="245" r="3" fill="#1b1a17"/>
+    <!-- tiny puzzled spark at the nib (nothing happens) -->
+    <path d="M690 250 l-22 -8 M695 270 l-20 8 M700 230 l-18 -14" opacity="0.5" stroke-width="2.4"/>
+    <!-- caption -->
+    <text x="565" y="425" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">write(0)?</text>
+  </g>
+</svg>

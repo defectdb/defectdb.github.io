@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Architecture — two labelled modules joined by a chain link">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left module -->
+    <rect x="150" y="150" width="230" height="180" rx="16"/>
+    <path d="M150 196 H380"/>
+    <circle cx="178" cy="173" r="7" fill="#1b1a17"/>
+    <circle cx="206" cy="173" r="7" fill="#1b1a17"/>
+    <path d="M195 250 H335 M195 285 H300"/>
+    <!-- right module -->
+    <rect x="820" y="150" width="230" height="180" rx="16"/>
+    <path d="M820 196 H1050"/>
+    <circle cx="848" cy="173" r="7" fill="#1b1a17"/>
+    <circle cx="876" cy="173" r="7" fill="#1b1a17"/>
+    <path d="M865 250 H1005 M865 285 H970"/>
+    <!-- chain link connecting the two -->
+    <ellipse cx="510" cy="240" rx="60" ry="34"/>
+    <ellipse cx="600" cy="240" rx="60" ry="34"/>
+    <ellipse cx="690" cy="240" rx="60" ry="34"/>
+    <path d="M380 240 H452 M748 240 H820"/>
+    <!-- caption -->
+    <text x="490" y="350" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">linked</text>
+  </g>
+</svg>

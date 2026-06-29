@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Memory — a figure forgetting a balloon that floats away while a box shape-shifts">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="63" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- mem::forget : figure with open hand, balloon escaping -->
+    <circle cx="240" cy="240" r="34"/>
+    <path d="M240 274 V370"/>
+    <path d="M240 300 L300 270 M240 300 L185 330"/>
+    <path d="M240 370 L210 430 M240 370 L275 430"/>
+    <!-- open releasing hand -->
+    <path d="M300 270 l24 -10"/>
+    <!-- escaped balloon (the forgotten allocation) -->
+    <ellipse cx="370" cy="150" rx="46" ry="56"/>
+    <path d="M370 206 L334 262" stroke-width="2.2" opacity="0.6"/>
+    <path d="M370 90 q14 -22 30 -8" stroke-width="2.2" opacity="0.5"/>
+    <!-- mem::transmute : one shape morphing into another -->
+    <rect x="640" y="200" width="120" height="120" rx="8"/>
+    <!-- morph arrow -->
+    <path d="M790 260 H900"/>
+    <path d="M900 260 l-22 -14 m22 14 l-22 14"/>
+    <!-- it becomes a triangle (wrong shape) -->
+    <path d="M1000 320 L1060 200 L1120 320 Z"/>
+    <!-- spark of danger at the transmute -->
+    <g stroke-width="2.6">
+      <path d="M845 200 l8 -26 M845 200 l-18 -14 M845 200 l26 -8"/>
+    </g>
+  </g>
+</svg>

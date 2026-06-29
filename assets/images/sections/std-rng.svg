@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Rng — a figure plants the same seed over and over, dice keep landing on the identical face">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="113" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- three dice all showing the SAME face (because srand reseeded) -->
+    <g>
+      <rect x="300" y="200" width="120" height="120" rx="16"/>
+      <circle cx="360" cy="260" r="9" fill="#1b1a17"/>
+    </g>
+    <g>
+      <rect x="540" y="200" width="120" height="120" rx="16"/>
+      <circle cx="600" cy="260" r="9" fill="#1b1a17"/>
+    </g>
+    <g>
+      <rect x="780" y="200" width="120" height="120" rx="16"/>
+      <circle cx="840" cy="260" r="9" fill="#1b1a17"/>
+    </g>
+    <!-- looping arrow over them = called again and again -->
+    <path d="M340 180 H880" />
+    <path d="M340 180 q-40 0 -40 60" opacity="0.5" stroke-width="2.4"/>
+    <path d="M860 165 L884 180 L860 196"/>
+    <!-- seed dropping in -->
+    <path d="M600 110 q-6 24 0 44 q8 -18 0 -44" fill="#1b1a17"/>
+    <text x="930" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">again?</text>
+  </g>
+</svg>

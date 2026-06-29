@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Result — a machine hands out a result on a tray but the figure walks away ignoring it">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="108" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- function machine offering a result -->
+    <rect x="180" y="180" width="200" height="170" rx="12"/>
+    <text x="280" y="280" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">f()</text>
+    <!-- an arm with a tray and the precious result on it -->
+    <path d="M380 250 H470"/>
+    <path d="M430 250 H520"/>
+    <rect x="455" y="208" width="56" height="42" rx="6"/>
+    <text x="483" y="240" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">42</text>
+    <!-- attention sparkles around the ignored result -->
+    <path d="M483 190 V172 M520 200 l16 -10 M448 200 l-16 -10" opacity="0.6" stroke-width="2.6"/>
+    <!-- figure walking AWAY (back turned) -->
+    <circle cx="820" cy="130" r="34"/>
+    <path d="M820 164 V270"/>
+    <path d="M820 195 L760 220 M820 195 L880 220"/>
+    <path d="M820 270 L865 360 M820 270 L780 350"/>
+    <!-- motion lines behind it -->
+    <path d="M690 150 H740 M680 200 H730 M690 250 H740" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

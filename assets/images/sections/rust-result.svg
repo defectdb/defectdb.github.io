@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Result — two boxes being unwrapped, one holds a check, the other bursts with a spark">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="119" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left box: Ok, opened to reveal a check -->
+    <path d="M210 300 L210 400 L430 400 L430 300"/>
+    <path d="M210 300 L430 300"/>
+    <path d="M240 250 L460 230 L480 280 L260 300 Z"/>
+    <!-- check rising from Ok box -->
+    <path d="M280 250 l30 34 l54 -78"/>
+    <!-- right box: Err, lid blown off by a spark -->
+    <path d="M720 300 L720 400 L940 400 L940 300"/>
+    <path d="M720 300 L940 300"/>
+    <!-- blown-off lid, tilted up high -->
+    <path d="M770 150 L990 170 L1010 220 L790 200 Z"/>
+    <!-- explosion spark bursting out of Err box -->
+    <path d="M830 290 L860 220 L885 285 L950 250 L905 305 L965 330 L900 340 L920 400 L860 360 L835 410 L820 350 L760 375 L800 315 L745 290 Z"/>
+    <!-- shock lines -->
+    <g stroke-width="2.4" opacity="0.6">
+      <path d="M700 230 l-34 -10 M1000 290 l36 -10 M850 460"/>
+    </g>
+  </g>
+</svg>

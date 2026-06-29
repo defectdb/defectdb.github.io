@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Interrupts — a lightning bolt wearing a nightcap, asleep with Zzz">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- big lightning bolt (the interrupt) -->
+    <path d="M560 110 L470 250 L560 250 L500 380 L700 200 L600 200 L680 110 Z"/>
+    <!-- closed sleepy eyes on the bolt -->
+    <path d="M540 215 a14 10 0 0 1 28 0"/>
+    <path d="M590 200 a14 10 0 0 1 28 0"/>
+    <!-- little snore mouth -->
+    <path d="M560 250 q12 14 24 0"/>
+    <!-- nightcap on top of the bolt -->
+    <path d="M590 130 q40 -60 110 -30 q-10 30 -60 40 Z"/>
+    <circle cx="700" cy="98" r="12"/>
+    <!-- Zzz floating up -->
+    <text x="760" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="42" fill="#1b1a17" stroke="none">z</text>
+    <text x="800" y="120" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="54" fill="#1b1a17" stroke="none">Z</text>
+    <text x="855" y="80" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="66" fill="#1b1a17" stroke="none">Z</text>
+    <!-- ground line -->
+    <path d="M380 400 H760" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

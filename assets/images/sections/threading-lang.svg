@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="sync.Once — a button labelled ONCE being pressed twice by two hands">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="86" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- big push button base -->
+    <ellipse cx="600" cy="320" rx="180" ry="50"/>
+    <path d="M420 320 V270 M780 320 V270"/>
+    <ellipse cx="600" cy="270" rx="180" ry="50"/>
+    <!-- button cap pressed -->
+    <ellipse cx="600" cy="250" rx="120" ry="34"/>
+    <text x="600" y="262" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">ONCE</text>
+    <!-- two hands both pressing (misuse: called twice) -->
+    <path d="M360 110 L470 215"/>
+    <path d="M470 215 q-22 -6 -34 8 q-4 14 12 18"/>
+    <path d="M840 110 L730 215"/>
+    <path d="M730 215 q22 -6 34 8 q4 14 -12 18"/>
+    <!-- a small no/again mark -->
+    <path d="M600 380 q-40 30 -8 50 M600 380 q40 30 8 50" opacity="0.5" stroke-width="2.4"/>
+    <path d="M560 420 L600 430 L592 400" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

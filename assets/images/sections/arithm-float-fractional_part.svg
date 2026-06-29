@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Fractional part — scissors snip the decimals off a number, which fall away">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="66" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- kept integer part -->
+    <text x="330" y="270" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="120" fill="#1b1a17" stroke="none">7</text>
+    <!-- dotted cut line -->
+    <line x1="420" y1="130" x2="420" y2="330" stroke-dasharray="10 14" opacity="0.5" stroke-width="2.4"/>
+    <!-- scissors at the cut -->
+    <circle cx="470" cy="120" r="20"/>
+    <circle cx="470" cy="170" r="20"/>
+    <line x1="486" y1="133" x2="600" y2="220"/>
+    <line x1="486" y1="157" x2="600" y2="120"/>
+    <!-- the snipped ".95" tumbling away -->
+    <g transform="rotate(22 760 320)">
+      <text x="760" y="350" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="96" fill="#1b1a17" stroke="none">.95</text>
+    </g>
+    <!-- motion arcs -->
+    <path d="M640 290 q40 30 90 30" opacity="0.5" stroke-width="2.4"/>
+    <path d="M660 240 q40 30 90 30" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

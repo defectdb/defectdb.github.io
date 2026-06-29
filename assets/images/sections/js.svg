@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="JavaScript — a stick figure juggling many balls at once">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- juggler -->
+    <circle cx="600" cy="200" r="34"/>
+    <path d="M600 234 V320"/>
+    <path d="M600 320 L565 405"/>
+    <path d="M600 320 L635 405"/>
+    <path d="M600 258 L536 220"/>
+    <path d="M600 258 L664 220"/>
+    <path d="M588 205 a5 5 0 0 1 24 0" stroke-width="2.4"/>
+    <!-- juggled balls -->
+    <circle cx="470" cy="170" r="22"/>
+    <circle cx="540" cy="95" r="22"/>
+    <circle cx="600" cy="70" r="22"/>
+    <circle cx="660" cy="95" r="22"/>
+    <circle cx="730" cy="170" r="22"/>
+    <!-- juggling arcs (faint) -->
+    <path d="M536 220 Q470 60 600 50 Q730 60 664 220" stroke-width="2.3" opacity="0.5"/>
+    <path d="M495 180 Q540 120 545 110" stroke-width="2.3" opacity="0.5"/>
+    <path d="M705 180 Q660 120 655 110" stroke-width="2.3" opacity="0.5"/>
+  </g>
+</svg>

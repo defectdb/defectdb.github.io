@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Channels — a pipe that is closed off and leaking, confusing a figure">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="64" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- a pipe that ends in a brick wall (closed channel) -->
+    <path d="M180 200 H640"/>
+    <path d="M180 300 H640"/>
+    <path d="M180 200 V300"/>
+    <!-- closed / capped end -->
+    <path d="M640 180 H700 V320 H640"/>
+    <path d="M655 195 H685 M655 230 H685 M655 265 H685 M655 300 H685"/>
+    <!-- a ball bounced back (operation on closed channel) -->
+    <circle cx="540" cy="250" r="22"/>
+    <path d="M580 230 L620 215 M585 250 H625 M580 270 L620 285" opacity="0.5" stroke-width="2.4"/>
+    <!-- a leaking drip from an unread channel below -->
+    <path d="M300 300 q-6 16 0 22 q6 -6 0 -22" fill="#1b1a17"/>
+    <!-- confused figure with a question mark -->
+    <circle cx="860" cy="170" r="32"/>
+    <path d="M845 162 L853 170 M875 162 L867 170"/>
+    <path d="M848 188 a14 8 0 0 1 24 0"/>
+    <path d="M860 202 V300"/>
+    <path d="M860 230 L800 220"/>
+    <path d="M860 230 L915 215"/>
+    <path d="M860 300 L825 385"/>
+    <path d="M860 300 L900 385"/>
+    <path d="M960 120 a22 22 0 1 1 22 30 V165"/>
+    <circle cx="982" cy="195" r="3" fill="#1b1a17"/>
+  </g>
+</svg>

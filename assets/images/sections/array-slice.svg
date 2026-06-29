@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Slices — scissors cutting a strip of array cells along a dotted line">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- long strip of cells (the array) -->
+    <rect x="180" y="190" width="700" height="110"/>
+    <path d="M280 190 V300 M380 190 V300 M480 190 V300 M580 190 V300 M680 190 V300 M780 190 V300"/>
+    <!-- dotted cut line where the slice is taken -->
+    <path d="M480 130 V360" stroke-width="2.4" opacity="0.5" stroke-dasharray="8 12"/>
+    <path d="M680 130 V360" stroke-width="2.4" opacity="0.5" stroke-dasharray="8 12"/>
+    <!-- scissors at the right cut -->
+    <circle cx="760" cy="120" r="22"/>
+    <circle cx="760" cy="78" r="22"/>
+    <path d="M778 132 L660 200"/>
+    <path d="M778 66 L660 190"/>
+    <!-- slice label -->
+    <text x="500" y="395" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">[2:5]</text>
+  </g>
+</svg>

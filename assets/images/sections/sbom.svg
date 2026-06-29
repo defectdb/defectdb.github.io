@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="SBOM — a stamped inventory document listing stacked dependency boxes, one marked with a warning">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="37" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the bill-of-materials document -->
+    <path d="M170 60 H540 V400 H170 Z"/>
+    <path d="M210 110 H500 M210 110" />
+    <!-- list rows = packages -->
+    <rect x="210" y="150" width="40" height="40" rx="6"/>
+    <path d="M275 170 H500"/>
+    <rect x="210" y="210" width="40" height="40" rx="6"/>
+    <path d="M275 230 H500"/>
+    <rect x="210" y="270" width="40" height="40" rx="6"/>
+    <path d="M275 290 H500"/>
+    <rect x="210" y="330" width="40" height="40" rx="6"/>
+    <path d="M275 350 H440"/>
+    <!-- official round stamp -->
+    <circle cx="450" cy="110" r="40" opacity="0.6" stroke-width="2.6"/>
+    <path d="M428 110 L444 126 L474 96" opacity="0.6" stroke-width="2.6"/>
+    <!-- right: stacked dependency boxes -->
+    <rect x="720" y="280" width="150" height="90" rx="8"/>
+    <rect x="745" y="200" width="150" height="80" rx="8"/>
+    <rect x="780" y="120" width="150" height="80" rx="8"/>
+    <!-- one box has a warning spark (vulnerable dependency) -->
+    <path d="M855 160 V148 M855 178 V178" />
+    <circle cx="855" cy="160" r="0.5" fill="#1b1a17"/>
+    <path d="M1000 110 L1000 70 M1020 130 L1055 100 M1000 150 L1000 150 M970 130 L935 100 M1000 130 L1000 130" opacity="0.5" stroke-width="2.4"/>
+    <path d="M1010 130 L1050 95 M1010 130 L1050 165 M1010 130 L1058 130 M1010 130 L1000 82 M1010 130 L1000 178"/>
+    <text x="985" y="240" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">CVE!</text>
+  </g>
+</svg>

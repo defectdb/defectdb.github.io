@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Arrays — a stick figure beside a row of numbered boxes in brackets">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- opening bracket -->
+    <path d="M300 150 H270 V330 H300"/>
+    <!-- row of boxes -->
+    <rect x="320" y="160" width="120" height="160"/>
+    <rect x="440" y="160" width="120" height="160"/>
+    <rect x="560" y="160" width="120" height="160"/>
+    <rect x="680" y="160" width="120" height="160"/>
+    <!-- indices under boxes -->
+    <text x="372" y="365" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">0</text>
+    <text x="492" y="365" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">1</text>
+    <text x="612" y="365" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">2</text>
+    <text x="732" y="365" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">3</text>
+    <!-- closing bracket -->
+    <path d="M820 150 H850 V330 H820"/>
+    <!-- stick figure pointing at the boxes -->
+    <circle cx="990" cy="150" r="34"/>
+    <path d="M990 184 V300"/>
+    <path d="M990 215 L900 240"/>
+    <path d="M990 215 L1050 200"/>
+    <path d="M990 300 L955 385"/>
+    <path d="M990 300 L1025 385"/>
+  </g>
+</svg>

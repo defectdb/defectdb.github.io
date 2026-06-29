@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Too many threads — a small figure overwhelmed by a giant tangle of thread spools">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="108" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- huge tangle of threads -->
+    <path d="M620 120 C500 60 760 60 700 150 C660 220 840 180 760 240 C700 290 880 300 780 330 C720 350 840 380 740 390"/>
+    <path d="M650 130 C780 80 560 90 650 170 C720 240 540 210 640 270 C720 320 540 320 660 360"/>
+    <path d="M580 160 C700 130 820 220 700 250 C600 280 820 320 690 350"/>
+    <circle cx="640" cy="230" r="120" opacity="0.5" stroke-width="2.4"/>
+    <!-- many loose thread ends sticking out -->
+    <path d="M520 180 L470 160 M770 150 L830 130 M540 320 L480 350 M780 340 L850 360 M650 110 L660 60" opacity="0.5" stroke-width="2.4"/>
+    <!-- small overwhelmed stick figure beneath, arms up in panic -->
+    <circle cx="640" cy="365" r="22"/>
+    <path d="M630 360 L638 366 M650 360 L642 366"/>
+    <path d="M628 380 a12 7 0 0 1 24 0"/>
+    <path d="M640 387 V430"/>
+    <path d="M640 400 L600 370 M640 400 L680 370"/>
+    <!-- sweat -->
+    <path d="M600 345 q-5 12 0 16 q5 -4 0 -16" fill="#1b1a17"/>
+  </g>
+</svg>

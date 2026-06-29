@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Related to zero — a number line that stops at zero, so 'less than zero' points at nothing">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="121" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- number line for unsigned: starts at 0, goes right only -->
+    <line x1="400" y1="280" x2="1020" y2="280"/>
+    <path d="M1020 280 l-26 -14 m26 14 l-26 14"/>
+    <!-- a hard wall / end-stop at zero on the left -->
+    <line x1="400" y1="230" x2="400" y2="330"/>
+    <line x1="400" y1="280" x2="380" y2="300"/>
+    <line x1="400" y1="280" x2="380" y2="260"/>
+    <!-- ticks 0 1 2 3 -->
+    <line x1="400" y1="270" x2="400" y2="290"/>
+    <line x1="540" y1="270" x2="540" y2="290"/>
+    <line x1="680" y1="270" x2="680" y2="290"/>
+    <line x1="820" y1="270" x2="820" y2="290"/>
+    <text x="400" y="335" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">0</text>
+    <text x="540" y="335" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">1</text>
+    <text x="680" y="335" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">2</text>
+    <!-- a figure on the left peering LEFT of zero into emptiness -->
+    <circle cx="250" cy="160" r="32"/>
+    <path d="M250 192 V280"/>
+    <path d="M250 214 L200 230"/>
+    <path d="M250 214 L300 200"/>
+    <path d="M250 280 L218 350"/>
+    <path d="M250 280 L282 350"/>
+    <!-- "x < 0 ?" looking into the void left of the wall -->
+    <path d="M330 110 a20 20 0 1 1 20 24 v8"/>
+    <circle cx="350" cy="158" r="4" fill="#1b1a17"/>
+    <!-- the never-reached region marked with a dotted void -->
+    <path d="M360 200 q-60 80 0 160" stroke-dasharray="8 12" opacity="0.5" stroke-width="2.4"/>
+  </g>
+</svg>

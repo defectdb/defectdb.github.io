@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Rust — a crab handing a checked box to a relieved figure">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- crab body -->
+    <ellipse cx="340" cy="250" rx="120" ry="78"/>
+    <circle cx="305" cy="225" r="9" fill="#1b1a17"/>
+    <circle cx="375" cy="225" r="9" fill="#1b1a17"/>
+    <path d="M305 200 V178 M375 200 V178"/>
+    <circle cx="305" cy="172" r="6" fill="#1b1a17"/>
+    <circle cx="375" cy="172" r="6" fill="#1b1a17"/>
+    <path d="M310 270 q30 18 60 0"/>
+    <!-- crab legs -->
+    <path d="M240 280 L195 320 M255 300 L215 345 M425 300 L470 345 M440 280 L488 320"/>
+    <!-- left claw -->
+    <path d="M225 215 L160 175"/>
+    <path d="M160 175 l-28 -16 m28 16 l-30 14"/>
+    <!-- right claw holding box -->
+    <path d="M455 215 L545 200"/>
+    <!-- box being handed over -->
+    <rect x="545" y="170" width="130" height="110" rx="10"/>
+    <path d="M610 170 V280 M545 225 H675"/>
+    <!-- check mark on box -->
+    <path d="M635 215 l14 16 l24 -34"/>
+    <!-- receiving figure -->
+    <circle cx="950" cy="150" r="34"/>
+    <path d="M950 184 V300"/>
+    <path d="M950 215 L860 240 M950 215 L1030 250"/>
+    <path d="M950 300 L912 380 M950 300 L990 380"/>
+    <path d="M938 158 q12 10 24 0"/>
+    <!-- arms reaching toward box -->
+    <path d="M860 240 L700 250"/>
+  </g>
+</svg>

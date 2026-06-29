@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Types — a figure insists with a big exclamation that an empty void is definitely there">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="117" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- assertive figure pointing -->
+    <circle cx="300" cy="160" r="34"/>
+    <path d="M300 194 V288"/>
+    <path d="M300 288 L272 360"/>
+    <path d="M300 288 L330 360"/>
+    <path d="M300 224 L262 268"/>
+    <path d="M300 220 L430 198"/>
+    <!-- empty void it points at -->
+    <circle cx="660" cy="210" r="58" stroke-dasharray="10 12"/>
+    <path d="M620 252 L700 168"/>
+    <!-- big assertive exclamation -->
+    <path d="M820 100 L820 200" stroke-width="5"/>
+    <circle cx="820" cy="232" r="9" fill="#1b1a17"/>
+    <!-- secondary: the 'any' blob that fits anything -->
+    <path d="M960 318 q-40 -34 4 -56 q44 -22 64 8 q26 30 -8 52 q-30 20 -60 -4 Z" stroke-width="2.6" opacity="0.7"/>
+    <text x="952" y="300" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="28" fill="#1b1a17" stroke="none" opacity="0.8">any</text>
+  </g>
+</svg>

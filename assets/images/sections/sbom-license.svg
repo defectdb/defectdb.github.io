@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Licensing — a license scroll stamped REJECTED with a big cross for a policy violation">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="61" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- license scroll -->
+    <path d="M430 70 H770 V370 H430 Z"/>
+    <path d="M430 70 a18 22 0 0 0 0 44 M770 70 a18 22 0 0 1 0 44" opacity="0.5" stroke-width="2.4"/>
+    <!-- ribbon header -->
+    <text x="490" y="135" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">LICENSE</text>
+    <path d="M470 170 H730 M470 205 H730 M470 240 H700"/>
+    <!-- big rejection cross over it -->
+    <circle cx="600" cy="270" r="120" opacity="0.7"/>
+    <path d="M520 190 L680 350 M680 190 L520 350"/>
+    <!-- gavel to the right (policy) -->
+    <rect x="900" y="250" width="120" height="50" rx="10"/>
+    <path d="M935 250 L1005 180" stroke-width="3.2"/>
+    <rect x="980" y="150" width="90" height="50" rx="8" transform="rotate(45 1025 175)"/>
+    <path d="M850 360 H1070"/>
+  </g>
+</svg>

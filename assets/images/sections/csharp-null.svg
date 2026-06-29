@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Null handling — an arrow points at a null void and bursts, a puzzled figure">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="18" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="300" y="200" width="80" height="64" rx="6"/>
+    <path d="M380 232 L620 232"/>
+    <path d="M620 232 L600 220 M620 232 L600 244"/>
+    <circle cx="722" cy="232" r="58"/>
+    <path d="M683 274 L761 190"/>
+    <path d="M722 158 L722 128 M722 306 L722 336 M648 232 L618 232 M796 232 L826 232 M672 182 L650 160 M772 182 L794 160 M672 282 L650 304 M772 282 L794 304" stroke-width="2.4" opacity="0.6"/>
+    <circle cx="980" cy="160" r="34"/>
+    <path d="M980 194 V296"/>
+    <path d="M980 220 L1030 188"/>
+    <path d="M980 220 L935 250"/>
+    <path d="M980 296 L940 376"/>
+    <path d="M980 296 L1020 376"/>
+    <path d="M1030 110 q30 -22 44 4 q12 24 -22 34 l0 18 M1052 192 l0 6" stroke-width="2.6" opacity="0.7"/>
+  </g>
+</svg>

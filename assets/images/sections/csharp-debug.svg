@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Debugging — a tripwire rings an alarm bell, a startled figure">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="13" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="250" cy="165" r="34"/>
+    <path d="M250 199 V300"/>
+    <path d="M250 215 L205 150"/>
+    <path d="M250 215 L298 150"/>
+    <path d="M250 300 L208 380"/>
+    <path d="M250 300 L292 380"/>
+    <path d="M238 158 L246 166 M254 158 L262 166"/>
+    <path d="M205 370 L770 352" stroke-width="2.6" opacity="0.6"/>
+    <path d="M205 370 L205 380 M770 352 L770 362" stroke-width="2.4" opacity="0.6"/>
+    <circle cx="845" cy="150" r="9"/>
+    <path d="M790 250 C790 162 900 162 900 250"/>
+    <path d="M773 252 L917 252"/>
+    <circle cx="845" cy="268" r="11" fill="#1b1a17"/>
+    <path d="M845 159 V162"/>
+    <path d="M935 175 q34 32 0 76"/>
+    <path d="M755 175 q-34 32 0 76"/>
+    <path d="M770 352 Q820 320 845 280"/>
+  </g>
+</svg>

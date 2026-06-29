@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Const qualifier — a figure dropping a tag marked const, which falls to the ground">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="61" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- figure with open hand, having let go -->
+    <circle cx="320" cy="120" r="32"/>
+    <path d="M320 152 V260"/>
+    <path d="M320 180 L390 175"/>
+    <path d="M320 180 L260 210"/>
+    <path d="M320 260 L286 340"/>
+    <path d="M320 260 L356 340"/>
+    <!-- open hand fingers -->
+    <path d="M390 175 l16 -6 M390 175 l16 6 M390 175 l18 0" opacity="0.7" stroke-width="2.6"/>
+    <!-- ground line -->
+    <line x1="160" y1="380" x2="1060" y2="380"/>
+    <!-- the const tag falling, with motion lines -->
+    <g>
+      <path d="M560 250 L690 230 L770 270 L690 330 L560 310 Z"/>
+      <circle cx="588" cy="270" r="8"/>
+      <text x="678" y="295" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none" text-anchor="middle">const</text>
+    </g>
+    <!-- motion / fall lines above the tag -->
+    <line x1="600" y1="170" x2="600" y2="215" opacity="0.5" stroke-width="2.4"/>
+    <line x1="660" y1="160" x2="660" y2="205" opacity="0.5" stroke-width="2.4"/>
+    <line x1="720" y1="175" x2="720" y2="220" opacity="0.5" stroke-width="2.4"/>
+    <!-- little impact spark where it nears the floor -->
+    <path d="M700 360 l-14 -10 M720 358 l4 -16 M740 362 l14 -10" opacity="0.6" stroke-width="2.4"/>
+  </g>
+</svg>

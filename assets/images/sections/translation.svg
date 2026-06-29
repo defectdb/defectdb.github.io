@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Translation — source code box and an internal-representation box with a broken arrow snapping between them">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="174" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- source code box on the left -->
+    <rect x="150" y="140" width="260" height="200" rx="12"/>
+    <text x="280" y="180" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">src</text>
+    <path d="M185 215 H360 M185 245 H320 M185 275 q18 -12 36 0 t36 0 M185 305 H340" opacity="0.7"/>
+    <!-- IR box on the right (a little brain/tree) -->
+    <rect x="790" y="140" width="260" height="200" rx="12"/>
+    <text x="920" y="180" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">IR</text>
+    <!-- little AST tree inside IR -->
+    <circle cx="920" cy="225" r="12"/>
+    <circle cx="870" cy="295" r="12"/>
+    <circle cx="970" cy="295" r="12"/>
+    <path d="M912 235 L877 285 M928 235 L963 285"/>
+    <!-- broken arrow between them: two halves with a snap gap -->
+    <path d="M420 240 L560 240"/>
+    <path d="M555 215 L580 240 L555 265" opacity="0.6"/>
+    <path d="M640 240 L780 240"/>
+    <path d="M780 240 L750 222 M780 240 L750 258"/>
+    <!-- snap / break sparks in the gap -->
+    <path d="M580 200 L600 240 L580 280 L620 240 Z"/>
+    <path d="M610 195 L620 165 M635 215 L665 200 M635 265 L665 280 M610 285 L620 315" opacity="0.7" stroke-width="2.6"/>
+    <!-- caption -->
+    <text x="600" y="350" text-anchor="middle" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">failed</text>
+  </g>
+</svg>

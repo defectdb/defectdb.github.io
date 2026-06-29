@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Marshalling — a raw pointer crosses a wall and becomes a struct on the native side">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="17" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <rect x="575" y="80" width="74" height="120" rx="4"/>
+    <rect x="575" y="280" width="74" height="120" rx="4"/>
+    <path d="M575 120 L649 120 M575 160 L649 160 M575 320 L649 320 M575 360 L649 360" stroke-width="2.4" opacity="0.55"/>
+    <path d="M612 80 L612 120 M594 120 L594 160 M630 120 L630 160 M612 160 L612 200 M612 280 L612 320 M594 320 L594 360 M630 320 L630 360 M612 360 L612 400" stroke-width="2.4" opacity="0.55"/>
+    <path d="M270 240 L568 240"/>
+    <path d="M568 240 L548 228 M568 240 L548 252"/>
+    <circle cx="262" cy="240" r="10" fill="#1b1a17"/>
+    <path d="M656 240 L740 240"/>
+    <path d="M740 240 L724 230 M740 240 L724 250"/>
+    <rect x="752" y="196" width="120" height="92" rx="6"/>
+    <path d="M752 226 L872 226 M752 258 L872 258 M812 196 L812 288" stroke-width="2.4" opacity="0.6"/>
+  </g>
+</svg>

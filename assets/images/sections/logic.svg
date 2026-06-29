@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Logic — two interlocking gears stamped with AND and OR symbols, a figure turning the crank">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="67" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- big gear -->
+    <circle cx="560" cy="220" r="90"/>
+    <circle cx="560" cy="220" r="26"/>
+    <line x1="560" y1="110" x2="560" y2="142"/>
+    <line x1="560" y1="298" x2="560" y2="330"/>
+    <line x1="450" y1="220" x2="482" y2="220"/>
+    <line x1="638" y1="220" x2="670" y2="220"/>
+    <line x1="483" y1="143" x2="505" y2="165"/>
+    <line x1="615" y1="275" x2="637" y2="297"/>
+    <line x1="483" y1="297" x2="505" y2="275"/>
+    <line x1="615" y1="165" x2="637" y2="143"/>
+    <!-- AND symbol on big gear -->
+    <path d="M540 210 L560 245 L580 210" />
+    <line x1="546" y1="228" x2="574" y2="228"/>
+    <!-- small gear -->
+    <circle cx="760" cy="280" r="58"/>
+    <circle cx="760" cy="280" r="16"/>
+    <line x1="760" y1="208" x2="760" y2="232"/>
+    <line x1="760" y1="328" x2="760" y2="352"/>
+    <line x1="688" y1="280" x2="712" y2="280"/>
+    <line x1="808" y1="280" x2="832" y2="280"/>
+    <!-- OR symbol (v) on small gear -->
+    <path d="M748 268 L760 296 L772 268"/>
+    <!-- figure cranking from left -->
+    <circle cx="250" cy="150" r="32"/>
+    <path d="M250 182 V290"/>
+    <path d="M250 210 L320 230"/>
+    <path d="M250 210 L200 240"/>
+    <path d="M250 290 L216 366"/>
+    <path d="M250 290 L286 366"/>
+    <path d="M320 230 L450 220" opacity="0.6" stroke-width="2.6"/>
+  </g>
+</svg>

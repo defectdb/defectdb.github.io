@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Integer truncated — a wide row of bits chopped down to fit a narrow box, the high bits spilling off">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="64" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- the small destination box (narrow type) -->
+    <rect x="560" y="190" width="320" height="110"/>
+    <path d="M640 190 V300 M720 190 V300 M800 190 V300"/>
+    <text x="585" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">1</text>
+    <text x="665" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">0</text>
+    <text x="745" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">1</text>
+    <text x="825" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">1</text>
+    <!-- dotted line: where the wide value is cut -->
+    <path d="M560 150 V340" stroke-width="2.4" opacity="0.5" stroke-dasharray="8 12"/>
+    <!-- the high bits that spill off the left edge, faint -->
+    <g opacity="0.5" stroke-width="2.4">
+      <rect x="200" y="190" width="360" height="110"/>
+      <path d="M290 190 V300 M380 190 V300 M470 190 V300"/>
+      <text x="220" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">1</text>
+      <text x="310" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">1</text>
+      <text x="400" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">0</text>
+      <text x="490" y="262" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">1</text>
+    </g>
+    <!-- discarded bits falling away -->
+    <path d="M360 320 q-20 50 -70 60" opacity="0.5" stroke-width="2.4"/>
+    <path d="M290 380 L300 352 M290 380 L262 368" opacity="0.5" stroke-width="2.4"/>
+    <!-- scissors at the cut -->
+    <circle cx="560" cy="370" r="20"/>
+    <circle cx="560" cy="412" r="20"/>
+    <path d="M546 356 L470 320 M546 426 L470 360"/>
+    <text x="640" y="160" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">int8</text>
+  </g>
+</svg>

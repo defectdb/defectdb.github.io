@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Pointers — a pointer arrow aiming into an empty void marked with a null symbol, and a little ghost nearby">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="119" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- pointer box -->
+    <rect x="160" y="180" width="180" height="90"/>
+    <text x="185" y="240" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="34" fill="#1b1a17" stroke="none">ptr</text>
+    <!-- arrow into the void -->
+    <path d="M340 225 H560"/>
+    <path d="M560 225 L532 205 M560 225 L532 245"/>
+    <!-- the void: a null symbol (circle with a slash) -->
+    <circle cx="660" cy="225" r="58"/>
+    <path d="M620 268 L700 182"/>
+    <!-- a dangling ghost off to the right (freed target) -->
+    <path d="M900 160 q0 -70 70 -70 q70 0 70 70 V310 l-25 -22 l-25 22 l-25 -22 l-25 22 l-25 -22 l-15 14 Z"/>
+    <circle cx="950" cy="170" r="9" fill="#1b1a17"/>
+    <circle cx="1000" cy="170" r="9" fill="#1b1a17"/>
+    <path d="M950 205 q25 18 50 0" stroke-width="2.6"/>
+  </g>
+</svg>

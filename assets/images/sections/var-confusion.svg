@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Confusion — a figure puzzled before an empty box marked with a null symbol">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="66" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- empty box with null symbol (Ø) -->
+    <rect x="620" y="180" width="200" height="160" rx="12"/>
+    <circle cx="720" cy="260" r="46"/>
+    <path d="M686 294 L754 226"/>
+    <!-- figure scratching head, confused -->
+    <circle cx="300" cy="160" r="34"/>
+    <path d="M283 165 a7 5 0 0 1 12 0 M308 165 a7 5 0 0 1 12 0"/>
+    <path d="M290 188 a10 6 0 0 0 18 -2"/>
+    <path d="M300 194 V300"/>
+    <!-- one arm scratching head -->
+    <path d="M300 220 L340 175"/>
+    <path d="M340 175 L330 150"/>
+    <!-- other arm pointing at box -->
+    <path d="M300 230 L500 250"/>
+    <path d="M500 250 L540 255"/>
+    <path d="M300 300 L262 380"/>
+    <path d="M300 300 L340 380"/>
+    <!-- confusion marks -->
+    <text x="360" y="120" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="44" fill="#1b1a17" stroke="none">?!</text>
+  </g>
+</svg>

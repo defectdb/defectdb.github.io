@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" fill="none" role="img" aria-label="Variables — a figure holding a labelled box x equals 42">
+  <defs>
+    <filter id="rough" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="54" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1b1a17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- three labelled boxes on a shelf -->
+    <path d="M180 360 H1040"/>
+    <rect x="240" y="250" width="150" height="110" rx="10"/>
+    <text x="270" y="318" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">x</text>
+    <rect x="540" y="230" width="150" height="130" rx="10"/>
+    <text x="572" y="305" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">y</text>
+    <rect x="840" y="270" width="150" height="90" rx="10"/>
+    <text x="872" y="328" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="40" fill="#1b1a17" stroke="none">z</text>
+    <!-- name tags / handwritten value floating over y -->
+    <path d="M615 210 V170"/>
+    <rect x="560" y="120" width="110" height="46" rx="8"/>
+    <text x="580" y="153" font-family="'Comic Sans MS','Chalkboard SE','Comic Neue',cursive" font-size="30" fill="#1b1a17" stroke="none">= 42</text>
+    <!-- little figure inspecting from left -->
+    <circle cx="120" cy="180" r="30"/>
+    <path d="M120 210 V300"/>
+    <path d="M120 235 L165 250"/>
+    <path d="M120 235 L85 270"/>
+    <path d="M120 300 L92 365"/>
+    <path d="M120 300 L150 365"/>
+  </g>
+</svg>
