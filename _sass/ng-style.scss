@@ -1,10 +1,13 @@
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-// The body background is inverted by the dark-theme filter; the html canvas is
-// not filtered, so it uses the literal --canvas-color instead.
+// Only the <html> root carries a background, and it is a literal colour
+// (--canvas-color) that is never touched by the dark-theme filter. The <body>
+// is kept transparent so the dark filter inverts its *content* only, never a
+// background — that way the page surface, the scroll canvas and the overscroll
+// area are all the one same literal colour, with no filter-vs-literal seam.
 html { background: var(--canvas-color); margin: 0; height: 100%; }
-body { background: var(--page-background-color); margin: 0; }
+body { background: transparent; margin: 0; }
 
 body {
   font-family: var(--font-body);
